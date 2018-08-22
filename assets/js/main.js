@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    $.getJSON('https://anyorigin.com/go?url=https%3A//untappd.com/user/HoppedUpEast/beers%3Fsort%3Dhighest_rated_you&callback=?', function(data){
+    $.getJSON('https://allorigins.me/get?url=' + encodeURIComponent('https://untappd.com/user/HoppedUpEast/beers?sort=highest_rated_you') + '&callback=?', function(data){
         // $('#output').html(data.contents);
         var response = data.contents;
         var beeritems = $(response).find("div.beer-item");
