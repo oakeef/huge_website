@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    $.getJSON('http://anyorigin.com/go?url=https%3A//untappd.com/user/HoppedUpEast/beers%3Fsort%3Dhighest_rated_you&callback=?', function(data){
+    $.getJSON('https://anyorigin.com/go?url=https%3A//untappd.com/user/HoppedUpEast/beers%3Fsort%3Dhighest_rated_you&callback=?', function(data){
         // $('#output').html(data.contents);
         var response = data.contents;
         var beeritems = $(response).find("div.beer-item");
@@ -26,7 +26,23 @@
    
         });
 
+        $.each( sixpack, function( index, value ){
+            $(".beers").append(
+                "<div>" + 
+                "<h3>" + value.name + "</h3>" + 
+                "<ul>" + 
+                "<li>" + value.brewery + "</li>" + 
+                "<li>" + value.style + "</li>" + 
+                "<li>" + value.abv + "</li>" + 
+                "<li>" + value.ibu + "</li>" + 
+                "</ul>" +
+                "</div>"
+            );
+        });
+
     });
+
+    
 
     function parseBeerValue(beer, value){
         var value = $(beer).find('p.' + value);
