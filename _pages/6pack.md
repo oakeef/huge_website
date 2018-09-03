@@ -6,4 +6,5 @@ desc: The Six most highly rated beers from the Hopped Up Gaming East Untappd App
 permalink: /6pack/
 ---
 
+<div class="loader"></div>
 <div class="beers"></div>

@@ -45,6 +45,8 @@
     
 
     function parseBeerValue(beer, value){
+        var elem = document.querySelector('.loader');
+        elem.style.display = 'none';
         var value = $(beer).find('p.' + value);
         value = $("<div/>").html(value).text();
         return value;
