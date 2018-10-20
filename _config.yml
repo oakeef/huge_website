@@ -3,9 +3,10 @@
 # Site settings
 title: Hopped Up Gaming East               # used for the html title of every page
 desc: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hopped Up Gaming East is your favorite East Coast Podcast that covers Craft Beer,
+  Video Games, Pop culture and everything nerdy. Join Evan, Matthew, Ben and Tim every
+  week for the two craft beer reviews, the latest in what everyone is playing and/or
+  watching.
 
 url: http://hoppedupeast.com      # put your website hosting url here
 baseurl: ''                 # the subpath of your site, e.g. /blog
