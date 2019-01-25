@@ -4,9 +4,7 @@
 title: Hopped Up Gaming East               # used for the html title of every page
 desc: >
   Hopped Up Gaming East is your favorite East Coast Podcast that covers Craft Beer,
-  Video Games, Pop culture and everything nerdy. Join Evan, Matthew, Ben and Tim every
-  week for the two craft beer reviews, the latest in what everyone is playing and/or
-  watching.
+  Video Games, Pop culture and everything nerdy.
 
 url: http://hoppedupeast.com      # put your website hosting url here
 baseurl: ''                 # the subpath of your site, e.g. /blog
