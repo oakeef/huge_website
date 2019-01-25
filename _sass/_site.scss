@@ -189,3 +189,27 @@
   &.right { margin-right: .3rem; }
   &.left { margin-left: .3rem; }
 }
+
+// stuff
+
+.box-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.box-person{
+  padding: 0px 15px;
+  border-radius: 10px;
+  border: 5px solid #000;
+}
+
+.box-person>h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box-person>img{
+  border-radius: 50%;
+  margin-bottom:10px;
+}
