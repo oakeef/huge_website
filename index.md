@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% include orgSchema.html %}
 
 <div class="lead">
   **Hopped Up Gaming East** is a beer and gaming podcast originating from Halifax Nova Scotia.
