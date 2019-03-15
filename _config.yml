@@ -14,11 +14,6 @@ permalink: /:year/:title/   # how should we display posts url
 email: hoppedupeast@gmail.com
 author: HUGE Crew
 twitter_username: hoppedupeast
-github_username: 
-github_source: 
-
-# Put your ga tracking code below
-google_analytics: 'UA-XXXXXXXX-X'
 
 # Pagination settings
 paginate: 5                           # number of posts to show per page
