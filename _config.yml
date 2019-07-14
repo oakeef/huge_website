@@ -1,73 +1,64 @@
-# The main config file for your Jekyll template
+# Site
+name: "Hopped-Up Gaming: East"
+title: "Hopped-Up Gaming: East"
+description: "Eastern Canadian Craft Beer and Video Games Podcast"
+meta_description: "Eastern Canadian Craft Beer and Video Games Podcast"
+logo: 'assets/images/huge-logo-sm.png'
+favicon: 'assets/images/favicon.ico'
+paginate: 12
+baseurl: ''
+email: 'hoppedupeast@gmail.com'
+google_analytics: 'UA-111791664-2'
+disqus: ''
 
-# Site settings
-title: 'Hopped-Up Gaming: East'               # used for the html title of every page
-desc: >
-  Hopped-Up Gaming: East is your favorite East Coast Podcast that covers Craft Beer,
-  Video Games, Pop culture and everything nerdy.
+#Podcast Providers:
+hipcast: 'https://www.hipcast.com/podcast/HJfyJb'
+spotify: 'https://open.spotify.com/show/2dTRwdB4bHYsCI2CN9OV2m'
+googlepod: 'https://play.google.com/music/m/I2ovy32ius4usiwhnuitgnh5ltu?t=Hopped-Up_Gaming_East'
+applepod: 'https://podcasts.apple.com/us/podcast/hopped-up-gaming-east/id797058638'
 
-url: http://hoppedupeast.com      # put your website hosting url here
-baseurl: ''                 # the subpath of your site, e.g. /blog
-permalink: /:year/:title/   # how should we display posts url
+#XCOMMITTEE
+xcom-hipcast: 'https://www.hipcast.com/podcast/HWK5rrWs'
+xcom-spotify: 'https://open.spotify.com/show/1z0C7QHykxMdrCQNxqqKCw'
+xcom-applepod: 'https://podcasts.apple.com/gb/podcast/x-committee/id979571952'
 
-# Meta settings
-email: hoppedupeast@gmail.com
-author: HUGE Crew
-twitter_username: hoppedupeast
-github_username: 
-github_source: 
+# sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
 
-# Put your ga tracking code below
-google_analytics: 'UA-XXXXXXXX-X'
+# Authors
+authors:
+  sal:
+    name: Evan
+    display_name: Evan
+    # gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: oakeef@gmail.com
+    # web: https://www.wowthemes.net/category/jekyll-themes/
+    twitter: https://twitter.com/stuffwithevan
+    description: "Member of Hopped-Up Gaming: East since 2014. Loves 80's cars, music and movies. Big fan of Dark Souls."
+  # john:
+  #   name: John
+  #   display_name: John
+  #   gravatar: b1cc14991db7a456fcd761680bbc8f81
+  #   email: wowthemesnet@gmail.com
+  #   web: https://www.wowthemes.net/category/jekyll-themes/
+  #   twitter: https://twitter.com/wowthemesnet
+  #   description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
 
-# Pagination settings
-paginate: 5                           # number of posts to show per page
-paginate_path: "/articles/page:num/"  # link scheme for articles, should be letf as is
-
-# Navigation settings
-# Used to define the navigation menu items
-# > Title is the tile of the navigation item, url the url and desc is the tooltip
-navigation:
-  - title: Podcast
-    url: /podcast/
-    desc: Where to listen to the Hopped Up Gaming East Podcast
-  - title: Projects
-    url: /projects/
-    desc: Projects the Hopped Up Gaming East Crew has worked on
-  - title: Six Pack
-    url: /6pack/
-    desc: The 6 most highly rated beers from the Hopped Up Gaming East crew
-  - title: About
-    url: /about/
-    desc: Learn more about Hopped Up Gaming East
-
-# Used by Jekyll to recognize what is a post and what is a page
-defaults:
-  -
-    scope:
-      path: ''
-      type: posts
-    values:
-      layout: post
-
-# Markdown parser settings
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false          # you can change this if you feel like it
-  parse_block_html: true    # allow parsing html inside markdown
-
-# Build settings
-include:
-  - _pages                  # all your pages can be put inside pages (except articles)
-exclude:
-  - README.md
-  - vendor
-gems:
+# Plugins
+plugins: 
   - jekyll-paginate
-
-# HUGE COLORS
-# Brown: #3b2314
-# Orange: #faaf40
-# Cream: #ffdea5
-
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+        
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Other
+markdown: kramdown
+highlighter: rouge
