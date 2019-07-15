@@ -3,4 +3,5 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .ruby-version
-planet.db
+huge.xml
+xcommittee.xml

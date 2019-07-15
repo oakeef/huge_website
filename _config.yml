@@ -3,7 +3,7 @@ name: "Hopped-Up Gaming: East"
 title: "Hopped-Up Gaming: East"
 description: "Eastern Canadian Craft Beer and Video Games Podcast"
 meta_description: "Eastern Canadian Craft Beer and Video Games Podcast"
-logo: 'assets/images/huge-logo-sm.png'
+logo: 'assets/images/huge-logo.png'
 favicon: 'assets/images/favicon.ico'
 paginate: 12
 baseurl: ''
@@ -33,7 +33,7 @@ discord: 'https://bit.ly/hoppedupdiscord'
 
 # Authors
 authors:
-  sal:
+  evan:
     name: Evan
     display_name: Evan
     # gravatar: e56154546cf4be74e393c62d1ae9f9d4
@@ -41,14 +41,22 @@ authors:
     # web: https://www.wowthemes.net/category/jekyll-themes/
     twitter: https://twitter.com/stuffwithevan
     description: "Member of Hopped-Up Gaming: East since 2014. Loves 80's cars, music and movies. Big fan of Dark Souls."
-  # john:
-  #   name: John
-  #   display_name: John
-  #   gravatar: b1cc14991db7a456fcd761680bbc8f81
-  #   email: wowthemesnet@gmail.com
-  #   web: https://www.wowthemes.net/category/jekyll-themes/
-  #   twitter: https://twitter.com/wowthemesnet
-  #   description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
+  commander:
+    name: Commander
+    display_name: Commander
+    # gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: hoppedupeast@gmail.com
+    # web: https://www.wowthemes.net/category/jekyll-themes/
+    twitter: https://twitter.com/hoppedupeast
+    description: "The Commander is the leader of the XCOM Project."
+  huge_crew:
+    name: HUGE Crew
+    display_name: HUGE Crew
+    # gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: hoppedupeast@gmail.com
+    # web: https://www.wowthemes.net/category/jekyll-themes/
+    twitter: https://twitter.com/hoppedupeast
+    description: "Hopped-Up Gaming: East members collectively known as the HUGE Crew"
 
 # Plugins
 plugins: 
