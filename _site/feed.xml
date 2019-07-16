@@ -3,10 +3,10 @@
   <channel>
     <title>Hopped-Up Gaming: East</title>
     <description>Eastern Canadian Craft Beer and Video Games Podcast</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 15 Jul 2019 17:58:48 -0300</pubDate>
-    <lastBuildDate>Mon, 15 Jul 2019 17:58:48 -0300</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 16 Jul 2019 09:15:15 -0300</pubDate>
+    <lastBuildDate>Tue, 16 Jul 2019 09:15:15 -0300</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -18,8 +18,8 @@ As always keep sending questions to hoppedupeast@gmail.com, we love them!
 Beer featured this week: Hop Trip - American Noble Citra by Garrison Brewing Company and Electric City by Tusket Falls Brewing Company.
 </description>
         <pubDate>Tue, 09 Jul 2019 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/huge/2019/07/09/ep-290-obadin-stellar-enterprises-07-08-2019.html</link>
-        <guid isPermaLink="true">http://localhost:4000/huge/2019/07/09/ep-290-obadin-stellar-enterprises-07-08-2019.html</guid>
+        <link>/huge/2019/07/09/ep-290-obadin-stellar-enterprises-07-08-2019.html</link>
+        <guid isPermaLink="true">/huge/2019/07/09/ep-290-obadin-stellar-enterprises-07-08-2019.html</guid>
         
         
         <category>HUGE</category>
@@ -41,8 +41,8 @@ As always keep sending questions to hoppedupeast@gmail.com, we love them!
 Beer featured this week: Mocha Oatmeal Stout by Propeller Brewing Company and Maudite by Unibroue.
 </description>
         <pubDate>Mon, 01 Jul 2019 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/huge/2019/07/01/ep-289-can-birds-hear-while-they-re-flying-07-01-2019.html</link>
-        <guid isPermaLink="true">http://localhost:4000/huge/2019/07/01/ep-289-can-birds-hear-while-they-re-flying-07-01-2019.html</guid>
+        <link>/huge/2019/07/01/ep-289-can-birds-hear-while-they-re-flying-07-01-2019.html</link>
+        <guid isPermaLink="true">/huge/2019/07/01/ep-289-can-birds-hear-while-they-re-flying-07-01-2019.html</guid>
         
         
         <category>HUGE</category>
@@ -60,8 +60,8 @@ As always keep sending questions to hoppedupeast@gmail.com, we love them!
 Beer featured this week: Island Time by Breton Brewing Company and Hawaiian Pale Ale by Hammond River Brewing Company.
 </description>
         <pubDate>Tue, 25 Jun 2019 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/huge/2019/06/25/ep-288-rogue-like-like-06-24-2019.html</link>
-        <guid isPermaLink="true">http://localhost:4000/huge/2019/06/25/ep-288-rogue-like-like-06-24-2019.html</guid>
+        <link>/huge/2019/06/25/ep-288-rogue-like-like-06-24-2019.html</link>
+        <guid isPermaLink="true">/huge/2019/06/25/ep-288-rogue-like-like-06-24-2019.html</guid>
         
         
         <category>HUGE</category>
@@ -74,8 +74,8 @@ Beer featured this week: Island Time by Breton Brewing Company and Hawaiian Pale
 Beers This Week: Alexander Keith's Le Passage Sour Gose and Bier de Garde(n)
 </description>
         <pubDate>Tue, 18 Jun 2019 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/huge/2019/06/18/ep-287-growling-about-e3.html</link>
-        <guid isPermaLink="true">http://localhost:4000/huge/2019/06/18/ep-287-growling-about-e3.html</guid>
+        <link>/huge/2019/06/18/ep-287-growling-about-e3.html</link>
+        <guid isPermaLink="true">/huge/2019/06/18/ep-287-growling-about-e3.html</guid>
         
         
         <category>HUGE</category>
@@ -91,8 +91,8 @@ As always keep sending questions to hoppedupeast@gmail.com, we love them!
 Beer featured this week: Growlers of stuff!
 </description>
         <pubDate>Mon, 10 Jun 2019 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/huge/2019/06/10/ep-286-printed-audiobooks-06-10-2019.html</link>
-        <guid isPermaLink="true">http://localhost:4000/huge/2019/06/10/ep-286-printed-audiobooks-06-10-2019.html</guid>
+        <link>/huge/2019/06/10/ep-286-printed-audiobooks-06-10-2019.html</link>
+        <guid isPermaLink="true">/huge/2019/06/10/ep-286-printed-audiobooks-06-10-2019.html</guid>
         
         
         <category>HUGE</category>
@@ -108,8 +108,8 @@ As always keep sending questions to hoppedupeast@gmail.com, we love them!
 Beer featured this week: After Hours: Sasquatch Pale Ale by Propeller Brewing Company and CBA | Canadian Black Ale by Picaroons Traditional Ales.
 </description>
         <pubDate>Tue, 04 Jun 2019 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/huge/2019/06/04/ep-285-beached-thing-06-03-2019.html</link>
-        <guid isPermaLink="true">http://localhost:4000/huge/2019/06/04/ep-285-beached-thing-06-03-2019.html</guid>
+        <link>/huge/2019/06/04/ep-285-beached-thing-06-03-2019.html</link>
+        <guid isPermaLink="true">/huge/2019/06/04/ep-285-beached-thing-06-03-2019.html</guid>
         
         
         <category>HUGE</category>
@@ -127,8 +127,8 @@ As always keep sending questions to hoppedupeast@gmail.com, we love them!
 Beer featured this week: After Hours: Snowbird Juicy IPA by PEI Brewing Company (Gahan) and Barking Squirrel Amber Lager by Hop City Brewing Co.
 </description>
         <pubDate>Tue, 28 May 2019 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/huge/2019/05/28/ep-284-gravity-bucket-05-27-2019.html</link>
-        <guid isPermaLink="true">http://localhost:4000/huge/2019/05/28/ep-284-gravity-bucket-05-27-2019.html</guid>
+        <link>/huge/2019/05/28/ep-284-gravity-bucket-05-27-2019.html</link>
+        <guid isPermaLink="true">/huge/2019/05/28/ep-284-gravity-bucket-05-27-2019.html</guid>
         
         
         <category>HUGE</category>
@@ -155,8 +155,8 @@ As always keep sending questions to hoppedupeast@gmail.com, we love them!
 Beer featured this week: Nuts Over You by Chill Street Fresh Beer &amp; Cider Market and Lemondrop by Garrison Brewing Company.
 </description>
         <pubDate>Mon, 20 May 2019 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/huge/2019/05/20/ep-283-started-yelling-holocron-05-20-2019.html</link>
-        <guid isPermaLink="true">http://localhost:4000/huge/2019/05/20/ep-283-started-yelling-holocron-05-20-2019.html</guid>
+        <link>/huge/2019/05/20/ep-283-started-yelling-holocron-05-20-2019.html</link>
+        <guid isPermaLink="true">/huge/2019/05/20/ep-283-started-yelling-holocron-05-20-2019.html</guid>
         
         
         <category>HUGE</category>
@@ -172,8 +172,8 @@ As always keep sending questions to hoppedupeast@gmail.com, we love them!
 Beer featured this week: Day 6 With Brett Blueberry by Big Spruce Brewing and Strawberry Rhubarb Kettle Sour by Breton Brewing Company.
 </description>
         <pubDate>Mon, 13 May 2019 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/huge/2019/05/13/ep-282-heavenly-cans-05-13-2019.html</link>
-        <guid isPermaLink="true">http://localhost:4000/huge/2019/05/13/ep-282-heavenly-cans-05-13-2019.html</guid>
+        <link>/huge/2019/05/13/ep-282-heavenly-cans-05-13-2019.html</link>
+        <guid isPermaLink="true">/huge/2019/05/13/ep-282-heavenly-cans-05-13-2019.html</guid>
         
         
         <category>HUGE</category>
@@ -189,8 +189,8 @@ As always keep sending questions to hoppedupeast@gmail.com, we love them!
 Beer featured this week: Delirium Nocturnum by Huyghe Brewery and 2019 Commissar by Unfiltered Brewing.
 </description>
         <pubDate>Tue, 07 May 2019 00:00:00 -0300</pubDate>
-        <link>http://localhost:4000/huge/2019/05/07/ep-281-the-internet-is-broken-05-06-2019.html</link>
-        <guid isPermaLink="true">http://localhost:4000/huge/2019/05/07/ep-281-the-internet-is-broken-05-06-2019.html</guid>
+        <link>/huge/2019/05/07/ep-281-the-internet-is-broken-05-06-2019.html</link>
+        <guid isPermaLink="true">/huge/2019/05/07/ep-281-the-internet-is-broken-05-06-2019.html</guid>
         
         
         <category>HUGE</category>
