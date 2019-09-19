@@ -3,50 +3,49 @@
     <div class="container">
 
         <div class="row">
+
             <div class="col-sm-3">
-            <div class="footer-widget">
-            <a href="{{site.baseurl}}/contact">
-            
-            </a>
-            </div>
+                <div class="footer-widget">
+                    <h5 class="title">Podcast Feeds</h5>
+                    <ul>
+                        <li><a target="_blank" href="{{ site.hipcast }}">Hipcast</a></li>
+                        <li><a target="_blank" href="{{ site.spotify }}">Spotify</a></li>
+                        <li><a target="_blank" href="{{ site.googlepod }}">Google Podcasts</a></li>
+                        <li><a target="_blank" href="{{ site.applepod }}">Apple Podcasts</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="col-sm-3">
-            <div class="footer-widget">
-            <h5 class="title">External Links</h5>
-            <ul>
-            <li><a target="_blank" href="#">Thing 1</a></li>
-            <li><a target="_blank" href="#">Thing 2</a></li>
-            <li><a target="_blank" href="#">Thing 3</a></li>
-            <li><a target="_blank" href="#">Thing 4</a></li>
-            </ul>
-            </div>
-            </div>
-
-            <div class="col-sm-3">
-            <div class="footer-widget">
-            <h5 class="title">Internal Links</h5>
-            <ul>
-            <li><a href="#">Thing 1</a></li>
-            <li><a href="#">Thing 2</a></li>
-            <li><a href="#">Thing 3</a></li>
-            <li><a href="#">Thing 4</a></li>
-            </ul>
-            </div>
+                <div class="footer-widget">
+                    <h5 class="title">Social Media</h5>
+                    <ul>
+                        <li><a target="_blank" href="{{ site.facebook }}">Facebook</a></li>
+                        <li><a target="_blank" href="{{ site.instagram }}">Instagram</a></li>
+                        <li><a target="_blank" href="{{ site.twitter }}">Twitter</a></li>
+                        <li><a target="_blank" href="{{ site.untappd }}">Untappd</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="col-sm-3">
-            <div class="footer-widget textwidget">
-                <h5 class="title">Column 3</h5>
-                <p>Content goes here.</p> 
-                <a href="#">Link</a>                    
+                <div class="footer-widget">
+                    <h5 class="title">More Stuff</h5>
+                    <ul>
+                        <li><a href="{{ site.youtube }}">Youtube</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/feedback">Feedback</a></li>
+                    </ul>
+                </div>
             </div>
-            </div>
+
+     
         </div>
 
         <div class="copyright">
             <p class="pull-left">
-            Copyright © {{ site.time | date: "%Y" }} {{ site.name }}.
+                Copyright © {{ site.time | date: "%Y" }} {{ site.name }}.
             </p>
             <p class="pull-right">
             <!-- Please, leave credit to author unless you own a commercial license: https://www.wowthemes.net/freebies-license/ --> 
