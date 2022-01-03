@@ -3,15 +3,15 @@
 # Site settings
 title: 'Hopped-Up Gaming: East'               # used for the html title of every page
 desc: >
-  Hopped-Up Gaming: East is your favorite East Coast Podcast that covers Craft Beer,
-  Video Games, Pop culture and everything nerdy.
+  Hopped-Up Gaming: East is your favorite Podcast about Craft Beer,
+  Video Games, Pop culture, Movies and everything nerdy.
 
-url: http://hoppedupeast.com      # put your website hosting url here
+url: https://hoppedupeast.com      # put your website hosting url here
 baseurl: ''                 # the subpath of your site, e.g. /blog
 permalink: /:year/:title/   # how should we display posts url
 
 # Meta settings
-email: hoppedupeast@gmail.com
+email: hugecrew@hoppedupeast.com
 author: HUGE Crew
 twitter_username: hoppedupeast
 github_username: 
