@@ -1,1 +1,1 @@
-Website for Hopped Up Gaming Podcast
+Website for Hopped Up Gaming East Podcast
