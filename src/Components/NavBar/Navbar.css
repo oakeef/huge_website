@@ -2,10 +2,22 @@
     display: flex;
 }
 
+.logo {
+    height: 20px;
+}
+
 button {
+    background-color: #faaf40;
+    border: none;
     border-radius: 30px;
+    color: white;
+    display: flex;
+    font-size: large;
+    font-weight: bolder;
     height: 50px;
+    justify-content: center;
     margin: 20px 100px 0 0;
+    text-align: center;
     width: 170px;
 }
 

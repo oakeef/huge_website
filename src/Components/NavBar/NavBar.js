@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBar.css";
+import patreon from "../../images/Patreon.png";
 
 export default function NavBar() {
     return (
@@ -9,7 +10,10 @@ export default function NavBar() {
                 <li className="navLink">About</li>
                 <li className="navLink">Projects</li>
             </ul>
-            <button> DONATE</button>
+            <button>
+                <img className="logo" src={patreon} alt="logo" />
+                <span>DONATE</span>
+            </button>
         </div>
     );
 }
