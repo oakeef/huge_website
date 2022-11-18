@@ -1,12 +1,11 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
+import "./Header.css";
 
 export default function Header() {
     return (
-        <>
-            <h1> hello world</h1>
-
+        <div className="headerContainer">
             <NavBar />
-        </>
+        </div>
     );
 }
