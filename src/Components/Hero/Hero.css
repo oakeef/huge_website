@@ -2,6 +2,15 @@
     display: flex;
 }
 
+.heroText {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroMainText {
+    font-size: 40px;
+}
+
 .heroImage {
     height: 600px;
 }

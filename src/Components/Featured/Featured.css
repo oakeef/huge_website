@@ -1,0 +1,28 @@
+.featuredContainer {
+    border-radius: 20px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    height: 235px;
+    width: 550px;
+}
+.featuredEpInfo {
+    display: flex;
+}
+
+.featuredEpAndTitle {
+    display: flex;
+    flex-direction: column;
+}
+
+.featuredImg {
+    height: 100px;
+}
+
+.featuredEpNo {
+    color: #01b7cc;
+}
+
+.featuredButtons {
+    display: flex;
+}
