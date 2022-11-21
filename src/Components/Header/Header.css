@@ -1,4 +1,6 @@
 .headerContainer {
+    background-color: #ffdea5;
     display: flex;
     flex-direction: row-reverse;
+    height: 93px;
 }

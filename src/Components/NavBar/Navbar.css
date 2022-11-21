@@ -24,15 +24,21 @@ button {
 }
 
 .navLinks {
+    color: #fab040;
     display: flex;
     flex-direction: row;
-    font-size: x-large;
+    font-size: large;
+    font-weight: bolder;
     list-style: none;
-    padding-right: 15px;
+    padding: 15px 15px 0 0;
 }
 
 .navLink {
     padding: 0 10px;
+}
+
+.navLink:hover {
+    text-decoration: underline;
 }
 
 .navLink:hover {
