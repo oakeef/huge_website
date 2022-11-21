@@ -1,0 +1,7 @@
+.heroContainer {
+    display: flex;
+}
+
+.heroImage {
+    height: 600px;
+}
