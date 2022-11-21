@@ -3,16 +3,18 @@
 }
 
 .logo {
-    height: 20px;
+    height: 17px;
+    padding-right: 8px;
 }
 
 button {
+    align-items: center;
     background-color: #faaf40;
     border: none;
     border-radius: 30px;
     color: white;
     display: flex;
-    font-size: large;
+    font-size: small;
     font-weight: bolder;
     height: 50px;
     justify-content: center;
