@@ -1,0 +1,6 @@
+.listenOnContainer {
+    display: flex;
+
+    max-width: 1140px;
+    margin: auto;
+}

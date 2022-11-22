@@ -6,9 +6,12 @@ import googleLogo from "../../images/googleLogo.webp";
 
 export default function ListenOn() {
     return (
-        <h3>
-            <img className="podIcon" src={podIcon} alt="podcatcher icon" />
-            Subscribe On:
+        <div className="listenOnContainer">
+            <div>
+                <img className="podIcon" src={podIcon} alt="podcatcher icon" />
+                <h3>Subscribe On:</h3>
+            </div>
+
             <span>
                 <img className="logo" src={appleLogo} alt="apple logo" />
                 APPLE PODCASTS
@@ -21,6 +24,6 @@ export default function ListenOn() {
                 <img className="logo" src={spotifyLogo} alt="spotify logo" />
                 SPOTIFY
             </span>
-        </h3>
+        </div>
     );
 }
