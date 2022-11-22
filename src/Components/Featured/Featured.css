@@ -1,28 +1,96 @@
 .featuredContainer {
     border-radius: 20px;
-    background-color: antiquewhite;
+    background-color: white;
+    box-shadow: 0 0px 20px 0 rgba(79, 73, 63, 0.5);
+    transition: box-shadow 0.4s;
     display: flex;
     flex-direction: column;
     height: 235px;
     width: 550px;
 }
+
+.featuredbanner {
+    background-color: #908dab;
+    color: white;
+    font-weight: bolder;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 2px 15px 0 15px;
+    border-radius: 15px;
+    margin: 20px 30px;
+    display: inline-block;
+    line-height: 20px;
+}
+
 .featuredEpInfo {
     display: flex;
+    align-items: center;
 }
 
 .featuredEpAndTitle {
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .featuredImg {
-    height: 100px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 100px;
+    height: 70px;
+    margin: 0 15px 10px 20px;
 }
 
 .featuredEpNo {
     color: #01b7cc;
+    padding-bottom: 5px;
+}
+
+.featuredTitle {
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .featuredButtons {
     display: flex;
+    padding-left: 15px;
+}
+
+.featureListenNow {
+    border-radius: 25px;
+    color: grey;
+    height: 45px;
+    transition: all 0.4s;
+    padding: 10px 30px;
+    margin: 10px;
+    border: 1px solid #c2c8cd;
+    font-size: 13px;
+    text-transform: uppercase;
+    width: 145px;
+    white-space: nowrap;
+}
+
+.featureListenNow:hover {
+    background-color: #01b7cc;
+    color: white;
+}
+
+.featuredBrowse {
+    background-color: white;
+    border-radius: 25px;
+    color: grey;
+    height: 45px;
+    margin: 10px;
+    transition: all 0.4s;
+    padding: 10px 30px;
+    border: 1px solid #c2c8cd;
+    font-size: 13px;
+    text-transform: uppercase;
+    width: 145px;
+    white-space: nowrap;
+}
+
+.featuredBrowse:hover {
+    background-color: #01b7cc;
+    color: white;
 }

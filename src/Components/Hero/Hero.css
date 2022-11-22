@@ -1,5 +1,7 @@
 .heroContainer {
     display: flex;
+    max-width: 1140px;
+    margin: auto;
 }
 
 .heroText {

@@ -18,13 +18,14 @@ export default function Featured() {
                 </div>
                 <div className="featuredEpAndTitle">
                     <span className="featuredEpNo">SEASON 2 EPISODE 6</span>
-                    <span className="featuredTitle">title</span>
+                    <span className="featuredTitle">
+                        The Title of the Episode Goes Here
+                    </span>
                 </div>
             </div>
             <div className="featuredButtons">
-                <button> ▶ </button>
-                <span> LISTEN NOW</span>
-                <button>BROWSE ALL</button>
+                <button className="featureListenNow"> ▶ LISTEN NOW </button>
+                <button className="featuredBrowse">BROWSE ALL</button>
             </div>
         </div>
     );
