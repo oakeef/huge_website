@@ -1,0 +1,18 @@
+.heroContainer {
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroMainText {
+    font-size: 40px;
+}
+
+.heroImage {
+    height: 600px;
+}
