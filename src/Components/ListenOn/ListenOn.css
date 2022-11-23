@@ -5,7 +5,7 @@
     margin: auto;
 }
 
-h3 {
+.listenOnIconAndTitle {
     font-size: 20px;
     padding-right: 10px;
 }
@@ -19,7 +19,7 @@ h3 {
     padding-right: 8px;
 }
 
-.ListenOnChannel {
+.listenOnChannel {
     display: flex;
     font-size: 13px;
     font-weight: 700;
