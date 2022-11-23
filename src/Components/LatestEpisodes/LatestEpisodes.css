@@ -1,0 +1,19 @@
+.latestEpContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 200px;
+    max-width: 1140px;
+}
+
+.latestEpButtonContainer {
+    display: flex;
+    align-items: flex-end;
+}
+
+.latestEpButton {
+    border-radius: 100%;
+    height: 50px;
+    margin: 5px;
+    width: 50px;
+}
