@@ -1,0 +1,28 @@
+.listenOnContainer {
+    align-items: center;
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.listenOnIconAndTitle {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.podIcon {
+    padding-right: 5px;
+}
+
+.logo {
+    height: 15px;
+    padding-right: 8px;
+}
+
+.listenOnChannel {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    padding-right: 20px;
+    padding-top: 10px;
+}
