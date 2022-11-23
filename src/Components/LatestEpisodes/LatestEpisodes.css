@@ -6,14 +6,33 @@
     max-width: 1140px;
 }
 
+.browseAll {
+    font-family: rubik, Sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #908dab;
+}
+
+.browseAll:hover {
+    color: #01b7cc;
+}
+
 .latestEpButtonContainer {
     display: flex;
     align-items: flex-end;
 }
 
 .latestEpButton {
+    background-color: white;
     border-radius: 100%;
+    border: 1px solid #c2c8cd;
     height: 50px;
     margin: 5px;
     width: 50px;
+}
+
+.latestEpButton:hover {
+    background-color: #01b7cc;
+    transition: all 0.4s;
+    color: white;
 }

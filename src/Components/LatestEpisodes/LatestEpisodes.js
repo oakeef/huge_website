@@ -6,7 +6,7 @@ export default function LatestEpisodes() {
         <div className="latestEpContainer">
             <div>
                 <h2> Latest Episodes</h2>
-                <span> BROWSE ALL {">"} </span>
+                <span className="browseAll"> BROWSE ALL {">"} </span>
             </div>
             <div className="latestEpButtonContainer">
                 <button className="latestEpButton"> → </button>
