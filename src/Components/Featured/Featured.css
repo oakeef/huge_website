@@ -51,6 +51,10 @@
     padding-bottom: 20px;
 }
 
+.featuredTitle:hover {
+    color: #01b7cc;
+}
+
 .featuredButtons {
     display: flex;
     padding-left: 15px;
