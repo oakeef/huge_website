@@ -6,10 +6,12 @@
 
 .heroText {
     display: flex;
+    font-family: "Anek Latin", sans-serif;
     flex-direction: column;
 }
 
 .heroMainText {
+    font-family: "Anek Latin", sans-serif;
     font-size: 40px;
 }
 

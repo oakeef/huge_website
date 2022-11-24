@@ -6,11 +6,20 @@
     max-width: 1140px;
 }
 
+.latestEpHeader {
+    font-family: "Anek Latin", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
 .browseAll {
-    font-family: rubik, Sans-serif;
-    font-size: 14px;
-    font-weight: 500;
     color: #908dab;
+    display: flex;
+    font-family: "Anek Latin", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -5px;
+    margin-bottom: 15px;
 }
 
 .browseAll:hover {
@@ -35,4 +44,10 @@
     background-color: #01b7cc;
     transition: all 0.4s;
     color: white;
+}
+
+.episodesContainer {
+    display: flex;
+    margin: auto;
+    max-width: 1140px;
 }
