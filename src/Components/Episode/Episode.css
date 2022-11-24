@@ -1,0 +1,71 @@
+.episodeContainer {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0px 20px 0 rgba(79, 73, 63, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 375px;
+    padding: 20px;
+    position: relative;
+    width: 315px;
+}
+
+.episodeImg {
+    border-radius: 20px;
+    height: 300px;
+    width: 315px;
+}
+
+.episodeDate {
+    background: rgba(98, 108, 117, 0.4);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 11px;
+    line-height: 20px;
+    padding: 4px 15px;
+    position: absolute;
+    right: 30px;
+    text-transform: uppercase;
+    top: 30px;
+    white-space: nowrap;
+}
+
+.episodePlayButton {
+    background-color: white;
+    border-radius: 100%;
+    border: none;
+    bottom: 85px;
+    color: grey;
+    font-size: x-large;
+    height: 60px;
+    left: 20px;
+    position: relative;
+    transition: all 0.4s;
+    width: 60px;
+}
+
+.episodePlayButton:hover {
+    color: white;
+    background-color: #01b7cc;
+}
+
+.episodeInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+}
+
+.episodeCategory {
+    color: #01b7cc;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.episodeTitle {
+    font-family: rubik, Sans-serif;
+    font-size: large;
+    font-weight: 600;
+    line-height: 30px;
+    color: #061020;
+}

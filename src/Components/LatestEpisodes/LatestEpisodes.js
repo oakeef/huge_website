@@ -1,4 +1,5 @@
 import React from "react";
+import Episode from "../Episode/Episode";
 import "./LatestEpisodes.css";
 
 export default function LatestEpisodes() {
@@ -12,6 +13,7 @@ export default function LatestEpisodes() {
                 <button className="latestEpButton"> → </button>
                 <button className="latestEpButton"> ← </button>
             </div>
+            <Episode />
         </div>
     );
 }
