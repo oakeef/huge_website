@@ -1,9 +1,13 @@
 .listenOnContainer {
-    align-items: center;
     display: flex;
+    flex-direction: column;
     max-width: 1140px;
     margin: auto;
     margin-top: -200px;
+}
+.ListenOnAudioContainer {
+    align-items: center;
+    display: flex;
 }
 
 .listenOnIconAndTitle {
@@ -26,4 +30,8 @@
     font-weight: 700;
     padding-right: 20px;
     padding-top: 10px;
+}
+
+.listenOnDiscord {
+    padding-left: 15px;
 }
