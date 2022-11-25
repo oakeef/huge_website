@@ -36,6 +36,7 @@ export default function ListenOn() {
                     SPOTIFY
                 </span>
             </div>
+            <span className="ListenOnbrowseAll"> BROWSE ALL {">"} </span>
             <h3 className="listenOnDiscord">
                 <img className="logo" src={discordIcon} alt="discord logo" />
                 Discord Server
