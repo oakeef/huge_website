@@ -11,6 +11,7 @@ export default function HostsSection() {
                 <Host />
                 <Host />
                 <Host />
+                <Host />
             </div>
         </div>
     );
