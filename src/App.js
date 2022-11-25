@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/Hero/Hero";
 import HostsSection from "./Components/HostsSection/HostsSection";
+import LatestEpisodes from "./Components/LatestEpisodes/LatestEpisodes";
 import ListenOn from "./Components/ListenOn/ListenOn";
 
 export default function App() {
@@ -10,6 +11,7 @@ export default function App() {
             <Header />
             <Hero />
             <ListenOn />
+            <LatestEpisodes />
             <HostsSection />
         </>
     );
