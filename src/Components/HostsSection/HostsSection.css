@@ -1,0 +1,15 @@
+.hostsSectionContainer {
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.hostsSectionBanner {
+    font-size: 30px;
+}
+
+.hostsContainer {
+    display: flex;
+}

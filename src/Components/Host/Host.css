@@ -1,0 +1,22 @@
+.hostContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hostImg {
+    border-radius: 100%;
+    height: 180px;
+    width: 180px;
+}
+/* TODO: will be filled in when font is brought back in  */
+/* .hostName {
+  
+} */
+
+.hostBio {
+    text-align: center;
+    font-size: small;
+    width: 175px;
+    padding: 0 15px;
+}
