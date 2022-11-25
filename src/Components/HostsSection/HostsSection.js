@@ -6,7 +6,12 @@ export default function HostsSection() {
     return (
         <div className="hostsSectionContainer">
             <h2>Meet the HUGE Crew</h2>
-            <Host />
+            <div className="hostsContainer">
+                <Host />
+                <Host />
+                <Host />
+                <Host />
+            </div>
         </div>
     );
 }
