@@ -45,5 +45,12 @@
 }
 
 .listenOnDiscord {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
     padding-left: 5px;
+}
+
+.listenOnDiscord:hover {
+    color: #5865f2;
 }
