@@ -12,14 +12,16 @@ export default function NavBar() {
                 <li className="navLink">PROJECTS </li>
                 <li className="navLink">CONTACT </li>
             </ul>
-            <button className="patreonDonate">
-                <img
-                    className="NavPatreonlogo"
-                    src={patreon}
-                    alt="Patreon P icon"
-                />
-                <span>DONATE</span>
-            </button>
+            <a href="https://www.patreon.com/hoppedupeast">
+                <button className="patreonDonate">
+                    <img
+                        className="NavPatreonlogo"
+                        src={patreon}
+                        alt="Patreon P icon"
+                    />
+                    <span>DONATE</span>
+                </button>
+            </a>
             <button className="searchButton">
                 <img className="searchicon" src={search} alt="search icon" />
             </button>

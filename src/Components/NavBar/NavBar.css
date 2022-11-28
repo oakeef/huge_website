@@ -24,6 +24,10 @@
     width: 170px;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 .patreonDonate:hover {
     box-shadow: 0 0px 10px 0 #fab040;
 }
