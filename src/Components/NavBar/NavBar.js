@@ -7,13 +7,17 @@ export default function NavBar() {
     return (
         <div className="navContainer">
             <ul className="navLinks">
-                <li className="navLink">HOME </li>
+                <li className="navLink">HOME</li>
                 <li className="navLink">ABOUT </li>
                 <li className="navLink">PROJECTS </li>
                 <li className="navLink">CONTACT </li>
             </ul>
             <button className="patreonDonate">
-                <img className="logo" src={patreon} alt="logo" />
+                <img
+                    className="NavPatreonlogo"
+                    src={patreon}
+                    alt="Patreon P icon"
+                />
                 <span>DONATE</span>
             </button>
             <button className="searchButton">
