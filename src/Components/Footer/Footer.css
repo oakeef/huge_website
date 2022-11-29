@@ -1,0 +1,41 @@
+.footerContainer {
+    max-width: 1140px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.footerLinksContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerLinks {
+    list-style: none;
+}
+
+.footerLinksHeader {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+}
+
+.footerLink {
+    color: rgb(149, 148, 148);
+    font-weight: 500;
+    padding: 5px 5px 5px 0;
+}
+
+.footerLink:hover {
+    color: #faaf40;
+}
+
+.footerHR {
+    color: rgb(187, 184, 184);
+    max-width: 1140px;
+    margin: auto;
+}
+
+.footerCopyright {
+    text-align: center;
+}

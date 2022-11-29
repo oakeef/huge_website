@@ -1,9 +1,13 @@
 .listenOnContainer {
-    align-items: center;
     display: flex;
+    flex-direction: column;
     max-width: 1140px;
     margin: auto;
     margin-top: -200px;
+}
+.ListenOnAudioContainer {
+    align-items: center;
+    display: flex;
 }
 
 .listenOnIconAndTitle {
@@ -26,4 +30,27 @@
     font-weight: 700;
     padding-right: 20px;
     padding-top: 10px;
+}
+.ListenOnbrowseAll {
+    color: #908dab;
+    font-family: "Anek Latin", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: -5px;
+    padding-left: 8px;
+}
+
+.ListenOnbrowseAll:hover {
+    color: #01b7cc;
+}
+
+.listenOnDiscord {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
+.listenOnDiscord:hover {
+    color: #5865f2;
 }
