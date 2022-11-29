@@ -46,12 +46,11 @@ a:link {
 }
 
 .navLink {
-    padding-right: 35px;
-    text-decoration: none;
     color: inherit;
+    padding-right: 35px;
 }
 
-.navLink:hover {
+.navLinkOuter:hover {
     list-style: disc;
 }
 

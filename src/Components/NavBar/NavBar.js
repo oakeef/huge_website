@@ -9,23 +9,23 @@ export default function NavBar() {
     return (
         <div className="navContainer">
             <ul className="navLinks">
-                <li>
+                <li className="navLinkOuter">
                     <Link className="navLink" to="/">
                         Home
                     </Link>
                 </li>
-                <li>
+                <li className="navLinkOuter">
                     <Link className="navLink" to="/About">
                         About
                     </Link>
                 </li>
-                <li>
+                <li className="navLinkOuter">
                     <Link className="navLink" to="/Projects">
                         Projects
                     </Link>
                 </li>
 
-                <li>
+                <li className="navLinkOuter">
                     <Link className="navLink" to="/Contact">
                         Contact
                     </Link>
