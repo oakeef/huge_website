@@ -27,7 +27,9 @@ export default function Footer() {
             </div>
             <div>
                 <hr className="footerHR"></hr>
-                <p className="footerCopyright">© 2022 HUGE Crew</p>
+                <p className="footerCopyright">
+                    © {new Date().getFullYear()} Hopped-Up Gaming: East
+                </p>
             </div>
         </div>
     );
