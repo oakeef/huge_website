@@ -9,18 +9,27 @@ export default function NavBar() {
     return (
         <div className="navContainer">
             <ul className="navLinks">
-                <li className="navLink">
-                    <Link to="/Home"> Home </Link>
+                <li>
+                    <Link className="navLink" to="/">
+                        Home
+                    </Link>
                 </li>
-                <li className="navLink">
-                    <Link to="/About"> About </Link>
+                <li>
+                    <Link className="navLink" to="/About">
+                        About
+                    </Link>
                 </li>
-                <li className="navLink">
-                    <Link to="/Projects"> Projects </Link>
+                <li>
+                    <Link className="navLink" to="/Projects">
+                        Projects
+                    </Link>
                 </li>
-                <a href="mailto:hugecrew@hoppedupeast.com">
-                    <li className="navLink">Contact </li>
-                </a>
+
+                <li>
+                    <Link className="navLink" to="/Contact">
+                        Contact
+                    </Link>
+                </li>
             </ul>
             <a href="https://www.patreon.com/hoppedupeast">
                 <button className="patreonDonate">

@@ -25,6 +25,7 @@
 }
 
 a:link {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -46,6 +47,8 @@ a:link {
 
 .navLink {
     padding-right: 35px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .navLink:hover {
