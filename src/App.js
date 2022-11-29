@@ -1,22 +1,20 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
-import Hero from "./Components/Hero/Hero";
-import HostsSection from "./Components/HostsSection/HostsSection";
-import LatestEpisodes from "./Components/LatestEpisodes/LatestEpisodes";
-import ListenOn from "./Components/ListenOn/ListenOn";
-import Patreon from "./Components/Patreon/Patreon";
+import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
 
 export default function App() {
     return (
         <>
-            <Header />
-            <Hero />
-            <ListenOn />
-            <LatestEpisodes />
-            <HostsSection />
-            <Patreon />
-            <Footer />
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Header />} />
+
+                    <Route index element={<Home />} />
+                </Routes>
+                <Footer />
+            </BrowserRouter>
         </>
     );
 }
