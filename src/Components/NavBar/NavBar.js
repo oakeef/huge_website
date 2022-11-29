@@ -10,7 +10,7 @@ export default function NavBar() {
         <div className="navContainer">
             <ul className="navLinks">
                 <li className="navLinkOuter">
-                    <Link className="navLink" to="/Home">
+                    <Link className="navLink" to="/">
                         Home
                     </Link>
                 </li>
