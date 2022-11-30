@@ -84,7 +84,7 @@ export default function ListenOn() {
                 </span>
             </div>
             <Link className="navLink" to="/About">
-                <span className="ListenOnbrowseAll"> BROWSE ALL {">"} </span>
+                <span className="ListenOnBrowseAll"> BROWSE ALL {">"} </span>
             </Link>
 
             <div className="listenOnDiscord">
