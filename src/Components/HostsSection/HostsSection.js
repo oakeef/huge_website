@@ -7,6 +7,7 @@ import matthew from "../../images/matthew.jpeg";
 import tim from "../../images/tim.jpeg";
 
 export default function HostsSection() {
+    //TODO: add Dylans picture and write up
     let hugeHosts = [
         {
             img: ben,
