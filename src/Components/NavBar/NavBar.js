@@ -34,7 +34,7 @@ export default function NavBar() {
             <a href="https://www.patreon.com/hoppedupeast">
                 <button className="patreonDonate">
                     <img
-                        className="navPatreonlogo"
+                        className="navPatreonLogo"
                         src={patreon}
                         alt="Patreon P icon"
                     />
