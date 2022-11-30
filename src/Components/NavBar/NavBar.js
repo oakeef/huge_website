@@ -34,7 +34,7 @@ export default function NavBar() {
             <a href="https://www.patreon.com/hoppedupeast">
                 <button className="patreonDonate">
                     <img
-                        className="NavPatreonlogo"
+                        className="navPatreonlogo"
                         src={patreon}
                         alt="Patreon P icon"
                     />
@@ -42,7 +42,7 @@ export default function NavBar() {
                 </button>
             </a>
             <button className="searchButton">
-                <img className="searchicon" src={search} alt="search icon" />
+                <img className="searchIcon" src={search} alt="search icon" />
             </button>
             <Outlet />
         </div>
