@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-import { Outlet } from "react-router-dom";
+
 import patreon from "../../images/Patreon.png";
 import search from "../../images/search.png";
 
@@ -44,7 +44,6 @@ export default function NavBar() {
             <button className="searchButton">
                 <img className="searchIcon" src={search} alt="search icon" />
             </button>
-            <Outlet />
         </div>
     );
 }
