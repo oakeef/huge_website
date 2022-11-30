@@ -20,27 +20,72 @@ export default function ListenOn() {
                 </h3>
 
                 <span className="listenOnChannel">
-                    <img className="logo" src={appleLogo} alt="apple logo" />
-                    APPLE PODCASTS
+                    <a
+                        href="https://podcasts.apple.com/us/podcast/hopped-up-gaming-east/id797058638"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            className="logo"
+                            src={appleLogo}
+                            alt="apple logo"
+                        />
+                    </a>
+                    <a
+                        href="https://podcasts.apple.com/us/podcast/hopped-up-gaming-east/id797058638"
+                        rel="noopener noreferrer"
+                    >
+                        <p>apple podcasts</p>
+                    </a>
                 </span>
+
                 <span className="listenOnChannel">
-                    <img className="logo" src={googleLogo} alt="spotify logo" />
-                    GOOGLE PODCASTS
+                    <a
+                        href="https://podcasts.google.com/feed/aHR0cHM6Ly9ob3BwZWR1cGVhc3QuaGlwY2FzdC5jb20vcnNzL2hvcHBlZHVwZ2FtaW5nZWFzdC54bWw"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            className="logo"
+                            src={googleLogo}
+                            alt="spotify logo"
+                        />
+                    </a>
+
+                    <a
+                        href="https://podcasts.google.com/feed/aHR0cHM6Ly9ob3BwZWR1cGVhc3QuaGlwY2FzdC5jb20vcnNzL2hvcHBlZHVwZ2FtaW5nZWFzdC54bWw"
+                        rel="noopener noreferrer"
+                    >
+                        <p>google podcasts</p>
+                    </a>
                 </span>
+
                 <span className="listenOnChannel">
-                    <img
-                        className="logo"
-                        src={spotifyLogo}
-                        alt="spotify logo"
-                    />
-                    SPOTIFY
+                    <a
+                        href="https://open.spotify.com/show/2dTRwdB4bHYsCI2CN9OV2m"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            className="logo"
+                            src={spotifyLogo}
+                            alt="spotify logo"
+                        />
+                    </a>
+                    <a
+                        href="https://open.spotify.com/show/2dTRwdB4bHYsCI2CN9OV2m"
+                        rel="noopener noreferrer"
+                    >
+                        <p>spotify</p>
+                    </a>
                 </span>
             </div>
             <span className="ListenOnbrowseAll"> BROWSE ALL {">"} </span>
-            <h3 className="listenOnDiscord">
+
+            <div className="listenOnDiscord">
                 <img className="logo" src={discordIcon} alt="discord logo" />
-                Discord Server
-            </h3>
+                <a href="bit.ly/hoppedupdiscord" rel="noopener noreferrer">
+                    <p className="ListenOnDiscordText">Discord Server</p>
+                </a>
+            </div>
         </div>
     );
 }
