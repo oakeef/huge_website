@@ -3,6 +3,7 @@ import "./Footer.css";
 
 export default function Footer() {
     return (
+        // TODO: add a tags to the links
         <div className="footerContainer">
             <hr className="footerHR"></hr>
             <div className="footerLinksContainer">

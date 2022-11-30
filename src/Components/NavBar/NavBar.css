@@ -2,7 +2,7 @@
     display: flex;
 }
 
-.logo {
+.navPatreonLogo {
     height: 17px;
     padding-right: 8px;
 }
@@ -20,30 +20,41 @@
     justify-content: center;
     margin-top: 20px;
     text-align: center;
+    text-transform: uppercase;
     width: 170px;
+}
+
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.patreonDonate:hover {
+    box-shadow: 0 0px 10px 0 #fab040;
 }
 
 .navLinks {
     color: #fab040;
     display: flex;
     flex-direction: row;
-    font-family: "Anek Latin", sans-serif;
+    font-family: "Helvetica Neue", sans-serif;
     font-size: large;
     font-weight: bold;
     list-style: none;
-    padding: 15px 10px 0 0;
+    padding-top: 15px;
+    text-transform: uppercase;
 }
 
 .navLink {
-    padding: 0 10px;
+    color: inherit;
+    padding-right: 35px;
 }
 
-.navLink:hover {
-    color: #fab040;
-    text-decoration: underline;
+.navLinkOuter:hover {
+    list-style: disc;
 }
 
-.searchicon {
+.searchIcon {
     height: 16px;
 }
 
@@ -56,4 +67,8 @@
     width: 50px;
     box-shadow: 0 0px 20px 0 rgba(79, 73, 63, 0.5);
     transition: box-shadow 0.4s;
+}
+
+.searchButton:hover {
+    box-shadow: 0 0px 10px 0 rgba(11, 11, 11, 0.5);
 }
