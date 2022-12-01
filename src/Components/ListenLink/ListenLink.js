@@ -16,7 +16,7 @@ export default function ListenLink(props) {
                 />
             </a>
             <a
-                href="https://podcasts.apple.com/us/podcast/hopped-up-gaming-east/id797058638"
+                href={props.listenLink.link}
                 target="_blank"
                 rel="noopener noreferrer"
             >
