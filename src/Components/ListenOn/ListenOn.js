@@ -33,7 +33,7 @@ export default function ListenOn() {
 
     return (
         <div className="listenOnContainer">
-            <div className="ListenOnAudioContainer">
+            <div className="listenOnAudioContainer">
                 <h3 className="listenOnIconAndTitle">
                     <img
                         className="podIcon"
@@ -46,7 +46,7 @@ export default function ListenOn() {
                 {listenLinks}
             </div>
             <Link className="navLink" to="/About">
-                <span className="ListenOnBrowseAll"> BROWSE ALL {">"} </span>
+                <span className="listenOnBrowseAll"> BROWSE ALL {">"} </span>
             </Link>
 
             <div className="listenOnDiscord">
@@ -56,7 +56,7 @@ export default function ListenOn() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <p className="ListenOnDiscordText">Discord Server</p>
+                    <p className="listenOnDiscordText">Discord Server</p>
                 </a>
             </div>
         </div>

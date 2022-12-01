@@ -5,7 +5,7 @@
     margin: auto;
     margin-top: -200px;
 }
-.ListenOnAudioContainer {
+.listenOnAudioContainer {
     align-items: center;
     display: flex;
 }
@@ -23,7 +23,7 @@ a:visited {
     color: inherit;
 }
 
-.ListenOnBrowseAll {
+.listenOnBrowseAll {
     color: #908dab;
     font-family: "Anek Latin", sans-serif;
     font-size: 14px;
@@ -32,7 +32,7 @@ a:visited {
     padding-left: 8px;
 }
 
-.ListenOnBrowseAll:hover {
+.listenOnBrowseAll:hover {
     color: #01b7cc;
 }
 
@@ -50,6 +50,6 @@ a:visited {
     color: #5865f2;
 }
 
-.ListenOnDiscordText {
+.listenOnDiscordText {
     margin: 0;
 }
