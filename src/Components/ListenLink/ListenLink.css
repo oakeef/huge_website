@@ -1,0 +1,15 @@
+.logo {
+    display: block;
+    height: 15px;
+    padding-right: 8px;
+}
+
+.listenOnChannel {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 20px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}

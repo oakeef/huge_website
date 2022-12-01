@@ -19,21 +19,6 @@
     padding-right: 5px;
 }
 
-.logo {
-    display: block;
-    height: 15px;
-    padding-right: 8px;
-}
-
-.listenOnChannel {
-    display: flex;
-    align-items: center;
-    font-size: 13px;
-    font-weight: 700;
-    margin-right: 20px;
-    padding-top: 10px;
-    text-transform: uppercase;
-}
 a:visited {
     color: inherit;
 }
@@ -47,7 +32,7 @@ a:visited {
     padding-left: 8px;
 }
 
-.ListenOnbrowseAll:hover {
+.ListenOnBrowseAll:hover {
     color: #01b7cc;
 }
 
