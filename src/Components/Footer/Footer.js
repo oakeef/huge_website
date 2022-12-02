@@ -46,7 +46,9 @@ export default function Footer() {
 
                 <ul className="footerLinks">
                     <li className="footerLinksHeader">Contact</li>
-                    <li className="footerLink">Email</li>
+                    <a href="mailto:hugecrew@hoppedupeast.com">
+                        <li className="footerLink">Email</li>
+                    </a>
                 </ul>
             </div>
             <div>
