@@ -25,9 +25,23 @@ export default function Footer() {
 
                 <ul className="footerLinks">
                     <li className="footerLinksHeader">More</li>
-                    <li className="footerLink"> Projects</li>
-                    <li className="footerLink">Patreon</li>
-                    <li className="footerLink">YouTube</li>
+                    <Link to="/Projects">
+                        <li className="footerLink"> Projects</li>
+                    </Link>
+                    <a
+                        href="https://www.patreon.com/hoppedupeast"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <li className="footerLink">Patreon</li>
+                    </a>
+                    <a
+                        href="https://www.youtube.com/@HoppedUpGamingEast"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <li className="footerLink">YouTube</li>
+                    </a>
                 </ul>
 
                 <ul className="footerLinks">
