@@ -36,8 +36,6 @@ export default function HostsSection() {
         },
     ];
 
-    console.log(hugeHosts);
-
     const hosts = hugeHosts.map((item, i) => {
         return <Host key={i} hugeHost={item} />;
     });
