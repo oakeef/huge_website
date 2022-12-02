@@ -5,6 +5,12 @@
     width: 20%;
 }
 
+@media only screen and (max-width: 900px) {
+    .hostContainer {
+        padding: 50px;
+    }
+}
+
 .hostImg {
     border-radius: 100%;
     height: 190px;
