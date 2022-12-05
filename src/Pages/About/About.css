@@ -1,6 +1,25 @@
 .aboutContainer {
-    max-width: 800px;
+    max-width: 1140px;
     margin: auto;
+}
+.aboutTextContainer {
+    display: flex;
+    align-items: center;
+}
+
+.aboutImage {
+    width: 600px;
+    /* aspect-ratio: auto 521 / 509; */
+}
+
+.aboutTextStart {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.aboutText {
+    font-size: larger;
+    font-weight: 400;
 }
 
 .aboutWhereToListenContainer {
@@ -11,10 +30,13 @@
 
 .aboutWhereToListenHeader {
     font-family: "Helvetica Neue", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
 }
 
 .aboutPodCastLinks {
     color: grey;
+    font-size: large;
     font-weight: 500;
     list-style: none;
 }
