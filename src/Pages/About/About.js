@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+
 import hugeLogo from "../../images/hugeLogo.png";
 
 export default function About() {
@@ -50,7 +51,7 @@ export default function About() {
                     <p>
                         <span className="aboutTextStart">
                             Hopped-Up Gaming: East
-                        </span>{" "}
+                        </span>
                         is a beer and gaming podcast originating from Halifax
                         Nova Scotia. It started as a bunch of guys that wanted
                         to sit around, drink a few beers and talk about video
@@ -67,9 +68,10 @@ export default function About() {
                     </p>
                 </article>
             </div>
+
             <div className="aboutWhereToListenContainer">
                 <h2 className="aboutWhereToListenHeader"> Where to Listen </h2>
-                <ul> {podCastLinks} </ul>
+                <ul className="aboutPodLinksUL"> {podCastLinks} </ul>
             </div>
         </div>
     );
