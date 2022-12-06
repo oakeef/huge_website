@@ -19,10 +19,16 @@ export default function Patreon() {
                     project going.
                 </span>
 
-                <button className="patreonButton">
-                    <img className="logo" src={patreon} alt="logo" />
-                    <span>DONATE</span>
-                </button>
+                <a
+                    href="https://www.patreon.com/hoppedupeast"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <button className="patreonButton">
+                        <img className="logo" src={patreon} alt="logo" />
+                        <span>DONATE</span>
+                    </button>
+                </a>
             </div>
         </div>
     );
