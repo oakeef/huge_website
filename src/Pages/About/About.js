@@ -50,7 +50,7 @@ export default function About() {
                 <article className="aboutText">
                     <p>
                         <span className="aboutTextStart">
-                            Hopped-Up Gaming: East
+                            Hopped-Up Gaming: East&nbsp;
                         </span>
                         is a beer and gaming podcast originating from Halifax
                         Nova Scotia. It started as a bunch of guys that wanted

@@ -4,6 +4,12 @@
     margin: auto;
     margin-top: 120px;
     margin-bottom: 100px;
+    padding: 25px;
+}
+
+.patreonImg {
+    height: 390px;
+    width: 400px;
 }
 
 .patreonTextContainer {
@@ -35,9 +41,13 @@
     display: flex;
     font-size: small;
     font-weight: bolder;
-    height: 50px;
+    height: 60px;
     justify-content: center;
     margin-top: 20px;
     text-align: center;
-    width: 170px;
+    width: 180px;
+}
+
+.patreonButton:hover {
+    box-shadow: 0 0px 10px 0 #fab040;
 }
