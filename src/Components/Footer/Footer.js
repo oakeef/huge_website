@@ -10,45 +10,58 @@ export default function Footer() {
             <div className="footerLinksContainer">
                 <ul className="footerLinks">
                     <li className="footerLinksHeader">Quick Links</li>
-                    <Link to="/About">
-                        <li className="footerLink">Where to Listen</li>
-                    </Link>
+
+                    <li className="footerLink">
+                        <Link to="/About">Where to Listen</Link>
+                    </li>
+
                     <li className="footerLink">Episodes</li>
-                    <a
-                        href="https://bit.ly/hoppedupdiscord"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <li className="footerLink">Discord Server</li>
-                    </a>
+
+                    <li className="footerLink">
+                        <a
+                            href="https://bit.ly/hoppedupdiscord"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Discord Server
+                        </a>
+                    </li>
                 </ul>
 
                 <ul className="footerLinks">
                     <li className="footerLinksHeader">More</li>
-                    <Link to="/Projects">
-                        <li className="footerLink"> Projects</li>
-                    </Link>
-                    <a
-                        href="https://www.patreon.com/hoppedupeast"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <li className="footerLink">Patreon</li>
-                    </a>
-                    <a
-                        href="https://www.youtube.com/@HoppedUpGamingEast"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <li className="footerLink">YouTube</li>
-                    </a>
+
+                    <li className="footerLink">
+                        <Link to="/Projects"> Projects</Link>
+                    </li>
+
+                    <li className="footerLink">
+                        <a
+                            href="https://www.patreon.com/hoppedupeast"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Patreon
+                        </a>
+                    </li>
+
+                    <li className="footerLink">
+                        <a
+                            href="https://www.youtube.com/@HoppedUpGamingEast"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            YouTube
+                        </a>
+                    </li>
                 </ul>
 
                 <ul className="footerLinks">
                     <li className="footerLinksHeader">Contact</li>
-                    <a href="mailto:hugecrew@hoppedupeast.com">
-                        <li className="footerLink">Email</li>
-                    </a>
+
+                    <li className="footerLink">
+                        <a href="mailto:hugecrew@hoppedupeast.com">Email</a>
+                    </li>
                 </ul>
             </div>
             <div>
