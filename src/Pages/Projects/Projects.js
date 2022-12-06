@@ -36,7 +36,7 @@ export default function Projects() {
     return (
         <div className="projectsContainer">
             <h2 className="projectsHeader">HUGE Projects</h2>
-            {projects}
+            <div className="hugeProjectsContainer">{projects}</div>
         </div>
     );
 }
