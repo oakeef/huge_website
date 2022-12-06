@@ -31,7 +31,11 @@ export default function NavBar() {
                     </Link>
                 </li>
             </ul>
-            <a href="https://www.patreon.com/hoppedupeast">
+            <a
+                href="https://www.patreon.com/hoppedupeast"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <button className="patreonDonate">
                     <img
                         className="navPatreonLogo"
