@@ -45,7 +45,7 @@
     align-self: center;
     font-size: large;
     height: 150px;
-
+    resize: none;
     width: 800px;
 }
 
