@@ -21,7 +21,7 @@
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0px 20px 0 rgba(79, 73, 63, 0.5);
-    height: 500px;
+    height: 650px;
 }
 
 .contactForm {
@@ -63,4 +63,10 @@
 
 .contactFormSubmit:hover {
     box-shadow: 0 0px 10px 0 #fab040;
+}
+
+.contactErrors {
+    color: red;
+    font-weight: 600;
+    padding-left: 45px;
 }

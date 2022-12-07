@@ -1,7 +1,17 @@
 import React from "react";
 import "./Contact.css";
+import { useForm } from "react-hook-form";
 
 export default function Contact() {
+    const {
+        register,
+        handleSubmit,
+        watch,
+        formState: { errors },
+    } = useForm();
+    const onSubmit = (data) => console.log(data);
+    console.log(errors.email);
+
     return (
         <div className="contactContainer">
             <h1 className="contactHeader">Contact Us</h1>
@@ -11,31 +21,52 @@ export default function Contact() {
             </p>
 
             <div className="contactFormContainer">
-                <form className="contactForm">
-                    <label className="contactFormLabel" for="name">
+                <form className="contactForm" onSubmit={handleSubmit(onSubmit)}>
+                    <label className="contactFormLabel" htmlFor="name">
                         Name:
                     </label>
                     <input
+                        {...register("name", {
+                            required: "Name is a required field",
+                        })}
                         className="contactFormInput"
                         type="text"
                         id="name"
                     ></input>
-                    <label className="contactFormLabel" for="email">
+                    <p className="contactErrors">{errors.name?.message}</p>
+                    <label className="contactFormLabel" htmlFor="email">
                         Email:
                     </label>
                     <input
+                        {...register("email", {
+                            required: "A valid email is required",
+                            pattern:
+                                /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                        })}
+                        aria-invalid={errors.email ? true : false}
                         className="contactFormInput"
                         type="text"
                         id="email"
                     ></input>
-                    <label className="contactFormLabel" for="message">
+                    {errors.email?.type === "pattern" && (
+                        <p className="contactErrors" role="alert">
+                            Email is invalid
+                        </p>
+                    )}
+                    <p className="contactErrors">{errors.email?.message}</p>
+                    <label className="contactFormLabel" htmlFor="message">
                         Message:
                     </label>
                     <textarea
+                        {...register("message", {
+                            required: "Message is a required field",
+                            maxLength: 32000,
+                        })}
                         className="contactFormInputMessage"
                         type="text"
                         id="message"
                     ></textarea>
+                    <p className="contactErrors">{errors.message?.message}</p>
                     <input
                         className="contactFormSubmit"
                         type="submit"

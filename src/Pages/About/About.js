@@ -28,10 +28,15 @@ export default function About() {
         },
     ];
 
-    const podCastLinks = podCastData.map((item) => {
+    const podCastLinks = podCastData.map((item, i) => {
         return (
             <li className="aboutPodCastLinks">
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <a
+                    href={item.link}
+                    key={i}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     {item.name}
                 </a>
             </li>
