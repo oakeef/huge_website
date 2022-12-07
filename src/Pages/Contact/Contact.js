@@ -31,11 +31,11 @@ export default function Contact() {
                     <label className="contactFormLabel" for="message">
                         Message:
                     </label>
-                    <input
+                    <textarea
                         className="contactFormInputMessage"
                         type="text"
                         id="message"
-                    ></input>
+                    ></textarea>
                     <input
                         className="contactFormSubmit"
                         type="submit"
