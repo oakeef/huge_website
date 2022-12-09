@@ -1,8 +1,8 @@
 import React from "react";
 import "./Featured.css";
-import hugeLogo from "../../images/hugeLogo.png";
 
-export default function Featured() {
+export default function Featured(props) {
+    const { episode } = props;
     return (
         <div className="featuredContainer">
             <div>
@@ -12,15 +12,13 @@ export default function Featured() {
                 <div>
                     <img
                         className="featuredImg"
-                        src={hugeLogo}
+                        src={episode.image}
                         alt="HUGE logo"
                     />
                 </div>
                 <div className="featuredEpAndTitle">
-                    <span className="featuredEpNo">SEASON 2 EPISODE 6</span>
-                    <span className="featuredTitle">
-                        The Title of the Episode Goes Here
-                    </span>
+                    <span className="featuredEpNo">{episode.subtitle}</span>
+                    <span className="featuredTitle">{episode.title}</span>
                 </div>
             </div>
             <div className="featuredButtons">

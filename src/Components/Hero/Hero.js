@@ -3,7 +3,9 @@ import "./Hero.css";
 import hugeLogo from "../../images/hugeLogo.png";
 import Featured from "../Featured/Featured";
 
-export default function Hero() {
+export default function Hero(props) {
+    const { episodes } = props;
+    console.log(episodes);
     return (
         <div className="heroContainer">
             <div className="heroText">
@@ -14,7 +16,7 @@ export default function Hero() {
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <Featured />
+                {episodes.length > 0 && <Featured episode={episodes[22]} />}
             </div>
 
             <img className="heroImage" src={hugeLogo} alt="HUGE Logo" />

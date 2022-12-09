@@ -36,15 +36,15 @@ export default function Home() {
                         episodes.push(parsedEpisode);
                     }
                 });
-                console.log(episodes);
+                setPodcastEpisodes(episodes);
             });
     }, []);
 
     return (
         <>
-            <Hero />
+            {podcastEpisodes.length > 0 && <Hero episodes={podcastEpisodes} />}
             <ListenOn />
-            <LatestEpisodes />
+            <LatestEpisodes episodes={podcastEpisodes} />
             <HostsSection />
             <Patreon />
         </>
