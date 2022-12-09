@@ -6,6 +6,7 @@ import Featured from "../Featured/Featured";
 export default function Hero(props) {
     const { episodes } = props;
     console.log(episodes);
+    let randomNumber = Math.floor(Math.random() * episodes.length) + 1;
     return (
         <div className="heroContainer">
             <div className="heroText">
@@ -16,7 +17,9 @@ export default function Hero(props) {
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                {episodes.length > 0 && <Featured episode={episodes[22]} />}
+                {episodes.length > 0 && (
+                    <Featured episode={episodes[randomNumber]} />
+                )}
             </div>
 
             <img className="heroImage" src={hugeLogo} alt="HUGE Logo" />
