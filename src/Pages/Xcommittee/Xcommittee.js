@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Xcommittee() {
     return (
-        <>
-            <p>X-Committee</p>
-        </>
+        <div className="xcomContainer">
+            <h2>X-Committee</h2>
+        </div>
     );
 }

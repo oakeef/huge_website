@@ -7,7 +7,7 @@ import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact/Contact";
 import Xcommittee from "./Pages/Xcommittee/Xcommittee";
 import BeerGoggles from "./Pages/BeerGoggles/BeerGoggles";
-import HugeAss from "./Pages/About/HugeAss/HugeAss";
+import HugeAss from "./Pages/HugeAss/HugeAss";
 import Footer from "./Components/Footer/Footer";
 
 export default function App() {
