@@ -7,7 +7,7 @@ export default function LatestEpisodes(props) {
 
     let latestEpisodes = [];
 
-    for (let i = 134; i <= 148; i++) {
+    for (let i = 0; i <= 5; i++) {
         latestEpisodes.push(<Episode key={i} episode={episodes[i]} />);
     }
     return (
