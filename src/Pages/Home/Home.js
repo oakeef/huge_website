@@ -32,11 +32,14 @@ export default function Home() {
                 let xml = new XMLParser().parseFromString(response.data);
                 xml.children[0].children.forEach((episode, index) => {
                     if (index >= 22) {
+                        console.log(episode);
                         let parsedEpisode = {
                             title: convertUnicode(episode.children[0].value),
                             subtitle: stringChoppy(episode.children[12].value),
                             image: episode.children[5].attributes.href,
-                            link: stringChoppy(episode.children[4].value),
+                            link: stringChoppy(
+                                episode.children[8].attributes.url
+                            ),
                         };
                         episodes.push(parsedEpisode);
                     }

@@ -17,12 +17,14 @@ export default function Featured(props) {
                     />
                 </div>
                 <div className="featuredEpAndTitle">
-                    <span className="featuredEpNo">{episode.subtitle}</span>
                     <span className="featuredTitle">{episode.title}</span>
+                    <span className="featuredSubTitle">{episode.subtitle}</span>
                 </div>
             </div>
             <div className="featuredButtons">
-                <button className="featureListenNow"> ▶ LISTEN NOW </button>
+                <a href={episode.link}>
+                    <button className="featureListenNow"> ▶ LISTEN NOW </button>
+                </a>
                 <button className="featuredBrowse">BROWSE ALL</button>
             </div>
         </div>
