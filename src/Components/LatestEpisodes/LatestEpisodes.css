@@ -49,5 +49,6 @@
 .episodesContainer {
     display: flex;
     margin: auto;
+    overflow-x: scroll;
     max-width: 1140px;
 }

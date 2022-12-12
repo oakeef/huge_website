@@ -1,22 +1,24 @@
 import React from "react";
 import "./Episode.css";
-import sonic2 from "../../images/sonic2.jpeg";
 
-export default function Episode() {
+export default function Episode(props) {
+    const { episode } = props;
+
     return (
         <div className="episodeContainer">
             <div>
-                <img className="episodeImg" src={sonic2} alt="episode cover" />
-                <span className="episodeDate">March 19, 2021</span>
+                <img
+                    className="episodeImg"
+                    src={episode.image}
+                    alt="episode cover"
+                />
+                <span className="episodeDate">{episode.date}</span>
                 <button className="episodePlayButton">▶</button>
             </div>
             <div className="episodeInfo">
                 <span className="episodeCategory"> 🎧 Category</span>
 
-                <span className="episodeTitle">
-                    The Title of The Episode Goes Here What If Its Very Long
-                    Though Dogs
-                </span>
+                <span className="episodeTitle">{episode.title}</span>
             </div>
         </div>
     );

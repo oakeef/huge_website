@@ -5,7 +5,7 @@ import Featured from "../Featured/Featured";
 
 export default function Hero(props) {
     const { episodes } = props;
-    console.log(episodes);
+
     let randomNumber = Math.floor(Math.random() * episodes.length) + 1;
     return (
         <div className="heroContainer">

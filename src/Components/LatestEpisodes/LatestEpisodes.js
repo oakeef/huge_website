@@ -2,7 +2,14 @@ import React from "react";
 import Episode from "../Episode/Episode";
 import "./LatestEpisodes.css";
 
-export default function LatestEpisodes() {
+export default function LatestEpisodes(props) {
+    const { episodes } = props;
+
+    let latestEpisodes = [];
+
+    for (let i = 0; i <= 5; i++) {
+        latestEpisodes.push(<Episode key={i} episode={episodes[i]} />);
+    }
     return (
         <>
             <div className="latestEpContainer">
@@ -15,11 +22,7 @@ export default function LatestEpisodes() {
                     <button className="latestEpButton"> → </button>
                 </div>
             </div>
-            <div className="episodesContainer">
-                <Episode />
-                <Episode />
-                <Episode />
-            </div>
+            <div className="episodesContainer">{latestEpisodes}</div>
         </>
     );
 }
