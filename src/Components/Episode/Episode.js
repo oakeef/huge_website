@@ -16,7 +16,7 @@ export default function Episode(props) {
                 <button className="episodePlayButton">▶</button>
             </div>
             <div className="episodeInfo">
-                <span className="episodeCategory"> 🎧 Category</span>
+                <span className="episodeCategory"> 🎧 {episode.category}</span>
 
                 <span className="episodeTitle">{episode.title}</span>
             </div>

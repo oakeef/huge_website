@@ -45,6 +45,28 @@ function convertDate(date) {
     return `${dateArray[2]} ` + `${day + end}, ` + dateArray[3];
 }
 
+function episodeCategory(title) {
+    let category = "";
+    let titleArray = title.split(" ");
+    if (
+        titleArray[0] === "Ep" ||
+        (titleArray[0] === "HUGE" && titleArray[1] !== "BBC")
+    ) {
+        category = "HUGE Podcast";
+    }
+    if (titleArray[1] === "BBC") {
+        category = "Huge BBC";
+    }
+    if (titleArray[1] === "Last") {
+        category = "The Last Of Us Play The Last Of Us";
+    }
+
+    if (titleArray[0] === "TLOU") {
+        category = "The Last Of Us Part II";
+    }
+    return category;
+}
+
 export default function Home() {
     const [podcastEpisodes, setPodcastEpisodes] = useState([]);
 
@@ -62,6 +84,9 @@ export default function Home() {
                         let parsedEpisode = {
                             title: convertUnicode(episode.children[0].value),
                             subtitle: stringChoppy(episode.children[12].value),
+                            category: episodeCategory(
+                                episode.children[0].value
+                            ),
                             image: episode.children[5].attributes.href,
                             date: convertDate(episode.children[2].value),
                             link: stringChoppy(
