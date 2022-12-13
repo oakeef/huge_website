@@ -1,8 +1,9 @@
 import React from "react";
 import "./Featured.css";
-import hugeLogo from "../../images/hugeLogo.png";
+import { Link } from "react-router-dom";
 
-export default function Featured() {
+export default function Featured(props) {
+    const { episode } = props;
     return (
         <div className="featuredContainer">
             <div>
@@ -12,20 +13,22 @@ export default function Featured() {
                 <div>
                     <img
                         className="featuredImg"
-                        src={hugeLogo}
+                        src={episode.image}
                         alt="HUGE logo"
                     />
                 </div>
                 <div className="featuredEpAndTitle">
-                    <span className="featuredEpNo">SEASON 2 EPISODE 6</span>
-                    <span className="featuredTitle">
-                        The Title of the Episode Goes Here
-                    </span>
+                    <span className="featuredTitle">{episode.title}</span>
+                    <span className="featuredSubTitle">{episode.subtitle}</span>
                 </div>
             </div>
             <div className="featuredButtons">
-                <button className="featureListenNow"> ▶ LISTEN NOW </button>
-                <button className="featuredBrowse">BROWSE ALL</button>
+                <a href={episode.link}>
+                    <button className="featureListenNow"> ▶ LISTEN NOW </button>
+                </a>
+                <Link to="/Episodes">
+                    <button className="featuredBrowse">BROWSE ALL</button>
+                </Link>
             </div>
         </div>
     );

@@ -2,6 +2,7 @@
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0px 20px 0 rgba(79, 73, 63, 0.5);
+    cursor: grab;
     display: flex;
     flex-direction: column;
     height: 375px;
@@ -18,11 +19,12 @@
 }
 
 .episodeDate {
-    background: rgba(98, 108, 117, 0.4);
+    background: rgba(7, 8, 8, 0.4);
     border-radius: 20px;
     color: #fff;
     font-family: "Helvetica Neue", sans-serif;
-    font-size: 11px;
+    font-size: 12px;
+    font-weight: 500;
     line-height: 20px;
     padding: 4px 15px;
     position: absolute;
@@ -33,7 +35,7 @@
 }
 
 .episodePlayButton {
-    background-color: white;
+    background-color: rgba(5, 172, 172, 0.6);
     border-radius: 100%;
     border: none;
     bottom: 85px;

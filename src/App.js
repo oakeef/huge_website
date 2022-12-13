@@ -9,6 +9,7 @@ import Xcommittee from "./Pages/Xcommittee/Xcommittee";
 import BeerGoggles from "./Pages/BeerGoggles/BeerGoggles";
 import HugeAss from "./Pages/HugeAss/HugeAss";
 import Footer from "./Components/Footer/Footer";
+import Episodes from "./Pages/Episodes/Episodes";
 
 export default function App() {
     return (
@@ -20,6 +21,7 @@ export default function App() {
                     <Route path="About" element={<About />} />
                     <Route path="Projects" element={<Projects />} />
                     <Route path="Contact" element={<Contact />} />
+                    <Route path="Episodes" element={<Episodes />} />
                     <Route path="Xcommittee" element={<Xcommittee />} />
                     <Route path="BeerGoggles" element={<BeerGoggles />} />
                     <Route path="BeerGoggles" element={<BeerGoggles />} />

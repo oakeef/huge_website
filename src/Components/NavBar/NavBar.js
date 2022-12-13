@@ -20,6 +20,11 @@ export default function NavBar() {
                     </Link>
                 </li>
                 <li className="navLinkOuter">
+                    <Link className="navLink" to="/Episodes">
+                        Episodes
+                    </Link>
+                </li>
+                <li className="navLinkOuter">
                     <Link className="navLink" to="/Projects">
                         Projects
                     </Link>
