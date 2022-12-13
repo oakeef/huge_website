@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Episode from "../Episode/Episode";
+import { Link } from "react-router-dom";
 import ReactSimplyCarousel from "react-simply-carousel";
 import "./LatestEpisodes.css";
 
@@ -19,7 +20,10 @@ export default function LatestEpisodes(props) {
             <div className="latestEpContainer glider">
                 <div>
                     <h2 className="latestEpHeader"> Latest Episodes</h2>
-                    <span className="browseAll"> BROWSE ALL {">"} </span>
+                    <span className="browseAll">
+                        {" "}
+                        <Link to="/Episodes">BROWSE ALL {">"}</Link>
+                    </span>
                 </div>
             </div>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Featured.css";
+import { Link } from "react-router-dom";
 
 export default function Featured(props) {
     const { episode } = props;
@@ -25,7 +26,9 @@ export default function Featured(props) {
                 <a href={episode.link}>
                     <button className="featureListenNow"> ▶ LISTEN NOW </button>
                 </a>
-                <button className="featuredBrowse">BROWSE ALL</button>
+                <Link to="/Episodes">
+                    <button className="featuredBrowse">BROWSE ALL</button>
+                </Link>
             </div>
         </div>
     );
