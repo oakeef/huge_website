@@ -22,9 +22,11 @@ export default function Contact() {
 
             <div className="contactFormContainer">
                 <form className="contactForm" onSubmit={handleSubmit(onSubmit)}>
+                    {/* Name inputs */}
                     <label className="contactFormLabel" htmlFor="name">
                         Name:
                     </label>
+
                     <input
                         {...register("name", {
                             required: "Name is a required field",
@@ -33,10 +35,14 @@ export default function Contact() {
                         type="text"
                         id="name"
                     ></input>
+
                     <p className="contactErrors">{errors.name?.message}</p>
+
+                    {/* Email inputs */}
                     <label className="contactFormLabel" htmlFor="email">
                         Email:
                     </label>
+
                     <input
                         {...register("email", {
                             required: "A valid email is required",
@@ -48,15 +54,20 @@ export default function Contact() {
                         type="text"
                         id="email"
                     ></input>
+
                     {errors.email?.type === "pattern" && (
                         <p className="contactErrors" role="alert">
                             Email is invalid
                         </p>
                     )}
+
                     <p className="contactErrors">{errors.email?.message}</p>
+
+                    {/* Message inputs */}
                     <label className="contactFormLabel" htmlFor="message">
                         Message:
                     </label>
+
                     <textarea
                         {...register("message", {
                             required: "Message is a required field",
@@ -66,7 +77,10 @@ export default function Contact() {
                         type="text"
                         id="message"
                     ></textarea>
+
                     <p className="contactErrors">{errors.message?.message}</p>
+
+                    {/* submit */}
                     <input
                         className="contactFormSubmit"
                         type="submit"
