@@ -1,0 +1,68 @@
+.hugeProjectContainer {
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0px 20px 0 rgba(79, 73, 63, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    margin: 10px;
+    position: relative;
+    width: 550px;
+}
+
+.hugeProjectContainer:hover {
+    box-shadow: 0 0 20px 0 #191918;
+}
+
+.hugeProjectContainer:hover .hugeProjectsSeeMore {
+    visibility: visible;
+}
+
+.hugeProjectContainer:hover .hugeProjectTitle {
+    color: #faaf40;
+}
+
+.hugeProjectImg {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 550px;
+    height: 300px;
+}
+
+.hugeProjectTitle {
+    padding: 10px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    line-height: 30px;
+    color: #061020;
+}
+
+.hugeProjectDescriptionContainer {
+    height: min-content;
+    width: 510px;
+}
+
+.hugeProjectDescription {
+    color: grey;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 20px 20px 20px;
+}
+
+.hugeProjectsSeeMore {
+    align-items: center;
+    background-color: #faaf40;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: small;
+    font-weight: bolder;
+    height: 40px;
+    position: absolute;
+    top: 150px;
+    text-transform: uppercase;
+    visibility: hidden;
+    width: 140px;
+}

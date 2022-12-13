@@ -5,6 +5,9 @@ import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact/Contact";
+import Xcommittee from "./Pages/Xcommittee/Xcommittee";
+import BeerGoggles from "./Pages/BeerGoggles/BeerGoggles";
+import HugeAss from "./Pages/HugeAss/HugeAss";
 import Footer from "./Components/Footer/Footer";
 
 export default function App() {
@@ -17,6 +20,10 @@ export default function App() {
                     <Route path="About" element={<About />} />
                     <Route path="Projects" element={<Projects />} />
                     <Route path="Contact" element={<Contact />} />
+                    <Route path="Xcommittee" element={<Xcommittee />} />
+                    <Route path="BeerGoggles" element={<BeerGoggles />} />
+                    <Route path="BeerGoggles" element={<BeerGoggles />} />
+                    <Route path="HugeAss" element={<HugeAss />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
