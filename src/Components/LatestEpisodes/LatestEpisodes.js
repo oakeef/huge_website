@@ -10,7 +10,7 @@ export default function LatestEpisodes(props) {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
     const hugeEps = latestEpisodes.map((episode, i) => {
-        return <Episode index={i} episode={episode} />;
+        return <Episode key={i} episode={episode} />;
     });
 
     return (

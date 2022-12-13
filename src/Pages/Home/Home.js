@@ -57,7 +57,6 @@ export default function Home() {
     const [podcastEpisodes, setPodcastEpisodes] = useState([]);
 
     let randomNumber = Math.floor(Math.random() * podcastEpisodes.length) + 1;
-    console.log(randomNumber);
 
     let latestEpisodes = [];
 
