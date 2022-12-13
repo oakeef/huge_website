@@ -4,7 +4,6 @@ import ListenOn from "../../Components/ListenOn/ListenOn";
 import LatestEpisodes from "../../Components/LatestEpisodes/LatestEpisodes";
 import HostsSection from "../../Components/HostsSection/HostsSection";
 import Patreon from "../../Components/Patreon/Patreon";
-import Playback from "../../Components/Playback/Playback";
 import axios from "axios";
 
 var XMLParser = require("react-xml-parser");
@@ -106,9 +105,6 @@ export default function Home() {
             )}
             <HostsSection />
             <Patreon />
-            {podcastEpisodes.length > 0 && (
-                <Playback podcastEpisodes={podcastEpisodes} />
-            )}
         </>
     );
 }

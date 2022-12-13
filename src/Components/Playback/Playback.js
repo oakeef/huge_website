@@ -5,6 +5,7 @@ export default function Playback(props) {
     const { podcastEpisodes } = props;
     console.log(podcastEpisodes);
     return (
+        //TODO: add X button to playback
         <div className="playbackContainer">
             <div className="playbackInnerContainer">
                 <div className="playbackEpInfo">

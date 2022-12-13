@@ -10,6 +10,7 @@ import BeerGoggles from "./Pages/BeerGoggles/BeerGoggles";
 import HugeAss from "./Pages/HugeAss/HugeAss";
 import Footer from "./Components/Footer/Footer";
 import Episodes from "./Pages/Episodes/Episodes";
+import Playback from "./Components/Playback/Playback";
 
 export default function App() {
     return (
@@ -28,6 +29,7 @@ export default function App() {
                     <Route path="HugeAss" element={<HugeAss />} />
                 </Routes>
                 <Footer />
+                <Playback />
             </BrowserRouter>
         </>
     );
