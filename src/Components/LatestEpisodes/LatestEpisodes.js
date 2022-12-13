@@ -5,23 +5,20 @@ import ReactSimplyCarousel from "react-simply-carousel";
 import "./LatestEpisodes.css";
 
 export default function LatestEpisodes(props) {
-    const { episodes } = props;
+    const { latestEpisodes } = props;
 
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
-    let latestEpisodes = [];
-
-    for (let i = 0; i <= 5; i++) {
-        latestEpisodes.push(<Episode key={i} episode={episodes[i]} />);
-    }
+    const hugeEps = latestEpisodes.map((episode, i) => {
+        return <Episode index={i} episode={episode} />;
+    });
 
     return (
         <>
-            <div className="latestEpContainer glider">
+            <div className="latestEpContainer">
                 <div>
                     <h2 className="latestEpHeader"> Latest Episodes</h2>
                     <span className="browseAll">
-                        {" "}
                         <Link to="/Episodes">BROWSE ALL {">"}</Link>
                     </span>
                 </div>
@@ -44,7 +41,7 @@ export default function LatestEpisodes(props) {
                     children: "→",
                 }}
             >
-                {latestEpisodes}
+                {hugeEps}
             </ReactSimplyCarousel>
         </>
     );

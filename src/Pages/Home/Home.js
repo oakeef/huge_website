@@ -26,49 +26,44 @@ function convertDate(date) {
     let digitOne = Number(dateArray[1][0]);
     let digitTwo = Number(dateArray[1][1]);
 
-    if (digitOne === 0) {
-        day = digitTwo;
-    } else day = dateArray[1];
+    digitOne === 0 ? (day = digitTwo) : (day = Number(dateArray[1]));
 
-    if (digitTwo === 1) {
+    if (day === 1 || day === 21) {
         end = "st";
-    }
-    if (digitTwo === 2) {
+    } else if (day === 2 || day === 22) {
         end = "nd";
-    }
-    if (digitTwo === 3) {
+    } else if (day === 3 || day === 23) {
         end = "rd";
-    }
-    if (digitTwo >= 4) {
-        end = "th";
-    }
+    } else end = "th";
+
     return `${dateArray[2]} ` + `${day + end}, ` + dateArray[3];
 }
 
 function episodeCategory(title) {
     let category = "";
     let titleArray = title.split(" ");
-    if (
-        titleArray[0] === "Ep" ||
-        (titleArray[0] === "HUGE" && titleArray[1] !== "BBC")
-    ) {
-        category = "HUGE Podcast";
-    }
+
     if (titleArray[1] === "BBC") {
         category = "Huge BBC";
-    }
-    if (titleArray[1] === "Last") {
+    } else if (titleArray[1] === "Last") {
         category = "The Last Of Us Play The Last Of Us";
-    }
-
-    if (titleArray[0] === "TLOU") {
+    } else if (titleArray[0] === "TLOU") {
         category = "The Last Of Us Part II";
-    }
+    } else category = "HUGE Podcast";
     return category;
 }
 
 export default function Home() {
     const [podcastEpisodes, setPodcastEpisodes] = useState([]);
+
+    let randomNumber = Math.floor(Math.random() * podcastEpisodes.length) + 1;
+    console.log(randomNumber);
+
+    let latestEpisodes = [];
+
+    for (let i = 0; i <= 5; i++) {
+        latestEpisodes.push(podcastEpisodes[i]);
+    }
 
     useEffect(() => {
         axios
@@ -78,7 +73,7 @@ export default function Home() {
             .then((response) => {
                 let episodes = [];
                 let xml = new XMLParser().parseFromString(response.data);
-                console.log(xml.children[0].children);
+
                 xml.children[0].children.forEach((episode, index) => {
                     if (index >= 22) {
                         let parsedEpisode = {
@@ -102,10 +97,12 @@ export default function Home() {
 
     return (
         <>
-            {podcastEpisodes.length > 0 && <Hero episodes={podcastEpisodes} />}
+            {podcastEpisodes.length > 0 && (
+                <Hero episode={podcastEpisodes[randomNumber]} />
+            )}
             <ListenOn />
             {podcastEpisodes.length > 0 && (
-                <LatestEpisodes episodes={podcastEpisodes} />
+                <LatestEpisodes latestEpisodes={latestEpisodes} />
             )}
             <HostsSection />
             <Patreon />
