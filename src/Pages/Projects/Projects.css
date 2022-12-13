@@ -1,0 +1,16 @@
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.projectsHeader {
+    text-align: center;
+    font-size: 30px;
+}
+
+.hugeProjectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
