@@ -13,7 +13,7 @@ import Episodes from "./Pages/Episodes/Episodes";
 import Playback from "./Components/Playback/Playback";
 
 export default function App() {
-    const [selectedEpisode, setSelectedEpisode] = useState({});
+    const [selectedEpisode, setSelectedEpisode] = useState(null);
     console.log(selectedEpisode);
     return (
         <>
@@ -36,7 +36,12 @@ export default function App() {
                     <Route path="HugeAss" element={<HugeAss />} />
                 </Routes>
                 <Footer />
-                <Playback />
+                {selectedEpisode && (
+                    <Playback
+                        selectedEpisode={selectedEpisode}
+                        setSelectedEpisode={setSelectedEpisode}
+                    />
+                )}
             </BrowserRouter>
         </>
     );
