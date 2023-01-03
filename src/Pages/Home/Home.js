@@ -10,7 +10,9 @@ var XMLParser = require("react-xml-parser");
 
 function convertUnicode(myString) {
     let convertedString = myString.replaceAll("%20", " ");
-    return convertedString;
+    if (convertedString.length > 55) {
+        return convertedString.slice(0, 54) + "...";
+    } else return convertedString;
 }
 
 function stringChoppy(mystring) {
