@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Home from "./Pages/Home/Home";
@@ -13,12 +13,19 @@ import Episodes from "./Pages/Episodes/Episodes";
 import Playback from "./Components/Playback/Playback";
 
 export default function App() {
+    const [selectedEpisode, setSelectedEpisode] = useState({});
+    console.log(selectedEpisode);
     return (
         <>
             <BrowserRouter>
                 <Header />
                 <Routes>
-                    <Route index element={<Home />} />
+                    <Route
+                        index
+                        element={
+                            <Home setSelectedEpisode={setSelectedEpisode} />
+                        }
+                    />
                     <Route path="About" element={<About />} />
                     <Route path="Projects" element={<Projects />} />
                     <Route path="Contact" element={<Contact />} />

@@ -53,10 +53,10 @@ function episodeCategory(title) {
     return category;
 }
 
-export default function Home() {
-    const [podcastEpisodes, setPodcastEpisodes] = useState([]);
+export default function Home(props) {
+    const { setSelectedEpisode } = props;
 
-    let randomNumber = Math.floor(Math.random() * podcastEpisodes.length) + 1;
+    const [podcastEpisodes, setPodcastEpisodes] = useState([]);
 
     let latestEpisodes = [];
 
@@ -97,7 +97,11 @@ export default function Home() {
     return (
         <>
             {podcastEpisodes.length > 0 && (
-                <Hero episode={podcastEpisodes[randomNumber]} />
+                <Hero
+                    //TODO: figure out how to add/update featured ep
+                    episode={podcastEpisodes[13]}
+                    setSelectedEpisode={setSelectedEpisode}
+                />
             )}
             <ListenOn />
             {podcastEpisodes.length > 0 && (

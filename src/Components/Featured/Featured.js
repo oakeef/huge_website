@@ -3,7 +3,8 @@ import "./Featured.css";
 import { Link } from "react-router-dom";
 
 export default function Featured(props) {
-    const { episode } = props;
+    const { episode, setSelectedEpisode } = props;
+    console.log(episode);
     return (
         <div className="featuredContainer">
             <div>
@@ -23,9 +24,14 @@ export default function Featured(props) {
                 </div>
             </div>
             <div className="featuredButtons">
-                <a href={episode.link}>
-                    <button className="featureListenNow"> ▶ LISTEN NOW </button>
-                </a>
+                <button
+                    onClick={() => setSelectedEpisode(episode)}
+                    className="featureListenNow"
+                >
+                    {" "}
+                    ▶ LISTEN NOW{" "}
+                </button>
+
                 <Link to="/Episodes">
                     <button className="featuredBrowse">BROWSE ALL</button>
                 </Link>
