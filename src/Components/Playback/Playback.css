@@ -39,3 +39,12 @@
 .playbackControl {
     width: 600px;
 }
+
+.playbackClose {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
