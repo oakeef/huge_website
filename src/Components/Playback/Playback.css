@@ -1,0 +1,50 @@
+.playbackContainer {
+    background-color: black;
+    height: 110px;
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+}
+
+.playbackInnerContainer {
+    align-items: center;
+    display: flex;
+    height: 110px;
+    justify-content: center;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.playbackEpInfo {
+    display: flex;
+    flex-direction: column;
+    padding-right: 150px;
+}
+
+.playbackEpTitle {
+    color: white;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: large;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.playbackEpCategory {
+    color: #01b7cc;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.playbackControl {
+    width: 600px;
+}
+
+.playbackClose {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}

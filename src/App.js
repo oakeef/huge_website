@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Home from "./Pages/Home/Home";
@@ -10,14 +10,22 @@ import BeerGoggles from "./Pages/BeerGoggles/BeerGoggles";
 import HugeAss from "./Pages/HugeAss/HugeAss";
 import Footer from "./Components/Footer/Footer";
 import Episodes from "./Pages/Episodes/Episodes";
+import Playback from "./Components/Playback/Playback";
 
 export default function App() {
+    const [selectedEpisode, setSelectedEpisode] = useState(null);
+
     return (
         <>
             <BrowserRouter>
                 <Header />
                 <Routes>
-                    <Route index element={<Home />} />
+                    <Route
+                        index
+                        element={
+                            <Home setSelectedEpisode={setSelectedEpisode} />
+                        }
+                    />
                     <Route path="About" element={<About />} />
                     <Route path="Projects" element={<Projects />} />
                     <Route path="Contact" element={<Contact />} />
@@ -28,6 +36,12 @@ export default function App() {
                     <Route path="HugeAss" element={<HugeAss />} />
                 </Routes>
                 <Footer />
+                {selectedEpisode && (
+                    <Playback
+                        selectedEpisode={selectedEpisode}
+                        setSelectedEpisode={setSelectedEpisode}
+                    />
+                )}
             </BrowserRouter>
         </>
     );

@@ -4,7 +4,7 @@ import hugeLogo from "../../images/hugeLogo.png";
 import Featured from "../Featured/Featured";
 
 export default function Hero(props) {
-    const { episode } = props;
+    const { episode, setSelectedEpisode } = props;
 
     return (
         <div className="heroContainer">
@@ -16,7 +16,10 @@ export default function Hero(props) {
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <Featured episode={episode} />
+                <Featured
+                    episode={episode}
+                    setSelectedEpisode={setSelectedEpisode}
+                />
             </div>
 
             <img className="heroImage" src={hugeLogo} alt="HUGE Logo" />
