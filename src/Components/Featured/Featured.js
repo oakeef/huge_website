@@ -28,8 +28,7 @@ export default function Featured(props) {
                     onClick={() => setSelectedEpisode(episode)}
                     className="featureListenNow"
                 >
-                    {" "}
-                    ▶ LISTEN NOW{" "}
+                    ▶ LISTEN NOW
                 </button>
 
                 <Link to="/Episodes">

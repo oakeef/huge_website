@@ -14,7 +14,7 @@ import Playback from "./Components/Playback/Playback";
 
 export default function App() {
     const [selectedEpisode, setSelectedEpisode] = useState(null);
-    console.log(selectedEpisode);
+
     return (
         <>
             <BrowserRouter>
