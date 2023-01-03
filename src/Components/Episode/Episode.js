@@ -2,7 +2,7 @@ import React from "react";
 import "./Episode.css";
 
 export default function Episode(props) {
-    const { episode } = props;
+    const { episode, setSelectedEpisode } = props;
 
     return (
         <div className="episodeContainer">
@@ -13,7 +13,12 @@ export default function Episode(props) {
                     alt="episode cover"
                 />
                 <span className="episodeDate">{episode.date}</span>
-                <button className="episodePlayButton">▶</button>
+                <button
+                    className="episodePlayButton"
+                    onClick={() => setSelectedEpisode(episode)}
+                >
+                    ▶
+                </button>
             </div>
             <div className="episodeInfo">
                 <span className="episodeCategory"> 🎧 {episode.category}</span>

@@ -105,7 +105,10 @@ export default function Home(props) {
             )}
             <ListenOn />
             {podcastEpisodes.length > 0 && (
-                <LatestEpisodes latestEpisodes={latestEpisodes} />
+                <LatestEpisodes
+                    latestEpisodes={latestEpisodes}
+                    setSelectedEpisode={setSelectedEpisode}
+                />
             )}
             <HostsSection />
             <Patreon />

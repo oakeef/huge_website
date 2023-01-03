@@ -5,12 +5,18 @@ import ReactSimplyCarousel from "react-simply-carousel";
 import "./LatestEpisodes.css";
 
 export default function LatestEpisodes(props) {
-    const { latestEpisodes } = props;
+    const { latestEpisodes, setSelectedEpisode } = props;
 
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
     const hugeEps = latestEpisodes.map((episode, i) => {
-        return <Episode key={i} episode={episode} />;
+        return (
+            <Episode
+                key={i}
+                setSelectedEpisode={setSelectedEpisode}
+                episode={episode}
+            />
+        );
     });
 
     return (

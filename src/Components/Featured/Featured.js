@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Featured(props) {
     const { episode, setSelectedEpisode } = props;
-    console.log(episode);
+
     return (
         <div className="featuredContainer">
             <div>
