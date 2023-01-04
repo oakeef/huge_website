@@ -1,0 +1,13 @@
+.allEpsContainer {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.allEpsHeader {
+    text-align: center;
+}
+
+.allEpsGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

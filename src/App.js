@@ -113,7 +113,15 @@ export default function App() {
                     <Route path="About" element={<About />} />
                     <Route path="Projects" element={<Projects />} />
                     <Route path="Contact" element={<Contact />} />
-                    <Route path="Episodes" element={<Episodes />} />
+                    <Route
+                        path="Episodes"
+                        element={
+                            <Episodes
+                                podcastEpisodes={podcastEpisodes}
+                                setSelectedEpisode={setSelectedEpisode}
+                            />
+                        }
+                    />
                     <Route path="Xcommittee" element={<Xcommittee />} />
                     <Route path="BeerGoggles" element={<BeerGoggles />} />
                     <Route path="BeerGoggles" element={<BeerGoggles />} />
