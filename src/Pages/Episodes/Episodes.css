@@ -16,6 +16,8 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
+    width: 100%;
+    margin-left: 89%;
 }
 
 li:hover {
