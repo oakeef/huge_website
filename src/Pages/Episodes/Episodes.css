@@ -11,3 +11,14 @@
     display: grid;
     grid-template-columns: auto auto auto;
 }
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
