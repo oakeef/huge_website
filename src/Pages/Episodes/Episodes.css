@@ -1,0 +1,26 @@
+.allEpsContainer {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.allEpsHeader {
+    text-align: center;
+}
+
+.allEpsGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    margin-left: 89%;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
