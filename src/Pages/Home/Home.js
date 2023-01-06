@@ -64,7 +64,18 @@ export default function Home(props) {
                     setSelectedEpisode={setSelectedEpisode}
                 />
             )}
-            <ListenOn />
+            <ListenOn
+                offsetValue={"-200px"}
+                googleLink={
+                    "https://podcasts.google.com/feed/aHR0cHM6Ly9ob3BwZWR1cGVhc3QuaGlwY2FzdC5jb20vcnNzL2hvcHBlZHVwZ2FtaW5nZWFzdC54bWw"
+                }
+                appleLink={
+                    "https://podcasts.apple.com/us/podcast/hopped-up-gaming-east/id797058638"
+                }
+                spotifyLink={
+                    "https://open.spotify.com/show/2dTRwdB4bHYsCI2CN9OV2m"
+                }
+            />
             {podcastEpisodes.length > 0 && (
                 <LatestEpisodes
                     latestEpisodes={latestEpisodes}

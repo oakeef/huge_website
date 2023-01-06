@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Xcommittee.css";
 import axios from "axios";
 import Episode from "../../Components/Episode/Episode";
+import ListenOn from "../../Components/ListenOn/ListenOn";
+import XcommitteePic from "../../images/xcommittee.jpg";
 import ReactSimplyCarousel from "react-simply-carousel";
 import { stringChoppy, convertDate } from "../../Helpers/Helpers";
 
@@ -9,6 +11,7 @@ var XMLParser = require("react-xml-parser");
 
 export default function Xcommittee() {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+    const [activeSlideIndexB, setActiveSlideIndexB] = useState(0);
     const [xcomOneEps, setXcomOneEps] = useState([]);
     const [xcomTwoEps, setXcomTwoEps] = useState([]);
 
@@ -52,25 +55,50 @@ export default function Xcommittee() {
 
     return (
         <div className="xcomContainer">
-            <h2 className="xcomHeader">X-COMMITTEE</h2>
-            <p className="xcomDescription">
-                An interesting take on playing the strategy game XCOM. We have
-                one save file and pass it around for 1 hour turns and meet up at
-                the end of each round and talk about what happened. Basically
-                playing XCOM by Commitee.
-            </p>
-            <p className="xcomDescription">
-                Season 1 covers the events of XCOM Enemy Unkown and Enemy Within
-                Expansion. Season 2 covers the events of XCOM 2, Alien Hunters
-                and War of the Chosen Expansion. You can find both Seasons on
-                Apple Podcasts, Google Podcasts or anywhere Podcasts are found.
-            </p>
+            <img className="xcomHeader" src={XcommitteePic} alt="xcombanner" />
 
-            <h3>X-COMMITTEE Season One</h3>
+            <div className="xcomIntroContainer">
+                <div className="xcomDescription">
+                    <p>
+                        An interesting take on playing the strategy game XCOM.
+                        We have one save file and pass it around for 1 hour
+                        turns and meet up at the end of each round and talk
+                        about what happened. Basically playing XCOM by commitee.
+                    </p>
+                    <p>
+                        Season 1 covers the events of XCOM Enemy Unkown and
+                        Enemy Within Expansion. Season 2 covers the events of
+                        XCOM 2, Alien Hunters and War of the Chosen Expansion.
+                        You can find both seasons on Apple Podcasts, Google
+                        Podcasts or anywhere Podcasts are found.
+                    </p>
+                </div>
+
+                <iframe
+                    width="450"
+                    height="315"
+                    title="YouTubeImbed"
+                    src="https://www.youtube.com/embed/41g1NHMjw3M"
+                ></iframe>
+            </div>
+            <ListenOn
+                offsetValue={"-50px"}
+                googleLink={
+                    "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5saWJzeW4uY29tLzQ0ODE4OC9yc3M"
+                }
+                appleLink={
+                    "https://podcasts.apple.com/us/podcast/x-committee/id979571952"
+                }
+                spotifyLink={
+                    "https://open.spotify.com/show/1z0C7QHykxMdrCQNxqqKCw"
+                }
+            />
+
+            <h3 className="xcomSeasonHeader">Season One</h3>
 
             {xcomOneEps.length > 0 && (
                 <ReactSimplyCarousel
-                    className="episodesContainer"
+                    className="xcomEpisodesContainer"
                     activeSlideIndex={activeSlideIndex}
                     onRequestChange={setActiveSlideIndex}
                     itemsToShow={3}
@@ -92,14 +120,15 @@ export default function Xcommittee() {
                 </ReactSimplyCarousel>
             )}
 
-            <h3>X-COMMITTEE Season Two</h3>
+            <h3 className="xcomSeasonHeader">Season Two</h3>
 
             {xcomTwoEps.length > 0 && (
                 <ReactSimplyCarousel
-                    className="episodesContainer"
-                    activeSlideIndex={activeSlideIndex}
-                    onRequestChange={setActiveSlideIndex}
+                    className="xcomEpisodesContainerTwo"
+                    activeSlideIndex={activeSlideIndexB}
+                    onRequestChange={setActiveSlideIndexB}
                     itemsToShow={3}
+                    draggable={true}
                     itemsToScroll={1}
                     infinite={false}
                     speed={60}
