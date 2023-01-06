@@ -1,7 +1,6 @@
 import React from "react";
 import "./HugeProject.css";
 import { Link } from "react-router-dom";
-import sonic2 from "../../images/sonic2.jpeg";
 
 export default function HugeProject(props) {
     return (
@@ -10,7 +9,7 @@ export default function HugeProject(props) {
                 <button className="hugeProjectsSeeMore">learn more</button>
                 <img
                     className="hugeProjectImg"
-                    src={sonic2}
+                    src={props.hugeProject.photo}
                     alt="placeholder"
                 />
                 <span className="hugeProjectTitle">
