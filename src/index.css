@@ -6,7 +6,17 @@ body {
         "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.projectDescription {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0px 50px 0 25px;
+    width: 600px;
 }
 
 code {
