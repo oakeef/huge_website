@@ -5,7 +5,7 @@ export default function HugeAss() {
     return (
         <div className="hugeAssContainer">
             <p>Huge Ass</p>
-            <div>
+            <div className="projectDescription">
                 <p>
                     HUGE ASS was spawned from the covid-19 pandemic. The HUGE
                     Crew wanted to make something together but also remote, so
@@ -16,8 +16,19 @@ export default function HugeAss() {
                     the HUGEst ASS truely is.
                 </p>
 
-                <p> You can check it out on the HUGE Youtube Channel.</p>
+                <p>
+                    You can check out Season One on the HUGE Youtube Channel.
+                    Season Two is availble by{" "}
+                    <span>subscribing to Patreon.</span>
+                </p>
+                <iframe
+                    width="450"
+                    height="315"
+                    title="YouTubeEmbed God of War"
+                    src="https://www.youtube.com/embed/OBq-CJizT9w"
+                ></iframe>
             </div>
+            <h3>Season One</h3>
         </div>
     );
 }
