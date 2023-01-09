@@ -20,7 +20,7 @@
     margin-left: 89%;
 }
 
-li:hover {
+.pagination > li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
