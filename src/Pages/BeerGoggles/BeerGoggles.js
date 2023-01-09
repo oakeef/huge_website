@@ -25,7 +25,7 @@ export default function BeerGoggles() {
                         will leave no door unsmashed, chest unopened, or undead
                         warrior un-undead on their quest to determine if any of
                         these games hold up. You can check it out on the HUGE
-                        Youtube Channel.
+                        YouTube Channel.
                     </p>
 
                     <div className="beerGogglesListenOnContainer">
