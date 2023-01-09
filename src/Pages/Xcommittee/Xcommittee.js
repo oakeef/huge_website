@@ -58,7 +58,7 @@ export default function Xcommittee() {
             <img className="xcomHeader" src={XcommitteePic} alt="xcombanner" />
 
             <div className="xcomIntroContainer">
-                <div className="xcomDescription">
+                <div className="projectDescription">
                     <p>
                         An interesting take on playing the strategy game XCOM.
                         We have one save file and pass it around for 1 hour
