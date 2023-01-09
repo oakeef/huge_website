@@ -77,7 +77,7 @@ export default function Xcommittee() {
                 <iframe
                     width="450"
                     height="315"
-                    title="YouTubeImbed"
+                    title="YouTubeEmbed"
                     src="https://www.youtube.com/embed/41g1NHMjw3M"
                 ></iframe>
             </div>

@@ -18,7 +18,6 @@ export default function LatestEpisodes(props) {
             />
         );
     });
-    console.log(hugeEps);
 
     return (
         <>
