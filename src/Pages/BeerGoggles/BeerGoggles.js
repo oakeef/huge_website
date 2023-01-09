@@ -3,10 +3,12 @@ import "./BeerGoggles.css";
 import podIcon from "../../images/podIcon.webp";
 import discordIcon from "../../images/discordIcon.png";
 import youtubeIcon from "../../images/youtubeIcon.png";
+import XcommitteePic from "../../images/xcommittee.jpg";
 
 export default function BeerGoggles() {
     return (
         <div className="beerGooglesContainer">
+            <img className="xcomHeader" src={XcommitteePic} alt="xcombanner" />
             <div className="beerGooglesIntroContainer">
                 <div className="beerGooglesDescription">
                     <p>
