@@ -11,7 +11,7 @@ export default function BeerGoggles() {
         <div className="beerGooglesContainer">
             <img className="xcomHeader" src={XcommitteePic} alt="xcombanner" />
             <div className="beerGooglesIntroContainer">
-                <div className="beerGooglesDescription">
+                <div className="projectDescription">
                     <p>
                         A fun little experiment where one of the HUGE members
                         picks a game they remember loving from their childhood
@@ -20,15 +20,16 @@ export default function BeerGoggles() {
                         the game after replaying it or if it was just nostalgia;
                         hence the name Beer Googles.
                     </p>
+                    <p className="bold"> Featured Episode: God of War (2005)</p>
                     <p>
-                        In this premiere episode, Ben and Tim set out on an epic
-                        journey to relive the adventures of Kratos throughout
-                        the entire God of War saga. In true Beer Goggles
-                        fashion, they're starting from the very beginning and
-                        will leave no door unsmashed, chest unopened, or undead
-                        warrior un-undead on their quest to determine if any of
-                        these games hold up. You can check it out on the HUGE
-                        YouTube Channel.
+                        In the most recent episode, Ben and Tim set out on an
+                        epic journey to relive the adventures of Kratos
+                        throughout the entire God of War saga. In true Beer
+                        Goggles fashion, they're starting from the very
+                        beginning and will leave no door unsmashed, chest
+                        unopened, or undead warrior un-undead on their quest to
+                        determine if any of these games hold up. You can check
+                        it out on the HUGE YouTube Channel.
                     </p>
 
                     <div className="beerGogglesListenOnContainer">
@@ -81,9 +82,6 @@ export default function BeerGoggles() {
                         title="YouTubeEmbed God of War"
                         src="https://www.youtube.com/embed/EkrQwbYW_jQ?list=PLXnsyGNMKFBggLnPn_vqFd872Pt3w1IhI"
                     ></iframe>
-                    <figcaption className="beerGogglesFigTitle">
-                        God of War (2005)
-                    </figcaption>
                 </figure>
             </div>
             <h3 className="beerGogglesEpHeader">Episodes</h3>
