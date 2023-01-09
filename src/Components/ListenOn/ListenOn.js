@@ -8,21 +8,22 @@ import spotifyLogo from "../../images/spotifyLogo.png";
 import googleLogo from "../../images/googleLogo.webp";
 import discordIcon from "../../images/discordIcon.png";
 
-export default function ListenOn() {
+export default function ListenOn(props) {
+    const { appleLink, offsetValue, googleLink, spotifyLink } = props;
     let listenOnData = [
         {
             name: "apple podcasts",
-            link: "https://podcasts.apple.com/us/podcast/hopped-up-gaming-east/id797058638",
+            link: appleLink,
             logo: appleLogo,
         },
         {
             name: "google podcasts",
-            link: "https://podcasts.google.com/feed/aHR0cHM6Ly9ob3BwZWR1cGVhc3QuaGlwY2FzdC5jb20vcnNzL2hvcHBlZHVwZ2FtaW5nZWFzdC54bWw",
+            link: googleLink,
             logo: googleLogo,
         },
         {
             name: "Spotify",
-            link: "https://open.spotify.com/show/2dTRwdB4bHYsCI2CN9OV2m",
+            link: spotifyLink,
             logo: spotifyLogo,
         },
     ];
@@ -32,7 +33,7 @@ export default function ListenOn() {
     });
 
     return (
-        <div className="listenOnContainer">
+        <div className="listenOnContainer" style={{ marginTop: offsetValue }}>
             <div className="listenOnAudioContainer">
                 <h3 className="listenOnIconAndTitle">
                     <img

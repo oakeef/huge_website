@@ -1,0 +1,34 @@
+.xcomContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.xcomIntroContainer {
+    display: flex;
+}
+
+.xcomHeader {
+    padding-bottom: 30px;
+    object-fit: none;
+    height: 800px;
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+}
+
+.xcomSeasonHeader {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+.xcomDescription {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0px 50px 0 25px;
+    width: 600px;
+}
