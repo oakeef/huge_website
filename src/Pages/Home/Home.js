@@ -4,6 +4,7 @@ import ListenOn from "../../Components/ListenOn/ListenOn";
 import LatestEpisodes from "../../Components/LatestEpisodes/LatestEpisodes";
 import HostsSection from "../../Components/HostsSection/HostsSection";
 import Patreon from "../../Components/Patreon/Patreon";
+import patreonImg from "../../images/PatreonLogoName.png";
 
 export default function Home(props) {
     const { setSelectedEpisode, podcastEpisodes } = props;
@@ -42,7 +43,13 @@ export default function Home(props) {
                 />
             )}
             <HostsSection />
-            <Patreon />
+            <Patreon
+                patreonTitle="Support the Show on Patreon"
+                patreonText="If you want to support the show, enjoy an extra warm feeling
+                    inside when you listen, knowing you’ve helped to keep the
+                    project going."
+                patreonimage={patreonImg}
+            />
         </>
     );
 }
