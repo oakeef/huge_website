@@ -12,6 +12,12 @@ body {
     font-weight: bold;
 }
 
+.outerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .projectDescription {
     font-size: 18px;
     font-weight: 400;
@@ -21,11 +27,14 @@ body {
 
 .projectHeader {
     padding-bottom: 30px;
-    margin-left: -20vw;
-
     max-height: 800px;
     max-width: 1700px;
-    position: relative;
+}
+
+@media only screen and (min-width: 1500px) {
+    .projectHeader {
+        margin: auto;
+    }
 }
 
 code {
