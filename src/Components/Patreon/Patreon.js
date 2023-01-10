@@ -1,14 +1,15 @@
 import React from "react";
 import "./Patreon.css";
 import patreon from "../../images/Patreon.png";
+import hugeCrewImg from "../../images/HUGEPodCrew.jpg";
 
 export default function Patreon(props) {
-    const { patreonimage, patreonText, patreonTitle } = props;
+    const { patreonText, patreonTitle } = props;
     return (
         <div className="patreonContainer">
             <img
                 className="patreonImg"
-                src={patreonimage}
+                src={hugeCrewImg}
                 alt="patreon logo and name"
             />
             <div className="patreonTextContainer">

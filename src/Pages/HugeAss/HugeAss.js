@@ -5,7 +5,6 @@ import hugeassPic from "../../images/hugeass.jpg";
 import podIcon from "../../images/podIcon.webp";
 import discordIcon from "../../images/discordIcon.png";
 import youtubeIcon from "../../images/youtubeIcon.png";
-import patreonImg from "../../images/PatreonLogoName.png";
 
 export default function HugeAss() {
     return (
@@ -98,8 +97,7 @@ export default function HugeAss() {
                 </div>
                 <Patreon
                     patreonTitle="Get Season Two Now on Patreon"
-                    patreonText="For early access to HUGE A-Synchronous Speedrunning Season 2, click the link below to check out our support options. Your support is super appreciated and allows up to keep doing what we love!"
-                    patreonimage={patreonImg}
+                    patreonText="For early access to HUGE ASS Season 2, click the link below to check out our support options. It's super appreciated and allows up to keep doing what we love!"
                 />
             </div>
         </div>
