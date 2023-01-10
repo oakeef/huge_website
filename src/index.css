@@ -19,6 +19,15 @@ body {
     width: 600px;
 }
 
+.projectHeader {
+    padding-bottom: 30px;
+    margin-left: -20vw;
+
+    max-height: 800px;
+    max-width: 1700px;
+    position: relative;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;

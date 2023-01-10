@@ -1,9 +1,18 @@
 import React from "react";
 import "./HugeAss.css";
+import hugeassPic from "../../images/hugeass.jpg";
+import podIcon from "../../images/podIcon.webp";
+import discordIcon from "../../images/discordIcon.png";
+import youtubeIcon from "../../images/youtubeIcon.png";
 
 export default function HugeAss() {
     return (
         <div className="hugeAssContainer">
+            <img
+                className="projectHeader"
+                src={hugeassPic}
+                alt="beerGoggles logo"
+            />
             <div className="hugeAssIntroContainer">
                 <div className="projectDescription">
                     <p>
@@ -18,16 +27,71 @@ export default function HugeAss() {
 
                     <p>
                         You can check out Season One on the HUGE Youtube
-                        Channel. Season Two is availble by{" "}
-                        <span>subscribing to Patreon.</span>
+                        Channel. Season Two is availble by {""}
+                        <span className="hugeAssBold">
+                            <a
+                                href="https://www.patreon.com/hoppedupeast"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                subscribing to Patreon.
+                            </a>
+                        </span>
                     </p>
+                    <div className="beerGogglesListenOnContainer">
+                        <h3 className="listenOnIconAndTitle">
+                            <img
+                                className="podIcon"
+                                src={podIcon}
+                                alt="podcatcher icon"
+                            />
+                            Subscribe On:
+                        </h3>
+                        <img
+                            className="youtubeIcon"
+                            src={youtubeIcon}
+                            alt="youtube triangle icon"
+                        />
+                        <span className="listenOnChannel">
+                            <a
+                                href="https://www.youtube.com/@HoppedUpGamingEast/featured"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Youtube
+                            </a>
+                        </span>
+                    </div>
+
+                    <div className="listenOnDiscord">
+                        <img
+                            className="logo"
+                            src={discordIcon}
+                            alt="discord logo"
+                        />
+                        <a
+                            href="https://bit.ly/hoppedupdiscord"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <p className="listenOnDiscordText">
+                                Discord Server
+                            </p>
+                        </a>
+                    </div>
                 </div>
-                <iframe
-                    width="450"
-                    height="315"
-                    title="YouTubeEmbed God of War"
-                    src="https://www.youtube.com/embed/OBq-CJizT9w"
-                ></iframe>
+                <figure>
+                    <iframe
+                        width="450"
+                        height="315"
+                        title="YouTubeEmbed HUGE ASS Playlist"
+                        src="https://www.youtube.com/embed/videoseries?list=PLXnsyGNMKFBgo8lYTARS244KlTaO1wTXb"
+                    ></iframe>
+                    <figcaption className="hugeAssfigCapt">
+                        {" "}
+                        Season One Playlist
+                    </figcaption>
+                </figure>
             </div>
         </div>
     );

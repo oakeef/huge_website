@@ -55,7 +55,11 @@ export default function Xcommittee() {
 
     return (
         <div className="xcomContainer">
-            <img className="xcomHeader" src={XcommitteePic} alt="xcombanner" />
+            <img
+                className="projectHeader"
+                src={XcommitteePic}
+                alt="xcombanner"
+            />
 
             <div className="xcomIntroContainer">
                 <div className="projectDescription">

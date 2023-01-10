@@ -6,10 +6,13 @@ import youtubeIcon from "../../images/youtubeIcon.png";
 import BeerGogglesImg from "../../images/BeerGogglesCrop.png";
 
 export default function BeerGoggles() {
-    //TODO: swap BeerGoggles image in for Xcom Image
     return (
         <div className="beerGooglesContainer">
-            <img className="xcomHeader" src={BeerGogglesImg} alt="xcombanner" />
+            <img
+                className="projectHeader"
+                src={BeerGogglesImg}
+                alt="beerGoggles logo"
+            />
             <div className="beerGooglesIntroContainer">
                 <div className="projectDescription">
                     <p>
