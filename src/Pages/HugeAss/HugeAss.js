@@ -1,9 +1,11 @@
 import React from "react";
 import "./HugeAss.css";
+import Patreon from "../../Components/Patreon/Patreon";
 import hugeassPic from "../../images/hugeass.jpg";
 import podIcon from "../../images/podIcon.webp";
 import discordIcon from "../../images/discordIcon.png";
 import youtubeIcon from "../../images/youtubeIcon.png";
+import patreonImg from "../../images/PatreonLogoName.png";
 
 export default function HugeAss() {
     return (
@@ -88,11 +90,15 @@ export default function HugeAss() {
                         src="https://www.youtube.com/embed/videoseries?list=PLXnsyGNMKFBgo8lYTARS244KlTaO1wTXb"
                     ></iframe>
                     <figcaption className="hugeAssfigCapt">
-                        {" "}
                         Season One Playlist
                     </figcaption>
                 </figure>
             </div>
+            <Patreon
+                patreonTitle="Get Season Two Now on Patreon"
+                patreonText="For early access to HUGE A-Synchronous Speedrunning Season 2, click the link below to check out our support options. Your support is super appreciated and allows up to keep doing what we love!"
+                patreonimage={patreonImg}
+            />
         </div>
     );
 }
