@@ -1,6 +1,7 @@
 import React from "react";
 import HugeProject from "../../Components/HugeProject/HugeProject";
 import XcommitteePic from "../../images/xcommittee.jpg";
+import BeerGoggles from "../../images/BeerGoggles.png";
 import "./Projects.css";
 
 export default function Projects() {
@@ -17,7 +18,7 @@ export default function Projects() {
             description:
                 "A fun little experiment where one of the HUGE members picks a game they remember loving from their childhood and grabbing another HUGE member as a co-pilot to play through the game in it’s entiretly and see if they still love it or if it was just nostalgia. Hence the name Beer Googles.",
             link: "/BeerGoggles",
-            photo: XcommitteePic,
+            photo: BeerGoggles,
         },
         {
             title: "HUGE A-Synchronous Speedrunning",
