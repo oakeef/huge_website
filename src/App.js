@@ -109,7 +109,8 @@ export default function App() {
                     }
                 });
                 setPodcastEpisodes(episodes);
-                console.log(lastOfUsEpisodes);
+                setHugeBBCEpisodes(BBCEpisodes.reverse());
+                setLastOfUsEpisodes(lastOfUsEpisodes.reverse());
             });
     }, []);
 
@@ -154,6 +155,8 @@ export default function App() {
                         path="OtherProjects"
                         element={
                             <OtherProjects
+                                hugeBBCEpisodes={hugeBBCEpisodes}
+                                lastOfUsEpisodes={lastOfUsEpisodes}
                                 setSelectedEpisode={setSelectedEpisode}
                             />
                         }

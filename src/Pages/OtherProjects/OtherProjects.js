@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./OtherProjects.css";
 import XcommitteePic from "../../images/xcommittee.jpg";
+import ReactSimplyCarousel from "react-simply-carousel";
+import Episode from "../../Components/Episode/Episode";
 import podIcon from "../../images/podIcon.webp";
 import discordIcon from "../../images/discordIcon.png";
 import youtubeIcon from "../../images/youtubeIcon.png";
 
 export default function OtherProjects(props) {
-    const { setSelectedEpisode } = props;
+    const { setSelectedEpisode, lastOfUsEpisodes, hugeBBCEpisodes } = props;
+    const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+    const [activeSlideIndexB, setActiveSlideIndexB] = useState(0);
     return (
         <div className="outerContainer">
             <img
@@ -93,7 +97,71 @@ export default function OtherProjects(props) {
                     ></iframe>
                 </div>
                 <h2> The Last of Us Play The Last of Us</h2>
-                <h2>HUGE Boys Book Club</h2>
+                <p></p>
+
+                {lastOfUsEpisodes.length > 0 && (
+                    <ReactSimplyCarousel
+                        className="xcomEpisodesContainerTwo"
+                        activeSlideIndex={activeSlideIndex}
+                        onRequestChange={setActiveSlideIndex}
+                        itemsToShow={3}
+                        draggable={true}
+                        itemsToScroll={1}
+                        infinite={false}
+                        speed={60}
+                        backwardBtnProps={{
+                            className: "latestEpButton",
+                            children: "←",
+                        }}
+                        forwardBtnProps={{
+                            className: "latestEpButton",
+                            children: "→",
+                        }}
+                    >
+                        {lastOfUsEpisodes.map((episode, i) => {
+                            return (
+                                <Episode
+                                    key={i}
+                                    episode={episode}
+                                    setSelectedEpisode={setSelectedEpisode}
+                                />
+                            );
+                        })}
+                    </ReactSimplyCarousel>
+                )}
+
+                <h2>HUGE Boy's Book Club </h2>
+                <p></p>
+                {hugeBBCEpisodes.length > 0 && (
+                    <ReactSimplyCarousel
+                        className="xcomEpisodesContainerTwo"
+                        activeSlideIndex={activeSlideIndexB}
+                        onRequestChange={setActiveSlideIndexB}
+                        itemsToShow={3}
+                        draggable={true}
+                        itemsToScroll={1}
+                        infinite={false}
+                        speed={60}
+                        backwardBtnProps={{
+                            className: "latestEpButton",
+                            children: "←",
+                        }}
+                        forwardBtnProps={{
+                            className: "latestEpButton",
+                            children: "→",
+                        }}
+                    >
+                        {hugeBBCEpisodes.map((episode, i) => {
+                            return (
+                                <Episode
+                                    key={i}
+                                    episode={episode}
+                                    setSelectedEpisode={setSelectedEpisode}
+                                />
+                            );
+                        })}
+                    </ReactSimplyCarousel>
+                )}
             </div>
         </div>
     );
