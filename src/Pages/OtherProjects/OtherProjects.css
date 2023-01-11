@@ -1,0 +1,8 @@
+.otherProjectsContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.otherProjectsIntroContainer {
+    display: flex;
+}

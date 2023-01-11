@@ -25,6 +25,15 @@ body {
     width: 600px;
 }
 
+.linkBold {
+    color: #faaf40;
+    font-weight: bold;
+}
+
+.linkBold:hover {
+    text-decoration: underline;
+}
+
 .projectHeader {
     padding-bottom: 30px;
     max-height: 800px;
