@@ -8,8 +8,10 @@
 }
 
 .patreonImg {
+    border-radius: 20px;
     height: 390px;
-    width: 400px;
+    margin-top: 50px;
+    box-shadow: 10px 10px 20px 0 rgba(55, 51, 44, 0.5);
 }
 
 .patreonTextContainer {
@@ -22,7 +24,7 @@
 
 .patreonHeading {
     font-family: "Helvetica Neue", sans-serif;
-    font-size: 68px;
+    font-size: 65px;
     font-weight: 700;
 }
 

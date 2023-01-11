@@ -1,6 +1,9 @@
 import React from "react";
 import HugeProject from "../../Components/HugeProject/HugeProject";
 import XcommitteePic from "../../images/xcommittee.jpg";
+import BeerGoggles from "../../images/BeerGoggles.png";
+import hugeassPic from "../../images/hugeass.jpg";
+
 import "./Projects.css";
 
 export default function Projects() {
@@ -17,14 +20,14 @@ export default function Projects() {
             description:
                 "A fun little experiment where one of the HUGE members picks a game they remember loving from their childhood and grabbing another HUGE member as a co-pilot to play through the game in it’s entiretly and see if they still love it or if it was just nostalgia. Hence the name Beer Googles.",
             link: "/BeerGoggles",
-            photo: XcommitteePic,
+            photo: BeerGoggles,
         },
         {
             title: "HUGE A-Synchronous Speedrunning",
             description:
                 "HUGE ASS was spawned from the covid-19 pandemic. The HUGE Crew wanted to make something together but also remote, so we decided to do some asynchronous speed running. Each player spends 30 mins playing a particular game and records it. We then sync up the footage and do some fun commentary over top and see who was faster. Eventually, finding out who the HUGEst ASS truely is.",
             link: "/HugeAss",
-            photo: XcommitteePic,
+            photo: hugeassPic,
         },
         {
             title: "Live Steams",

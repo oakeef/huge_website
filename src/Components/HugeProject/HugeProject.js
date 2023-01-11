@@ -20,7 +20,7 @@ export default function HugeProject(props) {
                         {props.hugeProject.description}
                     </span>
                 </div>
-            </div>{" "}
+            </div>
         </Link>
     );
 }

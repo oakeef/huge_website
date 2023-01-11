@@ -42,7 +42,12 @@ export default function Home(props) {
                 />
             )}
             <HostsSection />
-            <Patreon />
+            <Patreon
+                patreonTitle="Support the Show on Patreon"
+                patreonText="If you want to support the show, enjoy an extra warm feeling
+                    inside when you listen, knowing you’ve helped to keep the
+                    project going."
+            />
         </>
     );
 }
