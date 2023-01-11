@@ -96,7 +96,7 @@ export default function HugeAss() {
                     </figure>
                 </div>
                 <Patreon
-                    patreonTitle="Get Season Two Now on Patreon"
+                    patreonTitle="Season Two Early Access on Patreon"
                     patreonText="For early access to HUGE ASS Season 2, click the link below to check out our support options. It's super appreciated and allows up to keep doing what we love!"
                 />
             </div>
