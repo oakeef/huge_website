@@ -123,11 +123,25 @@ export default function App() {
                             />
                         }
                     />
-                    <Route path="Xcommittee" element={<Xcommittee />} />
+                    <Route
+                        path="Xcommittee"
+                        element={
+                            <Xcommittee
+                                setSelectedEpisode={setSelectedEpisode}
+                            />
+                        }
+                    />
                     <Route path="BeerGoggles" element={<BeerGoggles />} />
                     <Route path="BeerGoggles" element={<BeerGoggles />} />
                     <Route path="HugeAss" element={<HugeAss />} />
-                    <Route path="OtherProjects" element={<OtherProjects />} />
+                    <Route
+                        path="OtherProjects"
+                        element={
+                            <OtherProjects
+                                setSelectedEpisode={setSelectedEpisode}
+                            />
+                        }
+                    />
                 </Routes>
                 <Footer />
                 {selectedEpisode && (

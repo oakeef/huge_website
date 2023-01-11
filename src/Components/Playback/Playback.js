@@ -1,13 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Playback.css";
 
 export default function Playback(props) {
     const { selectedEpisode, setSelectedEpisode } = props;
-
-    useEffect(() => {
-        const player = document.querySelector(".playbackControl");
-        player.play();
-    }, []);
 
     return (
         <div className="playbackContainer">
@@ -23,6 +18,7 @@ export default function Playback(props) {
 
                 <audio
                     className="playbackControl"
+                    autoPlay
                     controls
                     src={selectedEpisode.link}
                 ></audio>

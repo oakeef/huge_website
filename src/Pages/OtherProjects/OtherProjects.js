@@ -5,7 +5,8 @@ import podIcon from "../../images/podIcon.webp";
 import discordIcon from "../../images/discordIcon.png";
 import youtubeIcon from "../../images/youtubeIcon.png";
 
-export default function OtherProjects() {
+export default function OtherProjects(props) {
+    const { setSelectedEpisode } = props;
     return (
         <div className="outerContainer">
             <img
@@ -16,6 +17,7 @@ export default function OtherProjects() {
             <div className="otherProjectsContainer">
                 <div className="otherProjectsIntroContainer">
                     <div className="projectDescription">
+                        <h2> Charity Streams</h2>
                         <p>
                             Over the years we have done several 12 and 24 hour
                             charity streams in support of the IWK Children's
@@ -90,6 +92,8 @@ export default function OtherProjects() {
                         src="https://www.youtube.com/embed/videoseries?list=PLXnsyGNMKFBjV_M-TUJACo0eWwBeHynGm"
                     ></iframe>
                 </div>
+                <h2> The Last of Us Play The Last of Us</h2>
+                <h2>HUGE Boys Book Club</h2>
             </div>
         </div>
     );
