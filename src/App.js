@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact/Contact";
 import Xcommittee from "./Pages/Xcommittee/Xcommittee";
 import BeerGoggles from "./Pages/BeerGoggles/BeerGoggles";
 import HugeAss from "./Pages/HugeAss/HugeAss";
+import OtherProjects from "./Pages/OtherProjects/OtherProjects";
 import Footer from "./Components/Footer/Footer";
 import Episodes from "./Pages/Episodes/Episodes";
 import Playback from "./Components/Playback/Playback";
@@ -126,6 +127,7 @@ export default function App() {
                     <Route path="BeerGoggles" element={<BeerGoggles />} />
                     <Route path="BeerGoggles" element={<BeerGoggles />} />
                     <Route path="HugeAss" element={<HugeAss />} />
+                    <Route path="OtherProjects" element={<OtherProjects />} />
                 </Routes>
                 <Footer />
                 {selectedEpisode && (
