@@ -66,6 +66,8 @@ function episodeCategory(title) {
 export default function App() {
     const [selectedEpisode, setSelectedEpisode] = useState(null);
     const [podcastEpisodes, setPodcastEpisodes] = useState([]);
+    const [hugeBBCEpisodes, setHugeBBCEpisodes] = useState([]);
+    const [lastOfUsEpisodes, setLastOfUsEpisodes] = useState([]);
 
     useEffect(() => {
         axios
@@ -74,6 +76,9 @@ export default function App() {
             })
             .then((response) => {
                 let episodes = [];
+                let BBCEpisodes = [];
+                let lastOfUsEpisodes = [];
+
                 let xml = new XMLParser().parseFromString(response.data);
 
                 xml.children[0].children.forEach((episode, index) => {
@@ -91,9 +96,20 @@ export default function App() {
                             ),
                         };
                         episodes.push(parsedEpisode);
+                        if (parsedEpisode.category === "Huge BBC") {
+                            BBCEpisodes.push(parsedEpisode);
+                        }
+                        if (
+                            parsedEpisode.category ===
+                                "The Last Of Us Play The Last Of Us" ||
+                            parsedEpisode.category === "The Last Of Us Part II"
+                        ) {
+                            lastOfUsEpisodes.push(parsedEpisode);
+                        }
                     }
                 });
                 setPodcastEpisodes(episodes);
+                console.log(lastOfUsEpisodes);
             });
     }, []);
 
