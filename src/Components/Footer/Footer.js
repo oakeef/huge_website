@@ -11,7 +11,13 @@ export default function Footer() {
                     <li className="footerLinksHeader">Quick Links</li>
 
                     <li className="footerLink">
-                        <Link to="/About">Where to Listen</Link>
+                        <a
+                            href="https://link.chtbl.com/Huge-podcast"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Where to Listen
+                        </a>
                     </li>
 
                     <li className="footerLink">
@@ -61,7 +67,7 @@ export default function Footer() {
                     <li className="footerLinksHeader">Contact</li>
 
                     <li className="footerLink">
-                        <a href="mailto:hugecrew@hoppedupeast.com">Email</a>
+                        <Link to="/Contact">Email</Link>
                     </li>
                 </ul>
             </div>

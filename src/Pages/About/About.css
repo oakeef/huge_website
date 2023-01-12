@@ -1,3 +1,9 @@
+.aboutHeader {
+    text-align: center;
+    font-size: 32px;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
 .aboutContainer {
     max-width: 1140px;
     margin: auto;
@@ -6,10 +12,17 @@
 .aboutTextContainer {
     display: flex;
     align-items: center;
+    margin-top: -50px;
 }
 
 .aboutImage {
     width: 600px;
+}
+
+.aboutLowerImage {
+    max-width: 1000px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px 0 rgba(55, 51, 44, 0.5);
 }
 
 .aboutTextStart {
@@ -40,7 +53,7 @@
 
 .aboutPodCastLinks {
     color: grey;
-    font-size: large;
+    font-size: 22px;
     font-weight: 500;
     list-style: none;
 }
