@@ -23,13 +23,15 @@ export default function OtherProjects(props) {
             <div className="otherProjectsContainer">
                 <div className="otherProjectsIntroContainer">
                     <div className="projectDescription">
-                        <h2 className="otherProjectsHeader">Charity Streams</h2>
+                        <h2 className="otherProjectsHeader">
+                            Charity Live Streams
+                        </h2>
                         <p>
                             Over the years we have done several 12 and 24 hour
-                            charity streams in support of the IWK Children's
-                            Hospital and Extra Life. These streams have raised
-                            thousands of dollars to help sick kids. You can find
-                            archives of streams on the{" "}
+                            charity live streams in support of the IWK
+                            Children's Hospital and Extra Life. These live
+                            streams have raised thousands of dollars to help
+                            sick kids. You can find archives of streams on the{" "}
                             <span className="linkBold">
                                 <a
                                     href="https://www.youtube.com/@HoppedUpGamingEast/featured"

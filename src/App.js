@@ -99,11 +99,7 @@ export default function App() {
                         if (parsedEpisode.category === "Huge BBC") {
                             BBCEpisodes.push(parsedEpisode);
                         }
-                        if (
-                            parsedEpisode.category ===
-                                "The Last Of Us Play The Last Of Us" ||
-                            parsedEpisode.category === "The Last Of Us Part II"
-                        ) {
+                        if (parsedEpisode.category.includes("The Last Of Us")) {
                             lastOfUsEpisodes.push(parsedEpisode);
                         }
                     }

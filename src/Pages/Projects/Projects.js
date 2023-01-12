@@ -11,7 +11,7 @@ export default function Projects() {
         {
             title: "X-COMMITTEE",
             description:
-                "An interesting take on playing the strategy game XCOM. We have one save file and pass it around for 1 hour turns and meet up at the end of each round and talk about what happened. Basically playing XCOM by commitee. Season 1 covers the events of XCOM Enemy Unkown and Enemy Within Expansion. Season 2 covers the events of XCOM 2, Alien Hunters and War of the Chosen Expansion.",
+                "An interesting take on playing the strategy game XCOM. We have one save file and pass it around for 1 hour turns and meet up at the end of each round to talk about what happened. Basically playing XCOM by committee. Season 1 covers the events of XCOM Enemy Unkown and Enemy Within Expansion. Season 2 covers the events of XCOM 2, Alien Hunters and War of the Chosen Expansion.",
             link: "/Xcommittee",
             photo: XcommitteePic,
         },
@@ -32,7 +32,7 @@ export default function Projects() {
         {
             title: "Other Projects",
             description:
-                "HUGE BBC write up. Last of us play the last of us write up.  We have also done a few 12 and 24 hour charity livestreams in support of the IWK Health Centre and Child’s Play Charity.",
+                "Other HUGE Projects including The Last of Us Play The Last Of Us, HUGE Boys Book Club as well as few 12 and 24 hour charity livestreams in support of the IWK Children's Hospital and Extra Life.",
             link: "/OtherProjects",
             photo: XcommitteePic,
         },

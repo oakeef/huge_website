@@ -67,9 +67,9 @@ export default function Xcommittee(props) {
                         <p>
                             An interesting take on playing the strategy game
                             XCOM. We have one save file and pass it around for 1
-                            hour turns and meet up at the end of each round and
+                            hour turns and meet up at the end of each round to
                             talk about what happened. Basically playing XCOM by
-                            commitee.
+                            committee.
                         </p>
                         <p>
                             Season 1 covers the events of XCOM Enemy Unkown and
