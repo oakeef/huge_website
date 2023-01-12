@@ -13,6 +13,7 @@ export default function OtherProjects(props) {
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
     const [activeSlideIndexB, setActiveSlideIndexB] = useState(0);
     return (
+        //TODO: replace XCOM image with OTHER PROJECTS IMAGE
         <div className="outerContainer">
             <img
                 className="projectHeader"
