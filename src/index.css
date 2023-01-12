@@ -18,6 +18,11 @@ body {
     justify-content: center;
 }
 
+.innerContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .projectDescription {
     font-size: 18px;
     font-weight: 400;
