@@ -50,9 +50,6 @@ export default function NavBar() {
                     <span>DONATE</span>
                 </button>
             </a>
-            <button className="searchButton">
-                <img className="searchIcon" src={search} alt="search icon" />
-            </button>
         </div>
     );
 }

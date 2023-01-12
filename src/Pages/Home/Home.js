@@ -24,7 +24,7 @@ export default function Home(props) {
                 />
             )}
             <ListenOn
-                offsetValue={"-200px"}
+                offsetValue={"-5px"}
                 googleLink={
                     "https://podcasts.google.com/feed/aHR0cHM6Ly9ob3BwZWR1cGVhc3QuaGlwY2FzdC5jb20vcnNzL2hvcHBlZHVwZ2FtaW5nZWFzdC54bWw"
                 }

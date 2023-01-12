@@ -5,6 +5,7 @@ import ben from "../../images/ben.jpeg";
 import evan from "../../images/evan.jpeg";
 import matthew from "../../images/matthew.jpeg";
 import tim from "../../images/tim.jpeg";
+import dylan from "../../images/dylan.jpg";
 
 export default function HostsSection() {
     //TODO: add Dylans picture and write up
@@ -30,7 +31,7 @@ export default function HostsSection() {
             bio: "Tim is our resident Nintendo lover. He likes retro games and is probably the nicest guy in the world. But get a game where you can deceive and Tim will get you.",
         },
         {
-            img: tim,
+            img: dylan,
             name: "Dylan",
             bio: "Dylan's write up will go here!",
         },

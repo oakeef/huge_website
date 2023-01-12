@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import hugeLogo from "../../images/hugeLogo.png";
+import hugeCrewImg from "../../images/HUGEPodCrew.jpg";
 import Featured from "../Featured/Featured";
 
 export default function Hero(props) {
@@ -11,10 +12,11 @@ export default function Hero(props) {
             <div className="heroText">
                 <h2 className="heroMainText">Hopped-Up Gaming: East </h2>
                 <p className="heroSubText">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Hi there! We're a bunch of fellas (Dylan, Ben, Evan, Matt,
+                    and Tim) who get together every week to talk about our
+                    hobbies, movies, the games we're playing, and basically
+                    whatever else we've done that week. Oh yeah, we also drink
+                    and rate beer that we don't properly know how to evaluate.
                 </p>
                 <Featured
                     episode={episode}
@@ -22,7 +24,8 @@ export default function Hero(props) {
                 />
             </div>
 
-            <img className="heroImage" src={hugeLogo} alt="HUGE Logo" />
+            <img className="heroImage" src={hugeCrewImg} alt="HUGE Logo" />
+            {/* <img className="heroImage" src={hugeLogo} alt="HUGE Logo" /> */}
         </div>
     );
 }
