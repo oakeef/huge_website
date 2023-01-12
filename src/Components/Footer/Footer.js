@@ -4,7 +4,6 @@ import "./Footer.css";
 
 export default function Footer() {
     return (
-        // TODO: add a tag to Episodes when that is made
         <div className="footerContainer">
             <hr className="footerHR"></hr>
             <div className="footerLinksContainer">
@@ -15,7 +14,9 @@ export default function Footer() {
                         <Link to="/About">Where to Listen</Link>
                     </li>
 
-                    <li className="footerLink">Episodes</li>
+                    <li className="footerLink">
+                        <Link to="/Episodes">Episodes </Link>
+                    </li>
 
                     <li className="footerLink">
                         <a
