@@ -1,0 +1,32 @@
+.otherProjectsContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.otherProjectsHeader {
+    color: black;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.otherProjectsIntroContainer {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.otherProjectsDescription {
+    font-size: 18px;
+    padding-bottom: 15px;
+    margin: 0 60px;
+    text-align: justify;
+}
+
+.otherProjectsTLOU {
+    padding-bottom: 30px;
+}
+
+.otherProjectsDescriptionImage {
+    object-fit: none;
+    height: 300px;
+}

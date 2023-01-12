@@ -18,11 +18,25 @@ body {
     justify-content: center;
 }
 
+.innerContainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .projectDescription {
     font-size: 18px;
     font-weight: 400;
     padding: 0px 50px 0 25px;
     width: 600px;
+}
+
+.linkBold {
+    color: #faaf40;
+    font-weight: bold;
+}
+
+.linkBold:hover {
+    text-decoration: underline;
 }
 
 .projectHeader {

@@ -9,7 +9,8 @@ import { stringChoppy, convertDate } from "../../Helpers/Helpers";
 
 var XMLParser = require("react-xml-parser");
 
-export default function Xcommittee() {
+export default function Xcommittee(props) {
+    const { setSelectedEpisode } = props;
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
     const [activeSlideIndexB, setActiveSlideIndexB] = useState(0);
     const [xcomOneEps, setXcomOneEps] = useState([]);
@@ -66,9 +67,9 @@ export default function Xcommittee() {
                         <p>
                             An interesting take on playing the strategy game
                             XCOM. We have one save file and pass it around for 1
-                            hour turns and meet up at the end of each round and
+                            hour turns and meet up at the end of each round to
                             talk about what happened. Basically playing XCOM by
-                            commitee.
+                            committee.
                         </p>
                         <p>
                             Season 1 covers the events of XCOM Enemy Unkown and
@@ -121,7 +122,13 @@ export default function Xcommittee() {
                         }}
                     >
                         {xcomOneEps.map((episode, i) => {
-                            return <Episode key={i} episode={episode} />;
+                            return (
+                                <Episode
+                                    key={i}
+                                    episode={episode}
+                                    setSelectedEpisode={setSelectedEpisode}
+                                />
+                            );
                         })}
                     </ReactSimplyCarousel>
                 )}
@@ -148,7 +155,13 @@ export default function Xcommittee() {
                         }}
                     >
                         {xcomTwoEps.map((episode, i) => {
-                            return <Episode key={i} episode={episode} />;
+                            return (
+                                <Episode
+                                    key={i}
+                                    episode={episode}
+                                    setSelectedEpisode={setSelectedEpisode}
+                                />
+                            );
                         })}
                     </ReactSimplyCarousel>
                 )}

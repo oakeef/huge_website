@@ -7,19 +7,6 @@
     display: flex;
 }
 
-.projectDescription {
-    color: rgb(88, 87, 87);
-}
-
-.hugeAssBold {
-    color: #faaf40;
-    font-weight: bold;
-}
-
-.hugeAssBold:hover {
-    text-decoration: underline;
-}
-
 .hugeAssfigCapt {
     font-weight: bold;
     text-align: center;

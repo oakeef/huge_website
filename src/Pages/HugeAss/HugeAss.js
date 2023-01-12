@@ -31,7 +31,7 @@ export default function HugeAss() {
                         <p>
                             You can check out Season One on the HUGE Youtube
                             Channel. Season Two is availble by {""}
-                            <span className="hugeAssBold">
+                            <span className="linkBold">
                                 <a
                                     href="https://www.patreon.com/hoppedupeast"
                                     target="_blank"

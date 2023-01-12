@@ -11,14 +11,14 @@ export default function Projects() {
         {
             title: "X-COMMITTEE",
             description:
-                "An interesting take on playing the strategy game XCOM. We have one save file and pass it around for 1 hour turns and meet up at the end of each round and talk about what happened. Basically playing XCOM by Commitee. Season 1 covers the events of XCOM Enemy Unkown and Enemy Within Expansion. Season 2 covers the events of XCOM 2, Alien Hunters and War of the Chosen Expansion.",
+                "An interesting take on playing the strategy game XCOM. We have one save file and pass it around for 1 hour turns and meet up at the end of each round to talk about what happened. Basically playing XCOM by committee. Season 1 covers the events of XCOM Enemy Unkown and Enemy Within Expansion. Season 2 covers the events of XCOM 2, Alien Hunters and War of the Chosen Expansion.",
             link: "/Xcommittee",
             photo: XcommitteePic,
         },
         {
             title: "Beer Goggles",
             description:
-                "A fun little experiment where one of the HUGE members picks a game they remember loving from their childhood and grabbing another HUGE member as a co-pilot to play through the game in it’s entiretly and see if they still love it or if it was just nostalgia. Hence the name Beer Googles.",
+                "A fun little experiment where one of the HUGE members picks a game they remember loving from their childhood and plays through it in its entirety with another HUGE member as a co-pilot. They see if they still love the game after replaying it or if it was just nostalgia; hence the name Beer Googles.",
             link: "/BeerGoggles",
             photo: BeerGoggles,
         },
@@ -30,10 +30,10 @@ export default function Projects() {
             photo: hugeassPic,
         },
         {
-            title: "Live Steams",
+            title: "Other Projects",
             description:
-                " We have done a few 12 and 24 hour charity livestreams in support of the IWK Health Centre and Child’s Play Charity.",
-            link: "https://www.youtube.com/hoppedupgamingeast",
+                "Other HUGE Projects including The Last of Us Play The Last Of Us, HUGE Boys Book Club as well as few 12 and 24 hour charity livestreams in support of the IWK Children's Hospital and Extra Life.",
+            link: "/OtherProjects",
             photo: XcommitteePic,
         },
     ];

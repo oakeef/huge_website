@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact/Contact";
 import Xcommittee from "./Pages/Xcommittee/Xcommittee";
 import BeerGoggles from "./Pages/BeerGoggles/BeerGoggles";
 import HugeAss from "./Pages/HugeAss/HugeAss";
+import OtherProjects from "./Pages/OtherProjects/OtherProjects";
 import Footer from "./Components/Footer/Footer";
 import Episodes from "./Pages/Episodes/Episodes";
 import Playback from "./Components/Playback/Playback";
@@ -65,6 +66,8 @@ function episodeCategory(title) {
 export default function App() {
     const [selectedEpisode, setSelectedEpisode] = useState(null);
     const [podcastEpisodes, setPodcastEpisodes] = useState([]);
+    const [hugeBBCEpisodes, setHugeBBCEpisodes] = useState([]);
+    const [lastOfUsEpisodes, setLastOfUsEpisodes] = useState([]);
 
     useEffect(() => {
         axios
@@ -73,6 +76,9 @@ export default function App() {
             })
             .then((response) => {
                 let episodes = [];
+                let BBCEpisodes = [];
+                let lastOfUsEpisodes = [];
+
                 let xml = new XMLParser().parseFromString(response.data);
 
                 xml.children[0].children.forEach((episode, index) => {
@@ -90,9 +96,17 @@ export default function App() {
                             ),
                         };
                         episodes.push(parsedEpisode);
+                        if (parsedEpisode.category === "Huge BBC") {
+                            BBCEpisodes.push(parsedEpisode);
+                        }
+                        if (parsedEpisode.category.includes("The Last Of Us")) {
+                            lastOfUsEpisodes.push(parsedEpisode);
+                        }
                     }
                 });
                 setPodcastEpisodes(episodes);
+                setHugeBBCEpisodes(BBCEpisodes.reverse());
+                setLastOfUsEpisodes(lastOfUsEpisodes.reverse());
             });
     }, []);
 
@@ -122,10 +136,27 @@ export default function App() {
                             />
                         }
                     />
-                    <Route path="Xcommittee" element={<Xcommittee />} />
+                    <Route
+                        path="Xcommittee"
+                        element={
+                            <Xcommittee
+                                setSelectedEpisode={setSelectedEpisode}
+                            />
+                        }
+                    />
                     <Route path="BeerGoggles" element={<BeerGoggles />} />
                     <Route path="BeerGoggles" element={<BeerGoggles />} />
                     <Route path="HugeAss" element={<HugeAss />} />
+                    <Route
+                        path="OtherProjects"
+                        element={
+                            <OtherProjects
+                                hugeBBCEpisodes={hugeBBCEpisodes}
+                                lastOfUsEpisodes={lastOfUsEpisodes}
+                                setSelectedEpisode={setSelectedEpisode}
+                            />
+                        }
+                    />
                 </Routes>
                 <Footer />
                 {selectedEpisode && (
