@@ -1,6 +1,5 @@
 import React from "react";
 import "./Hero.css";
-import hugeLogo from "../../images/hugeLogo.png";
 import hugeCrewImg from "../../images/HUGEPodCrew.jpg";
 import Featured from "../Featured/Featured";
 
@@ -10,6 +9,11 @@ export default function Hero(props) {
     return (
         <div className="heroContainer">
             <div className="heroText">
+                <img
+                    className="heroImageMediaQ"
+                    src={hugeCrewImg}
+                    alt="HUGE Logo"
+                />
                 <h2 className="heroMainText">Hopped-Up Gaming: East </h2>
                 <p className="heroSubText">
                     Hi there! We're a bunch of fellas (Dylan, Ben, Evan, Matt,
@@ -25,7 +29,6 @@ export default function Hero(props) {
             </div>
 
             <img className="heroImage" src={hugeCrewImg} alt="HUGE Logo" />
-            {/* <img className="heroImage" src={hugeLogo} alt="HUGE Logo" /> */}
         </div>
     );
 }

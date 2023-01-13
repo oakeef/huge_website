@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     height: 235px;
-    width: 545px;
+    max-width: 545px;
 }
 
 .featuredbanner {
@@ -44,13 +44,13 @@
 
 .featuredSubTitle {
     color: #01b7cc;
-    display: inline-block;
+    /* display: inline-block; */
     padding-bottom: 20px;
     text-transform: uppercase;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis;
     max-width: 50ch;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 .featuredTitle {

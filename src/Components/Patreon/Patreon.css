@@ -3,27 +3,28 @@
     max-width: 1140px;
     margin: auto;
     margin-bottom: 100px;
-    padding: 25px;
+    padding: 0 1.875rem;
 }
 
 .patreonImg {
     border-radius: 20px;
-    height: 390px;
+    max-width: 520px;
     margin-top: 50px;
     box-shadow: 10px 10px 20px 0 rgba(55, 51, 44, 0.5);
 }
 
 .patreonTextContainer {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    max-width: 600px;
     padding-left: 100px;
+    text-align: center;
 }
 
 .patreonHeading {
     font-family: "Helvetica Neue", sans-serif;
-    font-size: 65px;
+    font-size: 4.0625rem;
     font-weight: 700;
 }
 
@@ -51,4 +52,35 @@
 
 .patreonButton:hover {
     box-shadow: 0 0px 10px 0 #fab040;
+}
+
+@media only screen and (max-width: 1000px) {
+    .patreonTextContainer {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .patreonContainer {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .patreonImg {
+        max-height: 390px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .patreonImg {
+        height: 250px;
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .patreonHeading {
+        font-size: 45px;
+    }
 }

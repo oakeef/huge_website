@@ -3,8 +3,8 @@
 }
 
 .navPatreonLogo {
-    height: 17px;
-    padding-right: 8px;
+    height: 1.0625rem;
+    padding-right: 0.5rem;
 }
 
 .patreonDonate {
@@ -14,14 +14,14 @@
     border-radius: 30px;
     color: white;
     display: flex;
-    font-size: small;
+    font-size: 0.8rem;
     font-weight: bolder;
-    height: 50px;
+    height: 3.125rem;
     justify-content: center;
-    margin: 20px 15px 0 0;
+    margin: 1.25rem 0.9375rem 0 0;
     text-align: center;
     text-transform: uppercase;
-    width: 170px;
+    width: 10.625rem;
 }
 
 a:link {
@@ -38,10 +38,10 @@ a:link {
     display: flex;
     flex-direction: row;
     font-family: "Helvetica Neue", sans-serif;
-    font-size: large;
+    font-size: 1.125rem;
     font-weight: bold;
     list-style: none;
-    padding-top: 15px;
+    padding-top: 0.9375rem;
     text-transform: uppercase;
 }
 

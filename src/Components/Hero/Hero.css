@@ -2,6 +2,7 @@
     display: flex;
     max-width: 1140px;
     margin: auto;
+    padding: 0 1.875rem;
 }
 
 .heroText {
@@ -14,10 +15,12 @@
     font-size: 17px;
     padding-bottom: 20px;
     line-height: 140%;
-    width: 530px;
+    max-width: 530px;
 }
 
 .heroMainText {
+    display: flex;
+    justify-content: center;
     font-family: "Helvetica Neue", sans-serif;
     font-size: 42px;
     margin-bottom: 20px;
@@ -29,4 +32,28 @@
     height: 470px;
     object-fit: cover;
     margin: 55px 0 0 50px;
+}
+
+.heroImageMediaQ {
+    display: none;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px 0 rgba(55, 51, 44, 0.5);
+    height: 470px;
+    object-fit: cover;
+}
+@media only screen and (max-width: 1000px) {
+    .heroImage {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .heroImageMediaQ {
+        display: block;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .heroSubText {
+        text-align: center;
+    }
 }

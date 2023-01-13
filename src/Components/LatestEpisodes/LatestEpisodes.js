@@ -28,27 +28,26 @@ export default function LatestEpisodes(props) {
                         <Link to="/Episodes">BROWSE ALL {">"}</Link>
                     </span>
                 </div>
+                <ReactSimplyCarousel
+                    className="episodesContainer"
+                    activeSlideIndex={activeSlideIndex}
+                    onRequestChange={setActiveSlideIndex}
+                    itemsToShow={3}
+                    itemsToScroll={1}
+                    infinite={false}
+                    speed={60}
+                    backwardBtnProps={{
+                        className: "latestEpButton",
+                        children: "←",
+                    }}
+                    forwardBtnProps={{
+                        className: "latestEpButton",
+                        children: "→",
+                    }}
+                >
+                    {hugeEps}
+                </ReactSimplyCarousel>
             </div>
-
-            <ReactSimplyCarousel
-                className="episodesContainer"
-                activeSlideIndex={activeSlideIndex}
-                onRequestChange={setActiveSlideIndex}
-                itemsToShow={3}
-                itemsToScroll={1}
-                infinite={false}
-                speed={60}
-                backwardBtnProps={{
-                    className: "latestEpButton",
-                    children: "←",
-                }}
-                forwardBtnProps={{
-                    className: "latestEpButton",
-                    children: "→",
-                }}
-            >
-                {hugeEps}
-            </ReactSimplyCarousel>
         </>
     );
 }

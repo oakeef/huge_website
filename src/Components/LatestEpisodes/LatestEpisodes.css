@@ -1,9 +1,11 @@
 .latestEpContainer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin: auto;
     margin-top: 80px;
     max-width: 1140px;
+    padding: 0 1.875rem;
 }
 
 .latestEpHeader {
