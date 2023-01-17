@@ -11,13 +11,6 @@
     flex-direction: column;
 }
 
-.heroSubText {
-    font-size: 17px;
-    padding-bottom: 20px;
-    line-height: 140%;
-    max-width: 530px;
-}
-
 .heroMainText {
     display: flex;
     justify-content: center;

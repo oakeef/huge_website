@@ -29,7 +29,7 @@ export default function LatestEpisodes(props) {
                     </span>
                 </div>
                 <ReactSimplyCarousel
-                    className="episodesContainer"
+                    className="latestEpisodesCarousel"
                     activeSlideIndex={activeSlideIndex}
                     onRequestChange={setActiveSlideIndex}
                     itemsToShow={3}
