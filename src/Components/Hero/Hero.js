@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import hugeCrewImg from "../../images/HUGEPodCrew.jpg";
 import Featured from "../Featured/Featured";
+import ListenOn from "../ListenOn/ListenOn";
 
 export default function Hero(props) {
     const { episode, setSelectedEpisode } = props;
@@ -15,16 +16,28 @@ export default function Hero(props) {
                     alt="HUGE Logo"
                 />
                 <h2 className="heroMainText">Hopped-Up Gaming: East </h2>
-                <p className="heroSubText">
+                {/* <p className="heroSubText">
                     Hi there! We're a bunch of fellas (Dylan, Ben, Evan, Matt,
                     and Tim) who get together every week to talk about our
                     hobbies, movies, the games we're playing, and basically
                     whatever else we've done that week. Oh yeah, we also drink
                     and rate beer that we don't properly know how to evaluate.
-                </p>
+                </p> */}
                 <Featured
                     episode={episode}
                     setSelectedEpisode={setSelectedEpisode}
+                />
+                <ListenOn
+                    offsetValue={"10px"}
+                    googleLink={
+                        "https://podcasts.google.com/feed/aHR0cHM6Ly9ob3BwZWR1cGVhc3QuaGlwY2FzdC5jb20vcnNzL2hvcHBlZHVwZ2FtaW5nZWFzdC54bWw"
+                    }
+                    appleLink={
+                        "https://podcasts.apple.com/us/podcast/hopped-up-gaming-east/id797058638"
+                    }
+                    spotifyLink={
+                        "https://open.spotify.com/show/2dTRwdB4bHYsCI2CN9OV2m"
+                    }
                 />
             </div>
 

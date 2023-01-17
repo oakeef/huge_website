@@ -1,9 +1,7 @@
 .listenOnContainer {
-    display: flex;
-    flex-direction: column;
-    max-width: 1140px;
-    margin: auto;
-    padding: 0 1.875rem;
+    /* max-width: 1140px;
+    margin: auto; */
+    /* padding: 0 11rem; */
 }
 .listenOnAudioContainer {
     align-items: center;
@@ -11,8 +9,8 @@
 }
 
 .listenOnIconAndTitle {
-    font-size: 20px;
-    padding-right: 10px;
+    font-size: 16px;
+    padding-right: 5px;
 }
 
 .podIcon {
