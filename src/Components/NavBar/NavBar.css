@@ -1,5 +1,6 @@
 .navContainer {
     display: flex;
+    max-width: 1140px;
 }
 
 .navPatreonLogo {
@@ -56,4 +57,10 @@ a:link {
 
 .searchIcon {
     height: 16px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navContainer {
+        display: none;
+    }
 }
