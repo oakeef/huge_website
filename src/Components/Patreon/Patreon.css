@@ -74,14 +74,14 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .patreonImg {
         height: 250px;
         width: 350px;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     .patreonHeading {
         font-size: 45px;
     }
