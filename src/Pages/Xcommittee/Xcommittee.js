@@ -41,8 +41,6 @@ export default function Xcommittee(props) {
                     episodes.push(parsedEpisode);
                 });
 
-                console.log(episodes);
-
                 const xcomOne = [];
                 const xcomTwo = [];
 
