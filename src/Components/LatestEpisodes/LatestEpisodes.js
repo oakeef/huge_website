@@ -28,25 +28,32 @@ export default function LatestEpisodes(props) {
                         <Link to="/Episodes">BROWSE ALL {">"}</Link>
                     </span>
                 </div>
-                <ReactSimplyCarousel
-                    className="latestEpisodesCarousel"
-                    activeSlideIndex={activeSlideIndex}
-                    onRequestChange={setActiveSlideIndex}
-                    itemsToShow={3}
-                    itemsToScroll={1}
-                    infinite={false}
-                    speed={60}
-                    backwardBtnProps={{
-                        className: "latestEpButton",
-                        children: "←",
-                    }}
-                    forwardBtnProps={{
-                        className: "latestEpButton",
-                        children: "→",
-                    }}
-                >
-                    {hugeEps}
-                </ReactSimplyCarousel>
+                <div className="latestEpisodesCarouselCountainer">
+                    <ReactSimplyCarousel
+                        className="latestEpisodesCarousel"
+                        activeSlideIndex={activeSlideIndex}
+                        onRequestChange={setActiveSlideIndex}
+                        itemsToShow={3}
+                        itemsToScroll={1}
+                        infinite={false}
+                        speed={60}
+                        responsiveProps={[
+                            { minWidth: 1100, maxWidth: 1400, itemsToShow: 3 },
+                            { minWidth: 800, maxWidth: 1000, itemsToShow: 2 },
+                            { maxWidth: 500, itemsToShow: 1 },
+                        ]}
+                        backwardBtnProps={{
+                            className: "latestEpButton",
+                            children: "←",
+                        }}
+                        forwardBtnProps={{
+                            className: "latestEpButton",
+                            children: "→",
+                        }}
+                    >
+                        {hugeEps}
+                    </ReactSimplyCarousel>
+                </div>
             </div>
         </>
     );

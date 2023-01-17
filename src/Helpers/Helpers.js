@@ -28,7 +28,7 @@ export function convertDate(date) {
         end = "rd";
     } else end = "th";
 
-    return `${dateArray[2]} ` + `${day + end}, ` + dateArray[3];
+    return `${dateArray[2]}  ${day + end}  ${dateArray[3]}`;
 }
 
 export function episodeCategory(title) {
