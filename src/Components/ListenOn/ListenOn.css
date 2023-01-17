@@ -51,3 +51,9 @@ a:visited {
 .listenOnDiscordText {
     margin: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .podIcon {
+        display: none;
+    }
+}

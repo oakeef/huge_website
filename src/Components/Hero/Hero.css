@@ -7,6 +7,7 @@
 
 .heroText {
     display: flex;
+    align-items: center;
     font-family: "Helvetica Neue", sans-serif;
     flex-direction: column;
 }
@@ -15,9 +16,9 @@
     display: flex;
     justify-content: center;
     font-family: "Helvetica Neue", sans-serif;
-    font-size: 52px;
+    font-size: 3.25rem;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 .heroImage {
@@ -32,7 +33,7 @@
     display: none;
     border-radius: 20px;
     box-shadow: 10px 10px 20px 0 rgba(55, 51, 44, 0.5);
-    height: 470px;
+    max-height: 470px;
     object-fit: cover;
 }
 @media only screen and (max-width: 1000px) {
@@ -44,10 +45,18 @@
 @media only screen and (max-width: 1000px) {
     .heroImageMediaQ {
         display: block;
+        margin-top: 2rem;
     }
 }
 @media only screen and (max-width: 1000px) {
     .heroSubText {
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .heroImageMediaQ {
+        height: 275px;
+        width: 375px;
     }
 }
