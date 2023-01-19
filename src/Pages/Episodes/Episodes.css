@@ -15,15 +15,31 @@
     grid-template-columns: auto auto auto;
 }
 
+.paginationContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .pagination {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
-    width: 100%;
-    margin-left: 89%;
+    width: 70%;
 }
 
 .pagination > li:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .allEpsGrid {
+        grid-template-columns: 370px 370px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .allEpsGrid {
+        grid-template-columns: 370px;
+    }
 }
