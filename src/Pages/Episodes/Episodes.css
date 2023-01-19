@@ -1,6 +1,7 @@
 .allEpsContainer {
     max-width: 1140px;
     margin: auto;
+    padding: 0 1.875rem;
 }
 
 .allEpsHeader {

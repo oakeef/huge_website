@@ -5,10 +5,10 @@
     box-shadow: 0 0px 20px 0 rgba(79, 73, 63, 0.5);
     display: flex;
     flex-direction: column;
-    height: 550px;
-    margin: 10px;
+    height: 33.375rem;
+    margin: 0.3125rem;
     position: relative;
-    width: 550px;
+    width: 33.375rem;
 }
 
 .hugeProjectContainer:hover {
@@ -26,29 +26,28 @@
 .hugeProjectImg {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    width: 550px;
-    height: 300px;
+    width: 33.375rem;
+    height: 18.75rem;
 }
 
 .hugeProjectTitle {
-    padding: 10px;
+    padding: 0.625rem;
     font-family: "Helvetica Neue", sans-serif;
     font-size: x-large;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 1.875rem;
     color: #061020;
 }
 
 .hugeProjectDescriptionContainer {
     height: min-content;
-    width: 510px;
+    padding: 0 1.5625rem 1.25rem 1.5625rem;
 }
 
 .hugeProjectDescription {
     color: grey;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    padding: 0 20px 20px 20px;
 }
 
 .hugeProjectsSeeMore {
@@ -59,10 +58,10 @@
     color: white;
     font-size: small;
     font-weight: bolder;
-    height: 40px;
+    height: 2.5rem;
     position: absolute;
-    top: 150px;
+    top: 9.375rem;
     text-transform: uppercase;
     visibility: hidden;
-    width: 140px;
+    width: 8.75rem;
 }
