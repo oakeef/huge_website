@@ -38,9 +38,8 @@ export default function LatestEpisodes(props) {
                         infinite={false}
                         speed={60}
                         responsiveProps={[
-                            { minWidth: 1100, maxWidth: 1400, itemsToShow: 3 },
-                            { minWidth: 699, maxWidth: 1000, itemsToShow: 2 },
-                            { maxWidth: 600, itemsToShow: 1 },
+                            { minWidth: 780, maxWidth: 1199, itemsToShow: 2 },
+                            { maxWidth: 779, itemsToShow: 1 },
                         ]}
                         backwardBtnProps={{
                             className: "latestEpButton",
