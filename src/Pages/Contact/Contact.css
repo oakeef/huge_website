@@ -1,28 +1,33 @@
 .contactContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 900px;
     margin: auto;
+    padding: 0 1.875rem;
 }
 
 .contactHeader {
     font-family: "Helvetica Neue", sans-serif;
+    font-size: 1.875rem;
     text-align: center;
 }
 
 .contactText {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     margin: auto;
-    padding-bottom: 25px;
+    padding-bottom: 1.5625rem;
     text-align: center;
-    width: 300px;
+    width: 18.75rem;
 }
 
 .contactFormContainer {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 0px 20px 0 rgba(79, 73, 63, 0.5);
-    height: 650px;
-    padding-top: 15px;
+    height: 38.625rem;
+    padding: 1.875rem;
 }
 
 .contactForm {
@@ -37,17 +42,17 @@
 
 .contactFormInput {
     align-self: center;
-    font-size: large;
-    height: 30px;
-    width: 800px;
+    font-size: 1.25rem;
+    height: 1.875rem;
+    width: 50rem;
 }
 
 .contactFormInputMessage {
     align-self: center;
-    font-size: large;
-    height: 150px;
+    font-size: 1.25rem;
+    height: 9.375rem;
     resize: none;
-    width: 800px;
+    width: 50rem;
 }
 
 .contactFormSubmit {
@@ -56,10 +61,10 @@
     border-radius: 18px;
     color: white;
     font-weight: bolder;
-    height: 40px;
-    margin: 30px 0 0 46px;
+    height: 2.5rem;
+    margin: 1.875rem 0 0 2.875rem;
     text-transform: uppercase;
-    width: 100px;
+    width: 6.25rem;
 }
 
 .contactFormSubmit:hover {
@@ -69,5 +74,23 @@
 .contactErrors {
     color: red;
     font-weight: 600;
-    padding-left: 45px;
+    padding-left: 2.8125rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contactFormInput {
+        width: 30rem;
+    }
+    .contactFormInputMessage {
+        width: 30rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contactFormInput {
+        width: 20rem;
+    }
+    .contactFormInputMessage {
+        width: 20rem;
+    }
 }
