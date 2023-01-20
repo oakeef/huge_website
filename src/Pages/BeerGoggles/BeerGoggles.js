@@ -16,27 +16,31 @@ export default function BeerGoggles() {
             <div className="beerGooglesContainer">
                 <div className="beerGooglesIntroContainer">
                     <div className="projectDescription">
-                        <p>
-                            A fun little experiment where one of the HUGE
-                            members picks a game they remember loving from their
-                            childhood and plays through it in its entirety with
-                            another HUGE member as a co-pilot. They see if they
-                            still love the game after replaying it or if it was
-                            just nostalgia; hence the name Beer Googles.
-                        </p>
-                        <p className="bold">
-                            Featured Episode: God of War (2005)
-                        </p>
-                        <p>
-                            In the most recent episode, Ben and Tim set out on
-                            an epic journey to relive the adventures of Kratos
-                            throughout the entire God of War saga. In true Beer
-                            Goggles fashion, they're starting from the very
-                            beginning and will leave no door unsmashed, chest
-                            unopened, or undead warrior un-undead on their quest
-                            to determine if any of these games hold up. You can
-                            check it out on the HUGE YouTube Channel.
-                        </p>
+                        <div className="beerGooglesWriteUp">
+                            <p>
+                                A fun little experiment where one of the HUGE
+                                members picks a game they remember loving from
+                                their childhood and plays through it in its
+                                entirety with another HUGE member as a co-pilot.
+                                They see if they still love the game after
+                                replaying it or if it was just nostalgia; hence
+                                the name Beer Googles.
+                            </p>
+                            <p className="bold">
+                                Featured Episode: God of War (2005)
+                            </p>
+                            <p>
+                                In the most recent episode, Ben and Tim set out
+                                on an epic journey to relive the adventures of
+                                Kratos throughout the entire God of War saga. In
+                                true Beer Goggles fashion, they're starting from
+                                the very beginning and will leave no door
+                                unsmashed, chest unopened, or undead warrior
+                                un-undead on their quest to determine if any of
+                                these games hold up. You can check it out on the
+                                HUGE YouTube Channel.
+                            </p>
+                        </div>
 
                         <div className="beerGogglesListenOnContainer">
                             <h3 className="listenOnIconAndTitle">
@@ -47,20 +51,22 @@ export default function BeerGoggles() {
                                 />
                                 Subscribe On:
                             </h3>
-                            <img
-                                className="youtubeIcon"
-                                src={youtubeIcon}
-                                alt="youtube triangle icon"
-                            />
-                            <span className="listenOnChannel">
-                                <a
-                                    href="https://www.youtube.com/@HoppedUpGamingEast/featured"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Youtube
-                                </a>
-                            </span>
+                            <div className="listenOnIconChannel">
+                                <img
+                                    className="youtubeIcon"
+                                    src={youtubeIcon}
+                                    alt="youtube triangle icon"
+                                />
+                                <span className="listenOnChannel">
+                                    <a
+                                        href="https://www.youtube.com/@HoppedUpGamingEast/featured"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Youtube
+                                    </a>
+                                </span>
+                            </div>
                         </div>
 
                         <div className="listenOnDiscord">
@@ -81,10 +87,10 @@ export default function BeerGoggles() {
                         </div>
                     </div>
 
-                    <figure>
+                    <figure className="beerGooglesGOWContainer">
                         <iframe
-                            width="450"
-                            height="315"
+                            width="425"
+                            height="300"
                             title="YouTubeEmbed God of War"
                             src="https://www.youtube.com/embed/EkrQwbYW_jQ?list=PLXnsyGNMKFBggLnPn_vqFd872Pt3w1IhI"
                         ></iframe>
@@ -96,8 +102,8 @@ export default function BeerGoggles() {
                     <figure>
                         <iframe
                             className="beerGogglesEmbed"
-                            width="450"
-                            height="315"
+                            width="425"
+                            height="300"
                             title="YouTubeEmbed Zombie Dinos"
                             src="https://www.youtube.com/embed/gFFmsXS7jfU"
                         ></iframe>
@@ -116,8 +122,8 @@ export default function BeerGoggles() {
                     <figure>
                         <iframe
                             className="beerGogglesEmbed"
-                            width="450"
-                            height="315"
+                            width="425"
+                            height="300"
                             title="YouTubeEmbed Sonic 2"
                             src="https://www.youtube.com/embed/x6pPQqrJLec?list=PLXnsyGNMKFBjivISk342044m6m0ehFUwD"
                         ></iframe>
@@ -133,8 +139,8 @@ export default function BeerGoggles() {
                     <figure>
                         <iframe
                             className="beerGogglesEmbed"
-                            width="450"
-                            height="315"
+                            width="425"
+                            height="300"
                             title="YouTubeEmbed PacMan"
                             src="https://www.youtube.com/embed/sZXn9DzLLpQ?list=PLXnsyGNMKFBjg_tOr--Ot7bEkK43A4QYN"
                         ></iframe>
@@ -150,8 +156,8 @@ export default function BeerGoggles() {
                     <figure>
                         <iframe
                             className="beerGogglesEmbed"
-                            width="450"
-                            height="315"
+                            width="425"
+                            height="300"
                             title="YouTubeEmbed McDonald's Treasure Island"
                             src="https://www.youtube.com/embed/jTGtwkFTNrw?list=PLXnsyGNMKFBj3_ZoyKEt-FZOUtmTWqYAc"
                         ></iframe>
@@ -169,8 +175,8 @@ export default function BeerGoggles() {
                     <figure>
                         <iframe
                             className="beerGogglesEmbed"
-                            width="450"
-                            height="315"
+                            width="425"
+                            height="300"
                             title="YouTubeEmbed Contra 3"
                             src="https://www.youtube.com/embed/9qTJnt9uxpQ?list=PLXnsyGNMKFBj0FuF4ENLe1Ylqgp-qHa0q"
                         ></iframe>
@@ -187,8 +193,8 @@ export default function BeerGoggles() {
                     <figure>
                         <iframe
                             className="beerGogglesEmbed"
-                            width="450"
-                            height="315"
+                            width="425"
+                            height="300"
                             title="YouTubeEmbed Pitfall"
                             src="https://www.youtube.com/embed/5IUIEmXXNBM?list=PLXnsyGNMKFBj0rge7WO3zIwm0zyI67pwt"
                         ></iframe>
