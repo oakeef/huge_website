@@ -1,11 +1,11 @@
 .xcomContainer {
     max-width: 1200px;
     margin: auto;
-    /* padding: 0 1.875rem; */
 }
 
 .xcomIntroContainer {
     display: flex;
+    justify-content: center;
 }
 
 .xcomProjectDescription {
@@ -13,6 +13,7 @@
     font-size: 18px;
     font-weight: 400;
     max-width: 400px;
+    padding: 0 1.875rem;
 }
 
 .xcomSeasonHeader {
