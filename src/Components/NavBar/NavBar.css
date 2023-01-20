@@ -1,6 +1,12 @@
 .navContainer {
     display: flex;
+    height: 5rem;
     max-width: 1140px;
+    margin-bottom: 0.5rem;
+}
+
+.navMainContainer {
+    display: flex;
 }
 
 .navPatreonLogo {
@@ -55,12 +61,15 @@ a:link {
     list-style: disc;
 }
 
-.searchIcon {
-    height: 16px;
+.navHamburger {
+    display: none;
 }
 
 @media only screen and (max-width: 1000px) {
-    .navContainer {
+    .navMainContainer {
         display: none;
+    }
+    .navHamburger {
+        display: block;
     }
 }
