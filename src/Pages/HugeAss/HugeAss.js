@@ -17,30 +17,33 @@ export default function HugeAss() {
             <div className="hugeAssContainer">
                 <div className="hugeAssIntroContainer">
                     <div className="projectDescription">
-                        <p>
-                            HUGE ASS was spawned from the covid-19 pandemic. The
-                            HUGE Crew wanted to make something together but also
-                            remote, so we decided to do some asynchronous speed
-                            running. Each player spends 30 mins playing a
-                            particular game and records it. We then sync up the
-                            footage and do some fun commentary over top and see
-                            who was faster. Eventually, finding out who the
-                            HUGEst ASS truely is.
-                        </p>
+                        <div className="hugeAssWriteUp">
+                            <p>
+                                HUGE ASS was spawned from the covid-19 pandemic.
+                                The HUGE Crew wanted to make something together
+                                but also remote, so we decided to do some
+                                asynchronous speed running. Each player spends
+                                30 mins playing a particular game and records
+                                it. We then sync up the footage and do some fun
+                                commentary over top and see who was faster.
+                                Eventually, finding out who the HUGEst ASS
+                                truely is.
+                            </p>
 
-                        <p>
-                            You can check out Season One on the HUGE Youtube
-                            Channel. Season Two is availble by {""}
-                            <span className="linkBold">
-                                <a
-                                    href="https://www.patreon.com/hoppedupeast"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    subscribing to Patreon.
-                                </a>
-                            </span>
-                        </p>
+                            <p>
+                                You can check out Season One on the HUGE Youtube
+                                Channel. Season Two is availble by{" "}
+                                <span className="linkBold">
+                                    <a
+                                        href="https://www.patreon.com/hoppedupeast"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        subscribing to Patreon.
+                                    </a>
+                                </span>
+                            </p>
+                        </div>
                         <div className="beerGogglesListenOnContainer">
                             <h3 className="listenOnIconAndTitle">
                                 <img
@@ -50,20 +53,22 @@ export default function HugeAss() {
                                 />
                                 Subscribe On:
                             </h3>
-                            <img
-                                className="youtubeIcon"
-                                src={youtubeIcon}
-                                alt="youtube triangle icon"
-                            />
-                            <span className="listenOnChannel">
-                                <a
-                                    href="https://www.youtube.com/@HoppedUpGamingEast/featured"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Youtube
-                                </a>
-                            </span>
+                            <div className="listenOnIconChannel">
+                                <img
+                                    className="youtubeIcon"
+                                    src={youtubeIcon}
+                                    alt="youtube triangle icon"
+                                />
+                                <span className="listenOnChannel">
+                                    <a
+                                        href="https://www.youtube.com/@HoppedUpGamingEast/featured"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Youtube
+                                    </a>
+                                </span>
+                            </div>
                         </div>
 
                         <div className="listenOnDiscord">
@@ -83,10 +88,10 @@ export default function HugeAss() {
                             </a>
                         </div>
                     </div>
-                    <figure>
+                    <figure className="hugeAssPlaylistContainer">
                         <iframe
-                            width="450"
-                            height="315"
+                            width="425"
+                            height="300"
                             title="YouTubeEmbed HUGE ASS Playlist"
                             src="https://www.youtube.com/embed/videoseries?list=PLXnsyGNMKFBgo8lYTARS244KlTaO1wTXb"
                         ></iframe>
