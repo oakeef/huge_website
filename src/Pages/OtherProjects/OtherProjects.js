@@ -59,20 +59,22 @@ export default function OtherProjects(props) {
                                 />
                                 Subscribe On:
                             </h3>
-                            <img
-                                className="youtubeIcon"
-                                src={youtubeIcon}
-                                alt="youtube triangle icon"
-                            />
-                            <span className="listenOnChannel">
-                                <a
-                                    href="https://www.youtube.com/@HoppedUpGamingEast/featured"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Youtube
-                                </a>
-                            </span>
+                            <div className="listenOnIconChannel">
+                                <img
+                                    className="youtubeIcon"
+                                    src={youtubeIcon}
+                                    alt="youtube triangle icon"
+                                />
+                                <span className="listenOnChannel">
+                                    <a
+                                        href="https://www.youtube.com/@HoppedUpGamingEast/featured"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        Youtube
+                                    </a>
+                                </span>
+                            </div>
                         </div>
 
                         <div className="listenOnDiscord">
@@ -94,14 +96,14 @@ export default function OtherProjects(props) {
                     </div>
 
                     <iframe
-                        width="450"
-                        height="315"
+                        width="425"
+                        height="300"
                         title="YouTubeEmbed HUGE Charity Stream"
                         src="https://www.youtube.com/embed/videoseries?list=PLXnsyGNMKFBjV_M-TUJACo0eWwBeHynGm"
                     ></iframe>
                 </div>
                 <div className="otherProjectsTLOU">
-                    <h2 className="otherProjectsHeader">
+                    <h2 className="otherProjectsHeader otherProjectsTLOUHeader">
                         The Last of Us Play The Last of Us
                     </h2>
                     <p className="otherProjectsDescription">
@@ -125,6 +127,14 @@ export default function OtherProjects(props) {
                             itemsToScroll={1}
                             infinite={false}
                             speed={60}
+                            responsiveProps={[
+                                {
+                                    minWidth: 780,
+                                    maxWidth: 1199,
+                                    itemsToShow: 2,
+                                },
+                                { maxWidth: 779, itemsToShow: 1 },
+                            ]}
                             backwardBtnProps={{
                                 className: "latestEpButton",
                                 children: "←",
@@ -172,16 +182,11 @@ export default function OtherProjects(props) {
                             speed={60}
                             responsiveProps={[
                                 {
-                                    minWidth: 1100,
-                                    maxWidth: 1400,
-                                    itemsToShow: 3,
-                                },
-                                {
-                                    minWidth: 800,
-                                    maxWidth: 1000,
+                                    minWidth: 780,
+                                    maxWidth: 1199,
                                     itemsToShow: 2,
                                 },
-                                { maxWidth: 500, itemsToShow: 1 },
+                                { maxWidth: 779, itemsToShow: 1 },
                             ]}
                             backwardBtnProps={{
                                 className: "latestEpButton",
