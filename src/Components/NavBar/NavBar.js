@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBar.css";
+import hamburger from "../../images/hamburger.png";
 import { Link } from "react-router-dom";
 
 import patreon from "../../images/Patreon.png";
@@ -52,7 +53,33 @@ export default function NavBar() {
                 </a>
             </div>
 
-            <ul className="navHamburger"></ul>
+            <div className="navHamburger">
+                <button className="navbarHamburgerButton">
+                    <img
+                        src={hamburger}
+                        className="navbarHamburgerIcon"
+                        alt="hamburger icon"
+                    />
+                </button>
+                <div className="navHamburgerLinks">
+                    <Link className="navLink" to="/">
+                        Home
+                    </Link>
+                    <Link className="navLink" to="/About">
+                        About
+                    </Link>
+
+                    <Link className="navLink" to="/Episodes">
+                        Episodes
+                    </Link>
+                    <Link className="navLink" to="/Projects">
+                        Projects
+                    </Link>
+                    <Link className="navLink" to="/Contact">
+                        Contact
+                    </Link>
+                </div>
+            </div>
         </div>
     );
 }
