@@ -69,7 +69,6 @@ a:link {
 }
 
 .navbarHamburgerButton {
-    background-image: var();
     border: none;
     background: transparent;
     margin-right: 1rem;
@@ -78,6 +77,7 @@ a:link {
 
 .navbarHamburgerIcon {
     height: 20px;
+    padding-top: 0.5rem;
 }
 
 .navHamburgerLinks {

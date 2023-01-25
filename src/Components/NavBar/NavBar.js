@@ -79,23 +79,43 @@ export default function NavBar() {
                     />
                 </button>
                 <div id="hamburgerLinks" className="navHamburgerLinks">
-                    <Link className="hamBurgerLink" to="/">
+                    <Link
+                        className="hamBurgerLink"
+                        onClick={hamburgerClick}
+                        to="/"
+                    >
                         Home
                     </Link>
 
-                    <Link className="hamBurgerLink" to="/About">
+                    <Link
+                        className="hamBurgerLink"
+                        onClick={hamburgerClick}
+                        to="/About"
+                    >
                         About
                     </Link>
 
-                    <Link className="hamBurgerLink" to="/Episodes">
+                    <Link
+                        className="hamBurgerLink"
+                        onClick={hamburgerClick}
+                        to="/Episodes"
+                    >
                         Episodes
                     </Link>
 
-                    <Link className="hamBurgerLink" to="/Projects">
+                    <Link
+                        className="hamBurgerLink"
+                        onClick={hamburgerClick}
+                        to="/Projects"
+                    >
                         Projects
                     </Link>
 
-                    <Link className="hamBurgerLink" to="/Contact">
+                    <Link
+                        className="hamBurgerLink"
+                        onClick={hamburgerClick}
+                        to="/Contact"
+                    >
                         Contact
                     </Link>
                 </div>
