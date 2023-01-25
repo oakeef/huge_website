@@ -94,3 +94,14 @@
         width: 20rem;
     }
 }
+
+@media only screen and (max-width: 414px) {
+    .contactFormInput {
+        width: 15rem;
+        font-size: 1.15rem;
+    }
+    .contactFormInputMessage {
+        width: 15rem;
+        font-size: 1.15rem;
+    }
+}
