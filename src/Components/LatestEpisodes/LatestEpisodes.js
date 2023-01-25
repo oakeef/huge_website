@@ -28,7 +28,7 @@ export default function LatestEpisodes(props) {
                         <Link to="/Episodes">BROWSE ALL {">"}</Link>
                     </span>
                 </div>
-                <div className="latestEpisodesCarouselCountainer">
+                <div className="latestEpisodesCarouselContainer">
                     <ReactSimplyCarousel
                         className="latestEpisodesCarousel"
                         activeSlideIndex={activeSlideIndex}
