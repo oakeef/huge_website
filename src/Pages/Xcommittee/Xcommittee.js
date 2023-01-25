@@ -27,8 +27,6 @@ export default function Xcommittee(props) {
                 const parser = new XMLParser();
                 let rssFeed = parser.parse(response.data);
 
-                console.log(rssFeed);
-
                 rssFeed.rss.channel.item.forEach((episode) => {
                     let parsedEpisode = {
                         title: convertLength(episode.title),
