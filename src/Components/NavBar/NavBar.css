@@ -4,6 +4,7 @@
     height: 5rem;
     width: 100%;
     margin-bottom: 0.5rem;
+    z-index: 9;
 }
 
 .navMainContainer {
@@ -85,24 +86,27 @@ a:link {
     flex-direction: column;
     position: absolute;
     background-color: white;
-    width: max-content;
     width: 100%;
+
     display: none;
 }
 
-.hamBurgerLink {
-    border: 1px solid #f6fafc;
+.hamburgerLink {
+    border-bottom: 2px solid #f6fafc;
     border-left: none;
     height: 40px;
-    width: max-content;
+
     width: 100%;
     font-size: 22px;
     padding-top: 10px;
-    margin-left: 1rem;
 }
 
-.hamBurgerLink:hover {
+.hamburgerLink:hover {
     color: #faaf40;
+}
+
+.hamburgerLinkText {
+    padding-left: 1rem;
 }
 
 .hidden {

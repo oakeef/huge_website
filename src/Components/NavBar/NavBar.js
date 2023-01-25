@@ -80,43 +80,43 @@ export default function NavBar() {
                 </button>
                 <div id="hamburgerLinks" className="navHamburgerLinks">
                     <Link
-                        className="hamBurgerLink"
+                        className="hamburgerLink"
                         onClick={hamburgerClick}
                         to="/"
                     >
-                        Home
+                        <span className="hamburgerLinkText">Home</span>
                     </Link>
 
                     <Link
-                        className="hamBurgerLink"
+                        className="hamburgerLink"
                         onClick={hamburgerClick}
                         to="/About"
                     >
-                        About
+                        <span className="hamburgerLinkText"></span>About
                     </Link>
 
                     <Link
-                        className="hamBurgerLink"
+                        className="hamburgerLink"
                         onClick={hamburgerClick}
                         to="/Episodes"
                     >
-                        Episodes
+                        <span className="hamburgerLinkText"> Episodes</span>
                     </Link>
 
                     <Link
-                        className="hamBurgerLink"
+                        className="hamburgerLink"
                         onClick={hamburgerClick}
                         to="/Projects"
                     >
-                        Projects
+                        <span className="hamburgerLinkText">Projects</span>
                     </Link>
 
                     <Link
-                        className="hamBurgerLink"
+                        className="hamburgerLink"
                         onClick={hamburgerClick}
                         to="/Contact"
                     >
-                        Contact
+                        <span className="hamburgerLinkText">Contact</span>
                     </Link>
                 </div>
             </div>
