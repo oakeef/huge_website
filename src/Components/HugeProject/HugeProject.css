@@ -82,3 +82,22 @@
         font-size: 1rem;
     }
 }
+
+@media only screen and (max-width: 414px) {
+    .hugeProjectContainer {
+        height: 26.375rem;
+        width: 20rem;
+        margin-bottom: 1rem;
+    }
+    .hugeProjectImg {
+        height: 138px;
+        width: 20rem;
+    }
+    .hugeProjectTitle {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .hugeProjectDescription {
+        font-size: 1rem;
+    }
+}
