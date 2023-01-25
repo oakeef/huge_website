@@ -1,9 +1,22 @@
 import React from "react";
 import "./NavBar.css";
 import hamburger from "../../images/hamburger.png";
+import exit from "../../images/exit.png";
 import { Link } from "react-router-dom";
-
 import patreon from "../../images/Patreon.png";
+
+function hamburgerClick() {
+    var hamburgerLinks = document.getElementById("hamburgerLinks");
+    var hamburgericon = document.getElementById("hamburgericon");
+
+    hamburgerLinks.classList.toggle("hidden");
+
+    if (hamburgericon.src === hamburger) {
+        hamburgericon.src = exit;
+    } else {
+        hamburgericon.src = hamburger;
+    }
+}
 
 export default function NavBar() {
     return (
@@ -54,28 +67,35 @@ export default function NavBar() {
             </div>
 
             <div className="navHamburger">
-                <button className="navbarHamburgerButton">
+                <button
+                    onClick={hamburgerClick}
+                    className="navbarHamburgerButton"
+                >
                     <img
                         src={hamburger}
                         className="navbarHamburgerIcon"
+                        id="hamburgericon"
                         alt="hamburger icon"
                     />
                 </button>
-                <div className="navHamburgerLinks">
-                    <Link className="navLink" to="/">
+                <div id="hamburgerLinks" className="navHamburgerLinks">
+                    <Link className="hamBurgerLink" to="/">
                         Home
                     </Link>
-                    <Link className="navLink" to="/About">
+
+                    <Link className="hamBurgerLink" to="/About">
                         About
                     </Link>
 
-                    <Link className="navLink" to="/Episodes">
+                    <Link className="hamBurgerLink" to="/Episodes">
                         Episodes
                     </Link>
-                    <Link className="navLink" to="/Projects">
+
+                    <Link className="hamBurgerLink" to="/Projects">
                         Projects
                     </Link>
-                    <Link className="navLink" to="/Contact">
+
+                    <Link className="hamBurgerLink" to="/Contact">
                         Contact
                     </Link>
                 </div>

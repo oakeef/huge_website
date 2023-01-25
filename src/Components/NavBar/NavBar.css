@@ -64,11 +64,16 @@ a:link {
 
 .navHamburger {
     display: none;
+    position: relative;
+    width: 100%;
 }
 
 .navbarHamburgerButton {
+    background-image: var();
     border: none;
     background: transparent;
+    margin-right: 1rem;
+    margin-left: auto;
 }
 
 .navbarHamburgerIcon {
@@ -76,18 +81,42 @@ a:link {
 }
 
 .navHamburgerLinks {
-    display: flex;
+    top: 5.5rem;
     flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: max-content;
+    width: 100%;
+    display: none;
+}
+
+.hamBurgerLink {
+    border: 1px solid #f6fafc;
+    border-left: none;
+    height: 40px;
+    width: max-content;
+    width: 100%;
+    font-size: 22px;
+    padding-top: 10px;
+    margin-left: 1rem;
+}
+
+.hamBurgerLink:hover {
+    color: #faaf40;
+}
+
+.hidden {
+    display: flex;
 }
 
 @media only screen and (max-width: 1000px) {
     .navContainer {
-        justify-content: flex-start;
+        justify-content: baseline;
     }
     .navMainContainer {
         display: none;
     }
     .navHamburger {
-        display: block;
+        display: flex;
     }
 }
