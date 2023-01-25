@@ -1,7 +1,6 @@
 .allEpsContainer {
     max-width: 1140px;
     margin: auto;
-    padding: 0 1.875rem;
 }
 
 .allEpsHeader {
@@ -41,5 +40,14 @@
 @media only screen and (max-width: 800px) {
     .allEpsGrid {
         grid-template-columns: 370px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .allEpsGrid {
+        grid-template-columns: 340px;
+    }
+    .paginationContainer {
+        justify-content: flex-start;
     }
 }

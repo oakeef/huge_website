@@ -73,3 +73,17 @@
     line-height: 30px;
     color: #061020;
 }
+
+@media only screen and (max-width: 414px) {
+    .episodeContainer {
+        height: 335px;
+        width: 275px;
+    }
+    .episodeImg {
+        height: 260px;
+        width: 275px;
+    }
+    .episodeTitle {
+        font-size: medium;
+    }
+}
