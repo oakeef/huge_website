@@ -87,19 +87,17 @@ export default function BeerGoggles() {
                         </div>
                     </div>
 
-                    <figure className="beerGooglesGOWContainer">
-                        <iframe
-                            width="425"
-                            height="300"
-                            title="YouTubeEmbed God of War"
-                            src="https://www.youtube.com/embed/EkrQwbYW_jQ?list=PLXnsyGNMKFBggLnPn_vqFd872Pt3w1IhI"
-                        ></iframe>
-                    </figure>
+                    <iframe
+                        width="425"
+                        height="300"
+                        title="YouTubeEmbed God of War"
+                        src="https://www.youtube.com/embed/EkrQwbYW_jQ?list=PLXnsyGNMKFBggLnPn_vqFd872Pt3w1IhI"
+                    ></iframe>
                 </div>
                 <h3 className="beerGogglesEpHeader">Episodes</h3>
 
                 <div className="beerGogglesEpContainer">
-                    <figure>
+                    <div className="beerGoogglesEp">
                         <iframe
                             className="beerGogglesEmbed"
                             width="425"
@@ -117,9 +115,8 @@ export default function BeerGoggles() {
                             of nostalgia! This one is short and sweet with one
                             episode only.
                         </figcaption>
-                    </figure>
-
-                    <figure>
+                    </div>
+                    <div className="beerGoogglesEp">
                         <iframe
                             className="beerGogglesEmbed"
                             width="425"
@@ -135,8 +132,8 @@ export default function BeerGoggles() {
                             it's time for Evan and Tim to run through Sonic The
                             Hedgehog 2! There are two parts for you to enjoy.
                         </figcaption>
-                    </figure>
-                    <figure>
+                    </div>
+                    <div className="beerGoogglesEp">
                         <iframe
                             className="beerGogglesEmbed"
                             width="425"
@@ -152,8 +149,9 @@ export default function BeerGoggles() {
                             join Matt and Ben as they sit down for a new
                             adventure with two parts!
                         </figcaption>
-                    </figure>
-                    <figure>
+                    </div>
+
+                    <div className="beerGoogglesEp">
                         <iframe
                             className="beerGogglesEmbed"
                             width="425"
@@ -170,9 +168,9 @@ export default function BeerGoggles() {
                             incomprehensible wonders! There are four whole
                             videos in this playlist for your viewing pleasure!
                         </figcaption>
-                    </figure>
+                    </div>
 
-                    <figure>
+                    <div className="beerGoogglesEp">
                         <iframe
                             className="beerGogglesEmbed"
                             width="425"
@@ -188,9 +186,9 @@ export default function BeerGoggles() {
                             Ben are going to test the time limits of Beer
                             Goggles with this game! This one's got three parts.
                         </figcaption>
-                    </figure>
+                    </div>
 
-                    <figure>
+                    <div className="beerGoogglesEp">
                         <iframe
                             className="beerGogglesEmbed"
                             width="425"
@@ -207,7 +205,7 @@ export default function BeerGoggles() {
                             things to say along the way! There are three
                             episodes in this playlist.
                         </figcaption>
-                    </figure>
+                    </div>
                 </div>
             </div>
         </div>

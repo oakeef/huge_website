@@ -18,7 +18,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
     max-width: 1200px;
+}
+
+.beerGoogglesEp {
+    max-width: 450px;
+}
+
+.beerGogglesFigCaption {
+    margin: 0 1.6rem;
 }
 
 .beerGogglesEpContainer > figure {
@@ -32,8 +41,12 @@
     margin-bottom: 8px;
 }
 
+.projectDescription {
+    margin: 0 2rem;
+}
+
 .beerGogglesEmbed {
-    margin-bottom: 5px;
+    margin: 10px;
 }
 
 .beerGogglesListenOnContainer {
@@ -59,17 +72,40 @@
     .beerGooglesWriteUp {
         max-width: 400px;
     }
-
     .beerGogglesEpContainer {
         max-width: 440px;
         margin: 0 1rem;
     }
-    .beerGooglesGOWContainer {
-        max-width: 440px;
-        margin: 0;
-    }
-
     .projectDescription {
         padding: 0;
+    }
+    .beerGoogglesEp {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .beerGooglesIntroContainer {
+        width: 375px;
+    }
+    iframe {
+        scale: 75%;
+    }
+    .projectDescription {
+        max-width: 300px;
+    }
+    .beerGogglesEpContainer {
+        max-width: 345px;
+    }
+
+    .beerGogglesFigCaption {
+        margin: 0 5rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .xcomIntroContainer {
+        width: 360px;
     }
 }
