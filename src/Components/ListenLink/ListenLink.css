@@ -13,3 +13,10 @@
     padding-top: 10px;
     text-transform: uppercase;
 }
+
+@media only screen and (max-width: 414px) {
+    .listenOnChannel {
+        font-size: 10px;
+        margin-right: 10px;
+    }
+}

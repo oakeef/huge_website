@@ -94,7 +94,7 @@ export default function Xcommittee(props) {
                         />
                     </div>
 
-                    <div className="xcomEmbedVideo">
+                    <div className="xcomEmbedVideoContainer">
                         <iframe
                             className="xcomEmbedVideo"
                             width="425"

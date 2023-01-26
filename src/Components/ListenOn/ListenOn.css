@@ -57,3 +57,12 @@ a:visited {
         display: none;
     }
 }
+
+@media only screen and (max-width: 414px) {
+    .listenOnIconAndTitle {
+        font-size: 14px;
+    }
+    .listenOnDiscord {
+        font-size: 13px;
+    }
+}

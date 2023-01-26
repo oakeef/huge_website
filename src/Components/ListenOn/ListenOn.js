@@ -41,7 +41,7 @@ export default function ListenOn(props) {
                         src={podIcon}
                         alt="podcatcher icon"
                     />
-                    Subscribe On:
+                    Subscribe:
                 </h3>
 
                 {listenLinks}
