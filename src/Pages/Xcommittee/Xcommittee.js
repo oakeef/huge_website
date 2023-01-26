@@ -94,15 +94,13 @@ export default function Xcommittee(props) {
                         />
                     </div>
 
-                    <div className="xcomEmbedVideoContainer">
-                        <iframe
-                            className="xcomEmbedVideo"
-                            width="425"
-                            height="300"
-                            title="YouTubeEmbed"
-                            src="https://www.youtube.com/embed/41g1NHMjw3M"
-                        ></iframe>
-                    </div>
+                    <iframe
+                        className="xcomEmbedVideo"
+                        width="425"
+                        height="300"
+                        title="YouTubeEmbed"
+                        src="https://www.youtube.com/embed/41g1NHMjw3M"
+                    ></iframe>
                 </div>
 
                 <h3 className="xcomSeasonHeader">Season One</h3>
