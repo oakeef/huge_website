@@ -4,6 +4,7 @@ import hamburger from "../../images/hamburger.png";
 import exit from "../../images/exit.png";
 import { Link } from "react-router-dom";
 import patreon from "../../images/Patreon.png";
+import hugeLogo from "../../images/hugeLogo.png";
 
 function hamburgerClick() {
     var hamburgerLinks = document.getElementById("hamburgerLinks");
@@ -67,6 +68,11 @@ export default function NavBar() {
             </div>
 
             <div className="navHamburger">
+                <img
+                    src={hugeLogo}
+                    className="navbarHamburgerLogo"
+                    alt="Hopped Up Gaming:East Logo"
+                />
                 <button
                     onClick={hamburgerClick}
                     className="navbarHamburgerButton"

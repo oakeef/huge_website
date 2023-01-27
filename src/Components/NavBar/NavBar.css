@@ -81,18 +81,25 @@ a:link {
     padding-top: 0.5rem;
 }
 
+.navbarHamburgerLogo {
+    height: 65px;
+    align-self: center;
+    padding-top: 5px;
+    padding-left: 1rem;
+}
+
 .navHamburgerLinks {
-    top: 5.5rem;
+    top: 5.4rem;
     flex-direction: column;
     position: absolute;
-    background-color: white;
+    background-color: #faaf40;
     width: 100%;
 
     display: none;
 }
 
 .hamburgerLink {
-    border-bottom: 2px solid #f6fafc;
+    border-bottom: 2px solid #ffdea5;
     border-left: none;
     height: 40px;
 
@@ -102,7 +109,7 @@ a:link {
 }
 
 .hamburgerLink:hover {
-    color: #faaf40;
+    font-weight: bold;
 }
 
 .hamburgerLinkText {
