@@ -88,7 +88,7 @@ export default function HugeAss() {
                             </a>
                         </div>
                     </div>
-                    <figure className="hugeAssPlaylistContainer">
+                    <div className="hugeAssPlaylistContainer">
                         <iframe
                             width="425"
                             height="300"
@@ -98,7 +98,7 @@ export default function HugeAss() {
                         <figcaption className="hugeAssfigCapt">
                             Season One Playlist
                         </figcaption>
-                    </figure>
+                    </div>
                 </div>
                 <Patreon
                     patreonTitle="Season Two Early Access on Patreon"

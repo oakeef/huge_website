@@ -29,6 +29,25 @@
 
     .hugeAssPlaylistContainer {
         max-width: 440px;
-        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .hugeAssIntroContainer {
+        width: 375px;
+    }
+    .hugeAssPlaylistContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .BBCEpsContainer {
+        padding: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .otherProjectsIntroContainer {
+        width: 360px;
     }
 }
