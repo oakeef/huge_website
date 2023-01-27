@@ -13,14 +13,9 @@ import Footer from "./Components/Footer/Footer";
 import Episodes from "./Pages/Episodes/Episodes";
 import Playback from "./Components/Playback/Playback";
 import axios from "axios";
-import {
-    convertDate,
-    convertUnicode,
-    stringChoppy,
-    episodeCategory,
-} from "./Helpers/Helpers";
+import { convertDate, convertLength, episodeCategory } from "./Helpers/Helpers";
 
-var XMLParser = require("react-xml-parser");
+const { XMLParser } = require("fast-xml-parser");
 
 export default function App() {
     const [selectedEpisode, setSelectedEpisode] = useState(null);
@@ -38,93 +33,92 @@ export default function App() {
                 let BBCEpisodes = [];
                 let lastOfUsEpisodes = [];
 
-                let xml = new XMLParser().parseFromString(response.data);
+                const parser = new XMLParser();
+                let rssFeed = parser.parse(response.data);
 
-                xml.children[0].children.forEach((episode, index) => {
-                    if (index >= 22) {
-                        let parsedEpisode = {
-                            title: convertUnicode(episode.children[0].value),
-                            subtitle: stringChoppy(episode.children[12].value),
-                            category: episodeCategory(
-                                episode.children[0].value
-                            ),
-                            image: episode.children[5].attributes.href,
-                            date: convertDate(episode.children[2].value),
-                            link: stringChoppy(
-                                episode.children[8].attributes.url
-                            ),
-                        };
-                        episodes.push(parsedEpisode);
-                        if (parsedEpisode.category === "Huge BBC") {
-                            BBCEpisodes.push(parsedEpisode);
-                        }
-                        if (parsedEpisode.category.includes("The Last Of Us")) {
-                            lastOfUsEpisodes.push(parsedEpisode);
-                        }
+                rssFeed.rss.channel.item.forEach((episode) => {
+                    let parsedEpisode = {
+                        title: convertLength(episode.title),
+                        subtitle: episode[`itunes:subtitle`],
+                        category: episodeCategory(episode.title),
+                        link: episode.link,
+                        image: rssFeed.rss.channel.image.url,
+                        date: convertDate(episode.pubDate),
+                    };
+                    episodes.push(parsedEpisode);
+                    if (parsedEpisode.category === "Huge BBC") {
+                        BBCEpisodes.push(parsedEpisode);
+                    }
+                    if (parsedEpisode.category.includes("The Last Of Us")) {
+                        lastOfUsEpisodes.push(parsedEpisode);
                     }
                 });
+
                 setPodcastEpisodes(episodes);
                 setHugeBBCEpisodes(BBCEpisodes.reverse());
                 setLastOfUsEpisodes(lastOfUsEpisodes.reverse());
             });
     }, []);
 
-    return (
-        <>
-            <BrowserRouter>
-                <Header />
-                <Routes>
-                    <Route
-                        index
-                        element={
-                            <Home
-                                setSelectedEpisode={setSelectedEpisode}
-                                podcastEpisodes={podcastEpisodes}
-                            />
-                        }
-                    />
-                    <Route path="About" element={<About />} />
-                    <Route path="Projects" element={<Projects />} />
-                    <Route path="Contact" element={<Contact />} />
-                    <Route
-                        path="Episodes"
-                        element={
-                            <Episodes
-                                podcastEpisodes={podcastEpisodes}
-                                setSelectedEpisode={setSelectedEpisode}
-                            />
-                        }
-                    />
-                    <Route
-                        path="Xcommittee"
-                        element={
-                            <Xcommittee
-                                setSelectedEpisode={setSelectedEpisode}
-                            />
-                        }
-                    />
-                    <Route path="BeerGoggles" element={<BeerGoggles />} />
-                    <Route path="BeerGoggles" element={<BeerGoggles />} />
-                    <Route path="HugeAss" element={<HugeAss />} />
-                    <Route
-                        path="OtherProjects"
-                        element={
-                            <OtherProjects
-                                hugeBBCEpisodes={hugeBBCEpisodes}
-                                lastOfUsEpisodes={lastOfUsEpisodes}
-                                setSelectedEpisode={setSelectedEpisode}
-                            />
-                        }
-                    />
-                </Routes>
-                <Footer />
-                {selectedEpisode && (
-                    <Playback
-                        selectedEpisode={selectedEpisode}
-                        setSelectedEpisode={setSelectedEpisode}
-                    />
-                )}
-            </BrowserRouter>
-        </>
-    );
+    if (podcastEpisodes.length > 0) {
+        return (
+            <>
+                <BrowserRouter>
+                    <Header />
+                    <Routes>
+                        <Route
+                            index
+                            element={
+                                <Home
+                                    setSelectedEpisode={setSelectedEpisode}
+                                    podcastEpisodes={podcastEpisodes}
+                                />
+                            }
+                        />
+                        <Route path="About" element={<About />} />
+                        <Route path="Projects" element={<Projects />} />
+                        <Route path="Contact" element={<Contact />} />
+                        <Route
+                            path="Episodes"
+                            element={
+                                <Episodes
+                                    podcastEpisodes={podcastEpisodes}
+                                    setSelectedEpisode={setSelectedEpisode}
+                                />
+                            }
+                        />
+                        <Route
+                            path="Xcommittee"
+                            element={
+                                <Xcommittee
+                                    setSelectedEpisode={setSelectedEpisode}
+                                />
+                            }
+                        />
+                        <Route path="BeerGoggles" element={<BeerGoggles />} />
+                        <Route path="BeerGoggles" element={<BeerGoggles />} />
+                        <Route path="HugeAss" element={<HugeAss />} />
+                        <Route
+                            path="OtherProjects"
+                            element={
+                                <OtherProjects
+                                    hugeBBCEpisodes={hugeBBCEpisodes}
+                                    lastOfUsEpisodes={lastOfUsEpisodes}
+                                    setSelectedEpisode={setSelectedEpisode}
+                                />
+                            }
+                        />
+                    </Routes>
+                    <Footer />
+                    {selectedEpisode && (
+                        <Playback
+                            selectedEpisode={selectedEpisode}
+                            setSelectedEpisode={setSelectedEpisode}
+                        />
+                    )}
+                </BrowserRouter>
+            </>
+        );
+    }
+    return <p>loading</p>;
 }

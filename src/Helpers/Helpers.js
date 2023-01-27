@@ -1,14 +1,7 @@
-export function convertUnicode(myString) {
-    let convertedString = myString.replaceAll("%20", " ");
-    if (convertedString.length > 55) {
-        return convertedString.slice(0, 54) + "...";
-    } else return convertedString;
-}
-
-export function stringChoppy(mystring) {
-    let slicedString = mystring.slice(0, mystring.length - 2);
-
-    return slicedString;
+export function convertLength(myString) {
+    if (myString.length > 60) {
+        return myString.slice(0, 58) + "...";
+    } else return myString;
 }
 
 export function convertDate(date) {
