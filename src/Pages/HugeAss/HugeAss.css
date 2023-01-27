@@ -26,21 +26,13 @@
     .hugeAssWriteUp {
         max-width: 400px;
     }
-
-    .hugeAssPlaylistContainer {
-        max-width: 440px;
-    }
 }
 
 @media only screen and (max-width: 414px) {
     .hugeAssIntroContainer {
         width: 375px;
     }
-    .hugeAssPlaylistContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+
     .BBCEpsContainer {
         padding: 0 2rem;
     }
