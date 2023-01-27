@@ -5,9 +5,9 @@ import Episode from "../../Components/Episode/Episode";
 import ListenOn from "../../Components/ListenOn/ListenOn";
 import XcommitteePic from "../../images/xcommittee.jpg";
 import ReactSimplyCarousel from "react-simply-carousel";
-import { stringChoppy, convertDate } from "../../Helpers/Helpers";
+import { convertDate, convertLength } from "../../Helpers/Helpers";
 
-var XMLParser = require("react-xml-parser");
+const { XMLParser } = require("fast-xml-parser");
 
 export default function Xcommittee(props) {
     const { setSelectedEpisode } = props;
@@ -23,23 +23,22 @@ export default function Xcommittee(props) {
             })
             .then((response) => {
                 let episodes = [];
-                let xml = new XMLParser().parseFromString(response.data);
 
-                xml.children[0].children.forEach((episode, index) => {
-                    if (index >= 23) {
-                        let parsedEpisode = {
-                            title: episode.children[0].value,
-                            subtitle: stringChoppy(episode.children[12].value),
-                            category: "X-COMMITTEE",
-                            image: episode.children[5].attributes.href,
-                            date: convertDate(episode.children[2].value),
-                            link: stringChoppy(
-                                episode.children[8].attributes.url
-                            ),
-                        };
-                        episodes.push(parsedEpisode);
-                    }
+                const parser = new XMLParser();
+                let rssFeed = parser.parse(response.data);
+
+                rssFeed.rss.channel.item.forEach((episode) => {
+                    let parsedEpisode = {
+                        title: convertLength(episode.title),
+                        subtitle: episode[`itunes:subtitle`],
+                        category: "X-COMMITTEE",
+                        image: rssFeed.rss.channel.image.url,
+                        date: convertDate(episode.pubDate),
+                        link: episode.link,
+                    };
+                    episodes.push(parsedEpisode);
                 });
+
                 const xcomOne = [];
                 const xcomTwo = [];
 
