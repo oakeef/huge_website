@@ -68,11 +68,13 @@ export default function NavBar() {
             </div>
 
             <div className="navHamburger">
-                <img
-                    src={hugeLogo}
-                    className="navbarHamburgerLogo"
-                    alt="Hopped Up Gaming:East Logo"
-                />
+                <Link to="/">
+                    <img
+                        src={hugeLogo}
+                        className="navbarHamburgerLogo"
+                        alt="Hopped Up Gaming:East Logo"
+                    />
+                </Link>
                 <button
                     onClick={hamburgerClick}
                     className="navbarHamburgerButton"

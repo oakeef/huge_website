@@ -63,7 +63,10 @@
         margin: 0;
     }
     .heroImageMediaQ {
-        height: 225px;
-        width: 325px;
+        border-radius: 0;
+        width: 120%;
+        margin-left: -1.875rem;
+        margin-right: -1.875rem;
+        margin-top: 0;
     }
 }
