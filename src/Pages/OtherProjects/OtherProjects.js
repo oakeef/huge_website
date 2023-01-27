@@ -118,42 +118,46 @@ export default function OtherProjects(props) {
                     </p>
 
                     {lastOfUsEpisodes.length > 0 && (
-                        <ReactSimplyCarousel
-                            className="TheLastOfUsEpContainer"
-                            activeSlideIndex={activeSlideIndex}
-                            onRequestChange={setActiveSlideIndex}
-                            itemsToShow={3}
-                            draggable={true}
-                            itemsToScroll={1}
-                            infinite={false}
-                            speed={60}
-                            responsiveProps={[
-                                {
-                                    minWidth: 780,
-                                    maxWidth: 1199,
-                                    itemsToShow: 2,
-                                },
-                                { maxWidth: 779, itemsToShow: 1 },
-                            ]}
-                            backwardBtnProps={{
-                                className: "latestEpButton",
-                                children: "←",
-                            }}
-                            forwardBtnProps={{
-                                className: "latestEpButton",
-                                children: "→",
-                            }}
-                        >
-                            {lastOfUsEpisodes.map((episode, i) => {
-                                return (
-                                    <Episode
-                                        key={i}
-                                        episode={episode}
-                                        setSelectedEpisode={setSelectedEpisode}
-                                    />
-                                );
-                            })}
-                        </ReactSimplyCarousel>
+                        <div className="TheLastOfUsEpContainer">
+                            <ReactSimplyCarousel
+                                className="TheLastOfUsEps"
+                                activeSlideIndex={activeSlideIndex}
+                                onRequestChange={setActiveSlideIndex}
+                                itemsToShow={3}
+                                draggable={true}
+                                itemsToScroll={1}
+                                infinite={false}
+                                speed={60}
+                                responsiveProps={[
+                                    {
+                                        minWidth: 780,
+                                        maxWidth: 1199,
+                                        itemsToShow: 2,
+                                    },
+                                    { maxWidth: 779, itemsToShow: 1 },
+                                ]}
+                                backwardBtnProps={{
+                                    className: "latestEpButton",
+                                    children: "←",
+                                }}
+                                forwardBtnProps={{
+                                    className: "latestEpButton",
+                                    children: "→",
+                                }}
+                            >
+                                {lastOfUsEpisodes.map((episode, i) => {
+                                    return (
+                                        <Episode
+                                            key={i}
+                                            episode={episode}
+                                            setSelectedEpisode={
+                                                setSelectedEpisode
+                                            }
+                                        />
+                                    );
+                                })}
+                            </ReactSimplyCarousel>
+                        </div>
                     )}
                 </div>
                 <div>
@@ -171,42 +175,46 @@ export default function OtherProjects(props) {
                     </p>
 
                     {hugeBBCEpisodes.length > 0 && (
-                        <ReactSimplyCarousel
-                            className="xcomEpisodesContainerTwo"
-                            activeSlideIndex={activeSlideIndexB}
-                            onRequestChange={setActiveSlideIndexB}
-                            itemsToShow={3}
-                            draggable={true}
-                            itemsToScroll={1}
-                            infinite={false}
-                            speed={60}
-                            responsiveProps={[
-                                {
-                                    minWidth: 780,
-                                    maxWidth: 1199,
-                                    itemsToShow: 2,
-                                },
-                                { maxWidth: 779, itemsToShow: 1 },
-                            ]}
-                            backwardBtnProps={{
-                                className: "latestEpButton",
-                                children: "←",
-                            }}
-                            forwardBtnProps={{
-                                className: "latestEpButton",
-                                children: "→",
-                            }}
-                        >
-                            {hugeBBCEpisodes.map((episode, i) => {
-                                return (
-                                    <Episode
-                                        key={i}
-                                        episode={episode}
-                                        setSelectedEpisode={setSelectedEpisode}
-                                    />
-                                );
-                            })}
-                        </ReactSimplyCarousel>
+                        <div className="BBCEpsContainer">
+                            <ReactSimplyCarousel
+                                className="BBCEps"
+                                activeSlideIndex={activeSlideIndexB}
+                                onRequestChange={setActiveSlideIndexB}
+                                itemsToShow={3}
+                                draggable={true}
+                                itemsToScroll={1}
+                                infinite={false}
+                                speed={60}
+                                responsiveProps={[
+                                    {
+                                        minWidth: 780,
+                                        maxWidth: 1199,
+                                        itemsToShow: 2,
+                                    },
+                                    { maxWidth: 779, itemsToShow: 1 },
+                                ]}
+                                backwardBtnProps={{
+                                    className: "latestEpButton",
+                                    children: "←",
+                                }}
+                                forwardBtnProps={{
+                                    className: "latestEpButton",
+                                    children: "→",
+                                }}
+                            >
+                                {hugeBBCEpisodes.map((episode, i) => {
+                                    return (
+                                        <Episode
+                                            key={i}
+                                            episode={episode}
+                                            setSelectedEpisode={
+                                                setSelectedEpisode
+                                            }
+                                        />
+                                    );
+                                })}
+                            </ReactSimplyCarousel>
+                        </div>
                     )}
                 </div>
             </div>
