@@ -40,7 +40,7 @@
 @media only screen and (max-width: 1000px) {
     .heroImageMediaQ {
         display: block;
-        margin-top: 2rem;
+        border-radius: 0;
     }
     .heroSubText {
         text-align: center;
@@ -52,8 +52,11 @@
 
 @media only screen and (max-width: 600px) {
     .heroImageMediaQ {
+        border-radius: 20px;
         height: 275px;
         width: 375px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
