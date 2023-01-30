@@ -96,8 +96,7 @@ export default function OtherProjects(props) {
                     </div>
 
                     <iframe
-                        width="425"
-                        height="300"
+                        className="embedVideo"
                         title="YouTubeEmbed HUGE Charity Stream"
                         src="https://www.youtube.com/embed/videoseries?list=PLXnsyGNMKFBjV_M-TUJACo0eWwBeHynGm"
                     ></iframe>
