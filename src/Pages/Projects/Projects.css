@@ -21,7 +21,4 @@
     .projectsContainer {
         padding: 0;
     }
-    .hugeProjectsContainer {
-        height: fit-content;
-    }
 }
