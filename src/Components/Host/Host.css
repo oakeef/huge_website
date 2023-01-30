@@ -27,3 +27,10 @@
         padding: 50px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .hostImg {
+        height: 175px;
+        width: 175px;
+    }
+}

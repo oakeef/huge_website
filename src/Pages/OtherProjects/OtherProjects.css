@@ -50,16 +50,6 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .projectDescription {
-        max-width: 400px;
-    }
-
-    .otherProjectsTLOUHeader {
-        margin: 1rem 5rem 1rem 5rem;
-    }
-}
-
 @media only screen and (max-width: 414px) {
     .otherProjectsIntroContainer {
         width: 375px;
