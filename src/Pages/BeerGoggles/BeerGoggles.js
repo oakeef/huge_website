@@ -88,8 +88,7 @@ export default function BeerGoggles() {
                     </div>
 
                     <iframe
-                        width="425"
-                        height="300"
+                        className="embedVideo"
                         title="YouTubeEmbed God of War"
                         src="https://www.youtube.com/embed/EkrQwbYW_jQ?list=PLXnsyGNMKFBggLnPn_vqFd872Pt3w1IhI"
                     ></iframe>
@@ -99,9 +98,7 @@ export default function BeerGoggles() {
                 <div className="beerGogglesEpContainer">
                     <div className="beerGoogglesEp">
                         <iframe
-                            className="beerGogglesEmbed"
-                            width="425"
-                            height="300"
+                            className="embedVideo"
                             title="YouTubeEmbed Zombie Dinos"
                             src="https://www.youtube.com/embed/gFFmsXS7jfU"
                         ></iframe>
@@ -118,9 +115,7 @@ export default function BeerGoggles() {
                     </div>
                     <div className="beerGoogglesEp">
                         <iframe
-                            className="beerGogglesEmbed"
-                            width="425"
-                            height="300"
+                            className="embedVideo"
                             title="YouTubeEmbed Sonic 2"
                             src="https://www.youtube.com/embed/x6pPQqrJLec?list=PLXnsyGNMKFBjivISk342044m6m0ehFUwD"
                         ></iframe>
@@ -135,9 +130,7 @@ export default function BeerGoggles() {
                     </div>
                     <div className="beerGoogglesEp">
                         <iframe
-                            className="beerGogglesEmbed"
-                            width="425"
-                            height="300"
+                            className="embedVideo"
                             title="YouTubeEmbed PacMan"
                             src="https://www.youtube.com/embed/sZXn9DzLLpQ?list=PLXnsyGNMKFBjg_tOr--Ot7bEkK43A4QYN"
                         ></iframe>
@@ -153,9 +146,7 @@ export default function BeerGoggles() {
 
                     <div className="beerGoogglesEp">
                         <iframe
-                            className="beerGogglesEmbed"
-                            width="425"
-                            height="300"
+                            className="embedVideo"
                             title="YouTubeEmbed McDonald's Treasure Island"
                             src="https://www.youtube.com/embed/jTGtwkFTNrw?list=PLXnsyGNMKFBj3_ZoyKEt-FZOUtmTWqYAc"
                         ></iframe>
@@ -172,9 +163,7 @@ export default function BeerGoggles() {
 
                     <div className="beerGoogglesEp">
                         <iframe
-                            className="beerGogglesEmbed"
-                            width="425"
-                            height="300"
+                            className="embedVideo"
                             title="YouTubeEmbed Contra 3"
                             src="https://www.youtube.com/embed/9qTJnt9uxpQ?list=PLXnsyGNMKFBj0FuF4ENLe1Ylqgp-qHa0q"
                         ></iframe>
@@ -190,9 +179,7 @@ export default function BeerGoggles() {
 
                     <div className="beerGoogglesEp">
                         <iframe
-                            className="beerGogglesEmbed"
-                            width="425"
-                            height="300"
+                            className="embedVideo"
                             title="YouTubeEmbed Pitfall"
                             src="https://www.youtube.com/embed/5IUIEmXXNBM?list=PLXnsyGNMKFBj0rge7WO3zIwm0zyI67pwt"
                         ></iframe>

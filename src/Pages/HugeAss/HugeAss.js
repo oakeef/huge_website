@@ -90,8 +90,7 @@ export default function HugeAss() {
                     </div>
 
                     <iframe
-                        width="425"
-                        height="300"
+                        className="embedVideo"
                         title="YouTubeEmbed HUGE ASS Playlist"
                         src="https://www.youtube.com/embed/videoseries?list=PLXnsyGNMKFBgo8lYTARS244KlTaO1wTXb"
                     ></iframe>

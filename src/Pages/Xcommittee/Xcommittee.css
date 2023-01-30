@@ -45,9 +45,6 @@
     .xcomProjectDescription {
         width: 300px;
     }
-    .xcomEmbedVideo {
-        scale: 75%;
-    }
 }
 
 @media only screen and (max-width: 360px) {

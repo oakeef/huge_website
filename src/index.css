@@ -55,6 +55,11 @@ body {
     padding-top: 5px;
 }
 
+.embedVideo {
+    width: 425px;
+    height: 300px;
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
         monospace;
@@ -74,5 +79,13 @@ code {
 @media only screen and (max-width: 500px) {
     .carouselButton {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .embedVideo {
+        width: 318px;
+        height: 225px;
+        margin: 10px;
     }
 }
