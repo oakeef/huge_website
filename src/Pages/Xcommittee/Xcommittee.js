@@ -123,11 +123,11 @@ export default function Xcommittee(props) {
                                 { maxWidth: 779, itemsToShow: 1 },
                             ]}
                             backwardBtnProps={{
-                                className: "latestEpButton",
+                                className: "carouselButton",
                                 children: "←",
                             }}
                             forwardBtnProps={{
-                                className: "latestEpButton",
+                                className: "carouselButton",
                                 children: "→",
                             }}
                         >
@@ -166,11 +166,11 @@ export default function Xcommittee(props) {
                                 { maxWidth: 779, itemsToShow: 1 },
                             ]}
                             backwardBtnProps={{
-                                className: "latestEpButton",
+                                className: "carouselButton",
                                 children: "←",
                             }}
                             forwardBtnProps={{
-                                className: "latestEpButton",
+                                className: "carouselButton",
                                 children: "→",
                             }}
                         >

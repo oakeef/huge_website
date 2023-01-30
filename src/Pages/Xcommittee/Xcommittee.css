@@ -42,11 +42,9 @@
     .xcomIntroContainer {
         width: 375px;
     }
-
     .xcomProjectDescription {
         width: 300px;
     }
-
     .xcomEmbedVideo {
         scale: 75%;
     }
@@ -59,11 +57,9 @@
     .xcomProjectDescription {
         margin-right: 0;
     }
-
     .xcomSeasonHeader {
         font-size: 26px;
     }
-
     .xcomCarouselContainer {
         padding: 0;
     }

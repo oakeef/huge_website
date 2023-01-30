@@ -32,7 +32,7 @@
     align-items: flex-end;
 }
 
-.latestEpButton {
+.carouselButton {
     background-color: white;
     border-radius: 100%;
     border: 1px solid #c2c8cd;
@@ -41,7 +41,7 @@
     width: 50px;
 }
 
-.latestEpButton:hover {
+.carouselButton:hover {
     background-color: #01b7cc;
     transition: all 0.4s;
     color: white;

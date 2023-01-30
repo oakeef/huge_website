@@ -137,11 +137,11 @@ export default function OtherProjects(props) {
                                     { maxWidth: 779, itemsToShow: 1 },
                                 ]}
                                 backwardBtnProps={{
-                                    className: "latestEpButton",
+                                    className: "carouselButton",
                                     children: "←",
                                 }}
                                 forwardBtnProps={{
-                                    className: "latestEpButton",
+                                    className: "carouselButton",
                                     children: "→",
                                 }}
                             >
@@ -194,11 +194,11 @@ export default function OtherProjects(props) {
                                     { maxWidth: 779, itemsToShow: 1 },
                                 ]}
                                 backwardBtnProps={{
-                                    className: "latestEpButton",
+                                    className: "carouselButton",
                                     children: "←",
                                 }}
                                 forwardBtnProps={{
-                                    className: "latestEpButton",
+                                    className: "carouselButton",
                                     children: "→",
                                 }}
                             >
