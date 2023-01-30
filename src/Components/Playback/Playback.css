@@ -87,11 +87,18 @@
 @media only screen and (max-width: 414px) {
     .playbackEpTitle {
         font-size: 12px;
-        font-weight: 600;
-        line-height: 30px;
+        margin-left: 2rem;
+        line-height: 16px;
     }
     .playbackEpCategory {
-        font-size: 12px;
-        font-weight: 700;
+        margin-left: 2rem;
+        font-size: 10px;
+    }
+    .playbackControl {
+        margin-right: 1.5rem;
+        width: 250px;
+    }
+    .playbackEpInfo {
+        padding-right: 12px;
     }
 }
