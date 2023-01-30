@@ -48,3 +48,26 @@
     right: 0px;
     top: 0px;
 }
+
+@media only screen and (max-width: 1200px) {
+    .playbackEpTitle {
+        font-size: 12px;
+        margin-left: 10rem;
+        line-height: 12px;
+    }
+    .playbackEpCategory {
+        margin-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .playbackEpTitle {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    .playbackEpCategory {
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
