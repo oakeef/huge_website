@@ -63,9 +63,12 @@
 }
 
 .featureListenNow {
+    align-items: center;
     border-radius: 25px;
     color: grey;
+    display: flex;
     height: 45px;
+    justify-content: center;
     transition: all 0.4s;
     padding: 10px 30px;
     margin: 10px;
@@ -79,6 +82,10 @@
 .featureListenNow:hover {
     background-color: #01b7cc;
     color: white;
+}
+
+.featureListenNowText {
+    padding-top: 2px;
 }
 
 .featuredBrowse {

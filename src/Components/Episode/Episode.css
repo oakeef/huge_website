@@ -39,8 +39,7 @@
     border-radius: 100%;
     border: none;
     bottom: 85px;
-    color: grey;
-    font-size: x-large;
+
     height: 60px;
     left: 20px;
     position: relative;
@@ -51,6 +50,16 @@
 .episodePlayButton:hover {
     color: white;
     background-color: #01b7cc;
+}
+
+.episodePlayIcon {
+    color: rgb(121, 120, 120);
+    font-size: 45px;
+    padding-top: 5px;
+}
+
+.episodePlayIcon:hover {
+    color: white;
 }
 
 .episodeInfo {

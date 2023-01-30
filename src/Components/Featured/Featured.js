@@ -28,7 +28,10 @@ export default function Featured(props) {
                     onClick={() => setSelectedEpisode(episode)}
                     className="featureListenNow"
                 >
-                    ▶ LISTEN NOW
+                    <i className="material-icons featuredPlayIcon">
+                        play_arrow
+                    </i>{" "}
+                    <p className="featureListenNowText">LISTEN NOW</p>
                 </button>
 
                 <Link to="/Episodes">
