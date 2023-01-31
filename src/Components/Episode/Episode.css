@@ -41,6 +41,8 @@
     bottom: 85px;
     height: 60px;
     left: 20px;
+    display: flex;
+    justify-content: space-around;
     padding-right: 12px;
     position: relative;
     transition: all 0.4s;
