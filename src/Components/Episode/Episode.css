@@ -35,6 +35,7 @@
 }
 
 .episodePlayButton {
+    align-items: center;
     background-color: rgba(5, 172, 172, 0.6);
     border-radius: 100%;
     border: none;
@@ -43,7 +44,7 @@
     left: 20px;
     display: flex;
     justify-content: space-around;
-    padding-right: 12px;
+    /* padding-right: 12px; */
     position: relative;
     transition: all 0.4s;
     width: 60px;
