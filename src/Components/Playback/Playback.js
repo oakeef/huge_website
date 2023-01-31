@@ -4,6 +4,8 @@ import "./Playback.css";
 export default function Playback(props) {
     const { selectedEpisode, setSelectedEpisode } = props;
 
+    console.log(selectedEpisode);
+
     return (
         <div className="playbackContainer">
             <div className="playbackInnerContainer">

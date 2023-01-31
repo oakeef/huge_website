@@ -33,7 +33,11 @@ export default function App() {
                 let BBCEpisodes = [];
                 let lastOfUsEpisodes = [];
 
-                const parser = new XMLParser();
+                const options = {
+                    ignoreAttributes: false,
+                };
+
+                const parser = new XMLParser(options);
                 let rssFeed = parser.parse(response.data);
 
                 rssFeed.rss.channel.item.forEach((episode) => {
@@ -41,7 +45,7 @@ export default function App() {
                         title: convertLength(episode.title),
                         subtitle: episode[`itunes:subtitle`],
                         category: episodeCategory(episode.title),
-                        link: episode.link,
+                        link: episode.enclosure[`@_url`],
                         image: rssFeed.rss.channel.image.url,
                         date: convertDate(episode.pubDate),
                     };
