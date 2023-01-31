@@ -39,13 +39,23 @@
     border-radius: 100%;
     border: none;
     bottom: 85px;
-    text-align: center;
     height: 60px;
     left: 20px;
     padding-right: 12px;
     position: relative;
     transition: all 0.4s;
     width: 60px;
+}
+
+.episodePlayIcon {
+    position: relative;
+    color: rgb(121, 120, 120);
+    font-size: 45px;
+    padding: 5px 0 0 2px;
+}
+
+.episodePlayIcon:hover {
+    color: white;
 }
 
 .episodeInfo {
