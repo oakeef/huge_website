@@ -17,6 +17,12 @@ function hamburgerClick() {
         : (hamburgericon.src = hamburger);
 }
 
+function menuHide() {
+    var hamburgerLinks = document.getElementById("hamburgerLinks");
+
+    hamburgerLinks.classList.toggle("hidden");
+}
+
 export default function NavBar() {
     return (
         <div className="navContainer">
@@ -68,6 +74,7 @@ export default function NavBar() {
             <div className="navHamburger">
                 <Link to="/">
                     <img
+                        onClick={menuHide}
                         src={hugeLogo}
                         className="navbarHamburgerLogo"
                         alt="Hopped Up Gaming:East Logo"
