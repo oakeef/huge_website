@@ -39,7 +39,7 @@ export default function Projects() {
     ];
 
     const projects = projectsData.map((item, i) => {
-        return <HugeProject index={i} hugeProject={item} />;
+        return <HugeProject index={i} hugeProject={item} key={i} />;
     });
     return (
         <div className="projectsContainer">

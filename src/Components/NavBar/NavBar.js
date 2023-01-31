@@ -30,12 +30,13 @@ export default function NavBar() {
         <div className="navContainer">
             <div className="navMainContainer">
                 <ul className="navLinks">
-                    {links.map((link) => {
+                    {links.map((link, i) => {
                         return (
                             <li className="navLinkOuter">
                                 <Link
                                     className="navLink"
                                     to={link === "Home" ? "/" : "/" + link}
+                                    key={i}
                                 >
                                     {link}
                                 </Link>
@@ -80,45 +81,20 @@ export default function NavBar() {
                     />
                 </button>
                 <div id="hamburgerLinks" className="navHamburgerLinks">
-                    <Link
-                        className="hamburgerLink"
-                        onClick={hamburgerClick}
-                        to="/"
-                    >
-                        <span className="hamburgerLinkText">Home</span>
-                    </Link>
-
-                    <Link
-                        className="hamburgerLink"
-                        onClick={hamburgerClick}
-                        to="/About"
-                    >
-                        <span className="hamburgerLinkText"></span>About
-                    </Link>
-
-                    <Link
-                        className="hamburgerLink"
-                        onClick={hamburgerClick}
-                        to="/Episodes"
-                    >
-                        <span className="hamburgerLinkText"> Episodes</span>
-                    </Link>
-
-                    <Link
-                        className="hamburgerLink"
-                        onClick={hamburgerClick}
-                        to="/Projects"
-                    >
-                        <span className="hamburgerLinkText">Projects</span>
-                    </Link>
-
-                    <Link
-                        className="hamburgerLink"
-                        onClick={hamburgerClick}
-                        to="/Contact"
-                    >
-                        <span className="hamburgerLinkText">Contact</span>
-                    </Link>
+                    {links.map((link, i) => {
+                        return (
+                            <Link
+                                className="hamburgerLink"
+                                onClick={hamburgerClick}
+                                to={link === "Home" ? "/" : "/" + link}
+                                key={i}
+                            >
+                                <span className="hamburgerLinkText">
+                                    {link}
+                                </span>
+                            </Link>
+                        );
+                    })}
                 </div>
             </div>
         </div>
