@@ -47,21 +47,6 @@
     width: 60px;
 }
 
-.episodePlayButton:hover {
-    color: white;
-    background-color: #01b7cc;
-}
-
-.episodePlayIcon {
-    color: rgb(121, 120, 120);
-    font-size: 45px;
-    padding-top: 5px;
-}
-
-.episodePlayIcon:hover {
-    color: white;
-}
-
 .episodeInfo {
     display: flex;
     flex-direction: column;

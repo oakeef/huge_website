@@ -55,6 +55,10 @@ body {
     padding-top: 5px;
 }
 
+.episodePlayIcon:hover {
+    color: white;
+}
+
 .projectHeader {
     padding-bottom: 30px;
     max-height: 800px;
