@@ -30,7 +30,7 @@ export default function Featured(props) {
                 >
                     <i className="material-icons featuredPlayIcon">
                         play_arrow
-                    </i>{" "}
+                    </i>
                     <p className="featureListenNowText">LISTEN NOW</p>
                 </button>
 
