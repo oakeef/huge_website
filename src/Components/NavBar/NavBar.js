@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import patreon from "../../images/Patreon.png";
 import hugeLogo from "../../images/hugeLogo.png";
 
+const links = ["Home", "About", "Episodes", "Projects", "Contact"];
+
 function hamburgerClick() {
     var hamburgerLinks = document.getElementById("hamburgerLinks");
     var hamburgericon = document.getElementById("hamburgericon");
@@ -28,32 +30,18 @@ export default function NavBar() {
         <div className="navContainer">
             <div className="navMainContainer">
                 <ul className="navLinks">
-                    <li className="navLinkOuter">
-                        <Link className="navLink" to="/">
-                            Home
-                        </Link>
-                    </li>
-                    <li className="navLinkOuter">
-                        <Link className="navLink" to="/About">
-                            About
-                        </Link>
-                    </li>
-                    <li className="navLinkOuter">
-                        <Link className="navLink" to="/Episodes">
-                            Episodes
-                        </Link>
-                    </li>
-                    <li className="navLinkOuter">
-                        <Link className="navLink" to="/Projects">
-                            Projects
-                        </Link>
-                    </li>
-
-                    <li className="navLinkOuter">
-                        <Link className="navLink" to="/Contact">
-                            Contact
-                        </Link>
-                    </li>
+                    {links.map((link) => {
+                        return (
+                            <li className="navLinkOuter">
+                                <Link
+                                    className="navLink"
+                                    to={link === "Home" ? "/" : "/" + link}
+                                >
+                                    {link}
+                                </Link>
+                            </li>
+                        );
+                    })}
                 </ul>
                 <a
                     href="https://www.patreon.com/hoppedupeast"
