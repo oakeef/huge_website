@@ -50,16 +50,6 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .heroImageMediaQ {
-        border-radius: 20px;
-        height: 275px;
-        width: 375px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 @media only screen and (max-width: 414px) {
     .heroContainer {
         justify-content: center;
