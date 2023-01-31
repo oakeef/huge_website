@@ -12,11 +12,9 @@ function hamburgerClick() {
 
     hamburgerLinks.classList.toggle("hidden");
 
-    if (hamburgericon.src === hamburger) {
-        hamburgericon.src = exit;
-    } else {
-        hamburgericon.src = hamburger;
-    }
+    hamburger.src === hamburger
+        ? (hamburgericon.src = exit)
+        : (hamburgericon.src = hamburger);
 }
 
 export default function NavBar() {
