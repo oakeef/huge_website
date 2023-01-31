@@ -101,20 +101,22 @@ export default function OtherProjects(props) {
                         src="https://www.youtube.com/embed/videoseries?list=PLXnsyGNMKFBjV_M-TUJACo0eWwBeHynGm"
                     ></iframe>
                 </div>
-                <div className="otherProjectsTLOU">
-                    <h2 className="otherProjectsHeader otherProjectsTLOUHeader">
-                        The Last of Us Play The Last of Us
-                    </h2>
-                    <p className="otherProjectsDescription">
-                        TLOUPTLOU was hatched from the fact that Evan had
-                        purchased TLOU in 2014 but had never even taken the
-                        shrink wrap off the game. With the second game quickly
-                        approaching and Tim revealing that he had not played it
-                        either the show was born! With Ben as our sherpa we
-                        played through The Last of Us all those years after it's
-                        initial release to see if it was as good as everyone had
-                        said.
-                    </p>
+                <div className="otherProjectsSection">
+                    <div className="otherProjectsDescription">
+                        <h2 className="otherProjectsHeader otherProjectsTLOUHeader">
+                            The Last of Us Play The Last of Us
+                        </h2>
+                        <p>
+                            TLOUPTLOU was hatched from the fact that Evan had
+                            purchased TLOU in 2014 but had never even taken the
+                            shrink wrap off the game. With the second game
+                            quickly approaching and Tim revealing that he had
+                            not played it either the show was born! With Ben as
+                            our sherpa we played through The Last of Us all
+                            those years after it's initial release to see if it
+                            was as good as everyone had said.
+                        </p>
+                    </div>
 
                     {lastOfUsEpisodes.length > 0 && (
                         <div className="TheLastOfUsEpContainer">
@@ -159,19 +161,24 @@ export default function OtherProjects(props) {
                         </div>
                     )}
                 </div>
-                <div>
-                    <h2 className="otherProjectsHeader">HUGE Boys Book Club</h2>
+                <div className="otherProjectsSection">
+                    <div className="otherProjectsDescription">
+                        <h2 className="otherProjectsHeader">
+                            HUGE Boys Book Club
+                        </h2>
 
-                    <p className="otherProjectsDescription">
-                        HUGE BBC started from us finding out that Tim had never
-                        played Dead Space, a game that is very much up his
-                        alley. So we all replayed it together and talked about
-                        it on the podcast. From there we decided to play Dead
-                        Space 2 and make it into a more structure book club type
-                        thing where we would slice the game into "chapters" then
-                        play a chapter each week and meet up to talk about it.
-                        We branched out to do an additional BBC series for XCOM.
-                    </p>
+                        <p>
+                            HUGE BBC started from us finding out that Tim had
+                            never played Dead Space, a game that is very much up
+                            his alley. So we all replayed it together and talked
+                            about it on the podcast. From there we decided to
+                            play Dead Space 2 and make it into a more structure
+                            book club type thing where we would slice the game
+                            into "chapters" then play a chapter each week and
+                            meet up to talk about it. We branched out to do an
+                            additional BBC series for XCOM.
+                        </p>
+                    </div>
 
                     {hugeBBCEpisodes.length > 0 && (
                         <div className="BBCEpsContainer">
