@@ -88,4 +88,7 @@ code {
         height: 247px;
         margin: 10px;
     }
+    .projectHeader {
+        max-height: 160px;
+    }
 }
