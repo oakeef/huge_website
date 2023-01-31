@@ -44,6 +44,17 @@ body {
     text-decoration: underline;
 }
 
+.episodePlayButton:hover {
+    color: white;
+    background-color: #01b7cc;
+}
+
+.episodePlayIcon {
+    color: rgb(121, 120, 120);
+    font-size: 45px;
+    padding-top: 5px;
+}
+
 .projectHeader {
     padding-bottom: 30px;
     max-height: 800px;

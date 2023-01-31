@@ -8,7 +8,6 @@ import tim from "../../images/tim.jpeg";
 import dylan from "../../images/dylan.jpg";
 
 export default function HostsSection() {
-    //TODO: add Dylans picture and write up
     let hugeHosts = [
         {
             img: ben,
@@ -33,7 +32,7 @@ export default function HostsSection() {
         {
             img: dylan,
             name: "Dylan",
-            bio: "Dylan's write up will go here!",
+            bio: "Dylan is our local Sports expert. He conducts all diplomacy with the jocks, so the rest of us don’t get bullied. Loves playing with balls.",
         },
     ];
 
