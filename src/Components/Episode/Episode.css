@@ -50,10 +50,10 @@
 }
 
 .episodePlayIcon {
-    position: relative;
+    /* position: relative; */
     color: rgb(121, 120, 120);
     font-size: 45px;
-    padding: 5px 0 0 2px;
+    /* padding: 5px 0 0 2px; */
 }
 
 .episodePlayIcon:hover {
