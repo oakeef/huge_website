@@ -8,8 +8,15 @@ export default function Contact() {
         handleSubmit,
         formState: { errors },
     } = useForm();
-    const onSubmit = (data) => console.log(data);
-    console.log(errors.email);
+    const onSubmit = (data) => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encodeURI({ "form-name": "contact", ...data }),
+        })
+            .then(() => alert("Success!"))
+            .catch((error) => alert(error));
+    };
 
     return (
         <div className="contactContainer">
