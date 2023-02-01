@@ -28,27 +28,32 @@ export default function LatestEpisodes(props) {
                         <Link to="/Episodes">BROWSE ALL {">"}</Link>
                     </span>
                 </div>
+                <div className="latestEpisodesCarouselContainer">
+                    <ReactSimplyCarousel
+                        className="latestEpisodesCarousel"
+                        activeSlideIndex={activeSlideIndex}
+                        onRequestChange={setActiveSlideIndex}
+                        itemsToShow={3}
+                        itemsToScroll={1}
+                        infinite={false}
+                        speed={60}
+                        responsiveProps={[
+                            { minWidth: 780, maxWidth: 1199, itemsToShow: 2 },
+                            { maxWidth: 779, itemsToShow: 1 },
+                        ]}
+                        backwardBtnProps={{
+                            className: "carouselButton",
+                            children: "←",
+                        }}
+                        forwardBtnProps={{
+                            className: "carouselButton",
+                            children: "→",
+                        }}
+                    >
+                        {hugeEps}
+                    </ReactSimplyCarousel>
+                </div>
             </div>
-
-            <ReactSimplyCarousel
-                className="episodesContainer"
-                activeSlideIndex={activeSlideIndex}
-                onRequestChange={setActiveSlideIndex}
-                itemsToShow={3}
-                itemsToScroll={1}
-                infinite={false}
-                speed={60}
-                backwardBtnProps={{
-                    className: "latestEpButton",
-                    children: "←",
-                }}
-                forwardBtnProps={{
-                    className: "latestEpButton",
-                    children: "→",
-                }}
-            >
-                {hugeEps}
-            </ReactSimplyCarousel>
         </>
     );
 }

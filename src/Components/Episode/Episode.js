@@ -17,7 +17,7 @@ export default function Episode(props) {
                     className="episodePlayButton"
                     onClick={() => setSelectedEpisode(episode)}
                 >
-                    ▶
+                    <i className="material-icons episodePlayIcon">play_arrow</i>
                 </button>
             </div>
             <div className="episodeInfo">

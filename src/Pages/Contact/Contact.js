@@ -15,7 +15,7 @@ export default function Contact() {
         <div className="contactContainer">
             <h1 className="contactHeader">Contact Us</h1>
             <p className="contactText">
-                Have a question for the HUGE crew? We'd love to hear from you.
+                Have a question for the HUGE crew? We'd love to hear from you!
                 Send us a message and we'll respond as soon as we can.
             </p>
 

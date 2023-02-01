@@ -5,6 +5,15 @@
 
 .xcomIntroContainer {
     display: flex;
+    justify-content: center;
+}
+
+.xcomProjectDescription {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 400px;
+    padding: 0 1.875rem;
 }
 
 .xcomSeasonHeader {
@@ -12,4 +21,43 @@
     font-size: 30px;
     padding-top: 50px;
     text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .xcomIntroContainer {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .xcomCarouselContainer {
+        padding: 0 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .xcomIntroContainer {
+        width: 375px;
+    }
+    .xcomProjectDescription {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .xcomIntroContainer {
+        width: 360px;
+    }
+    .xcomProjectDescription {
+        margin-right: 0;
+    }
+    .xcomSeasonHeader {
+        font-size: 26px;
+    }
+    .xcomCarouselContainer {
+        padding: 0;
+    }
 }

@@ -1,10 +1,19 @@
 .navContainer {
     display: flex;
+    justify-content: flex-end;
+    height: 5rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    z-index: 9;
+}
+
+.navMainContainer {
+    display: flex;
 }
 
 .navPatreonLogo {
-    height: 17px;
-    padding-right: 8px;
+    height: 1.0625rem;
+    padding-right: 0.5rem;
 }
 
 .patreonDonate {
@@ -14,14 +23,14 @@
     border-radius: 30px;
     color: white;
     display: flex;
-    font-size: small;
+    font-size: 0.8rem;
     font-weight: bolder;
-    height: 50px;
+    height: 3.125rem;
     justify-content: center;
-    margin-top: 20px;
+    margin: 1.25rem 0.9375rem 0 0;
     text-align: center;
     text-transform: uppercase;
-    width: 170px;
+    width: 10.625rem;
 }
 
 a:link {
@@ -38,10 +47,10 @@ a:link {
     display: flex;
     flex-direction: row;
     font-family: "Helvetica Neue", sans-serif;
-    font-size: large;
+    font-size: 1.125rem;
     font-weight: bold;
     list-style: none;
-    padding-top: 15px;
+    padding-top: 0.9375rem;
     text-transform: uppercase;
 }
 
@@ -54,21 +63,71 @@ a:link {
     list-style: disc;
 }
 
-.searchIcon {
-    height: 16px;
+.navHamburger {
+    display: none;
+    position: relative;
+    width: 100%;
 }
 
-.searchButton {
-    background-color: white;
+.navbarHamburgerButton {
     border: none;
-    border-radius: 100%;
-    height: 50px;
-    margin: 20px;
-    width: 50px;
-    box-shadow: 0 0px 20px 0 rgba(79, 73, 63, 0.5);
-    transition: box-shadow 0.4s;
+    background: transparent;
+    margin-right: 1.5rem;
+    margin-left: auto;
 }
 
-.searchButton:hover {
-    box-shadow: 0 0px 10px 0 rgba(11, 11, 11, 0.5);
+.navbarHamburgerIcon {
+    height: 20px;
+    padding-top: 0.5rem;
+}
+
+.navbarHamburgerLogo {
+    height: 65px;
+    align-self: center;
+    padding-top: 10px;
+    padding-left: 1rem;
+}
+
+.navHamburgerLinks {
+    top: 5.4rem;
+    flex-direction: column;
+    position: absolute;
+    background-color: #faaf40;
+    width: 100%;
+
+    display: none;
+}
+
+.hamburgerLink {
+    border-bottom: 2px solid #ffdea5;
+    border-left: none;
+    height: 40px;
+
+    width: 100%;
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.hamburgerLink:hover {
+    font-weight: bold;
+}
+
+.hamburgerLinkText {
+    padding-left: 1rem;
+}
+
+.hidden {
+    display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navContainer {
+        justify-content: baseline;
+    }
+    .navMainContainer {
+        display: none;
+    }
+    .navHamburger {
+        display: flex;
+    }
 }

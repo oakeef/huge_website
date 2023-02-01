@@ -4,7 +4,6 @@ import "./Footer.css";
 
 export default function Footer() {
     return (
-        // TODO: add a tag to Episodes when that is made
         <div className="footerContainer">
             <hr className="footerHR"></hr>
             <div className="footerLinksContainer">
@@ -12,10 +11,18 @@ export default function Footer() {
                     <li className="footerLinksHeader">Quick Links</li>
 
                     <li className="footerLink">
-                        <Link to="/About">Where to Listen</Link>
+                        <a
+                            href="https://link.chtbl.com/Huge-podcast"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Where to Listen
+                        </a>
                     </li>
 
-                    <li className="footerLink">Episodes</li>
+                    <li className="footerLink">
+                        <Link to="/Episodes">Episodes </Link>
+                    </li>
 
                     <li className="footerLink">
                         <a
@@ -60,7 +67,7 @@ export default function Footer() {
                     <li className="footerLinksHeader">Contact</li>
 
                     <li className="footerLink">
-                        <a href="mailto:hugecrew@hoppedupeast.com">Email</a>
+                        <Link to="/Contact">Email</Link>
                     </li>
                 </ul>
             </div>

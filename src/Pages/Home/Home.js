@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "../../Components/Hero/Hero";
-import ListenOn from "../../Components/ListenOn/ListenOn";
 import LatestEpisodes from "../../Components/LatestEpisodes/LatestEpisodes";
 import HostsSection from "../../Components/HostsSection/HostsSection";
 import Patreon from "../../Components/Patreon/Patreon";
@@ -20,19 +19,6 @@ export default function Home(props) {
                 //TODO: figure out how to add/update featured ep
                 episode={podcastEpisodes[13]}
                 setSelectedEpisode={setSelectedEpisode}
-            />
-
-            <ListenOn
-                offsetValue={"-200px"}
-                googleLink={
-                    "https://podcasts.google.com/feed/aHR0cHM6Ly9ob3BwZWR1cGVhc3QuaGlwY2FzdC5jb20vcnNzL2hvcHBlZHVwZ2FtaW5nZWFzdC54bWw"
-                }
-                appleLink={
-                    "https://podcasts.apple.com/us/podcast/hopped-up-gaming-east/id797058638"
-                }
-                spotifyLink={
-                    "https://open.spotify.com/show/2dTRwdB4bHYsCI2CN9OV2m"
-                }
             />
 
             <LatestEpisodes

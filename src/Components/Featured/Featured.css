@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     height: 235px;
-    width: 560px;
+    max-width: 545px;
 }
 
 .featuredbanner {
@@ -44,13 +44,8 @@
 
 .featuredSubTitle {
     color: #01b7cc;
-    display: inline-block;
     padding-bottom: 20px;
     text-transform: uppercase;
-    text-overflow: ellipsis;
-    max-width: 50ch;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 .featuredTitle {
@@ -68,9 +63,12 @@
 }
 
 .featureListenNow {
+    align-items: center;
     border-radius: 25px;
     color: grey;
+    display: flex;
     height: 45px;
+    justify-content: center;
     transition: all 0.4s;
     padding: 10px 30px;
     margin: 10px;
@@ -84,6 +82,10 @@
 .featureListenNow:hover {
     background-color: #01b7cc;
     color: white;
+}
+
+.featureListenNowText {
+    padding-top: 2px;
 }
 
 .featuredBrowse {

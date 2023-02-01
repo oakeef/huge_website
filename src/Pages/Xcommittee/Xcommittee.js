@@ -62,7 +62,7 @@ export default function Xcommittee(props) {
             />
             <div className="xcomContainer">
                 <div className="xcomIntroContainer">
-                    <div className="projectDescription">
+                    <div className="xcomProjectDescription">
                         <p>
                             An interesting take on playing the strategy game
                             XCOM. We have one save file and pass it around for 1
@@ -78,91 +78,111 @@ export default function Xcommittee(props) {
                             Podcasts, Google Podcasts or anywhere Podcasts are
                             found.
                         </p>
+
+                        <ListenOn
+                            offsetValue={"-5px"}
+                            googleLink={
+                                "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5saWJzeW4uY29tLzQ0ODE4OC9yc3M"
+                            }
+                            appleLink={
+                                "https://podcasts.apple.com/us/podcast/x-committee/id979571952"
+                            }
+                            spotifyLink={
+                                "https://open.spotify.com/show/1z0C7QHykxMdrCQNxqqKCw"
+                            }
+                        />
                     </div>
 
                     <iframe
-                        width="450"
-                        height="315"
+                        className="embedVideo"
                         title="YouTubeEmbed"
                         src="https://www.youtube.com/embed/41g1NHMjw3M"
                     ></iframe>
                 </div>
-                <ListenOn
-                    offsetValue={"-50px"}
-                    googleLink={
-                        "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5saWJzeW4uY29tLzQ0ODE4OC9yc3M"
-                    }
-                    appleLink={
-                        "https://podcasts.apple.com/us/podcast/x-committee/id979571952"
-                    }
-                    spotifyLink={
-                        "https://open.spotify.com/show/1z0C7QHykxMdrCQNxqqKCw"
-                    }
-                />
 
                 <h3 className="xcomSeasonHeader">Season One</h3>
 
                 {xcomOneEps.length > 0 && (
-                    <ReactSimplyCarousel
-                        className="xcomEpisodesContainer"
-                        activeSlideIndex={activeSlideIndex}
-                        onRequestChange={setActiveSlideIndex}
-                        itemsToShow={3}
-                        itemsToScroll={1}
-                        infinite={false}
-                        speed={60}
-                        backwardBtnProps={{
-                            className: "latestEpButton",
-                            children: "←",
-                        }}
-                        forwardBtnProps={{
-                            className: "latestEpButton",
-                            children: "→",
-                        }}
-                    >
-                        {xcomOneEps.map((episode, i) => {
-                            return (
-                                <Episode
-                                    key={i}
-                                    episode={episode}
-                                    setSelectedEpisode={setSelectedEpisode}
-                                />
-                            );
-                        })}
-                    </ReactSimplyCarousel>
+                    <div className="xcomCarouselContainer">
+                        <ReactSimplyCarousel
+                            className="xcomEpisodesContainer"
+                            activeSlideIndex={activeSlideIndex}
+                            onRequestChange={setActiveSlideIndex}
+                            itemsToShow={3}
+                            itemsToScroll={1}
+                            infinite={false}
+                            speed={60}
+                            responsiveProps={[
+                                {
+                                    minWidth: 780,
+                                    maxWidth: 1199,
+                                    itemsToShow: 2,
+                                },
+                                { maxWidth: 779, itemsToShow: 1 },
+                            ]}
+                            backwardBtnProps={{
+                                className: "carouselButton",
+                                children: "←",
+                            }}
+                            forwardBtnProps={{
+                                className: "carouselButton",
+                                children: "→",
+                            }}
+                        >
+                            {xcomOneEps.map((episode, i) => {
+                                return (
+                                    <Episode
+                                        key={i}
+                                        episode={episode}
+                                        setSelectedEpisode={setSelectedEpisode}
+                                    />
+                                );
+                            })}
+                        </ReactSimplyCarousel>
+                    </div>
                 )}
 
                 <h3 className="xcomSeasonHeader">Season Two</h3>
 
                 {xcomTwoEps.length > 0 && (
-                    <ReactSimplyCarousel
-                        className="xcomEpisodesContainerTwo"
-                        activeSlideIndex={activeSlideIndexB}
-                        onRequestChange={setActiveSlideIndexB}
-                        itemsToShow={3}
-                        draggable={true}
-                        itemsToScroll={1}
-                        infinite={false}
-                        speed={60}
-                        backwardBtnProps={{
-                            className: "latestEpButton",
-                            children: "←",
-                        }}
-                        forwardBtnProps={{
-                            className: "latestEpButton",
-                            children: "→",
-                        }}
-                    >
-                        {xcomTwoEps.map((episode, i) => {
-                            return (
-                                <Episode
-                                    key={i}
-                                    episode={episode}
-                                    setSelectedEpisode={setSelectedEpisode}
-                                />
-                            );
-                        })}
-                    </ReactSimplyCarousel>
+                    <div className="xcomCarouselContainer">
+                        <ReactSimplyCarousel
+                            className="xcomEpisodesContainerTwo"
+                            activeSlideIndex={activeSlideIndexB}
+                            onRequestChange={setActiveSlideIndexB}
+                            itemsToShow={3}
+                            draggable={true}
+                            itemsToScroll={1}
+                            infinite={false}
+                            speed={60}
+                            responsiveProps={[
+                                {
+                                    minWidth: 780,
+                                    maxWidth: 1199,
+                                    itemsToShow: 2,
+                                },
+                                { maxWidth: 779, itemsToShow: 1 },
+                            ]}
+                            backwardBtnProps={{
+                                className: "carouselButton",
+                                children: "←",
+                            }}
+                            forwardBtnProps={{
+                                className: "carouselButton",
+                                children: "→",
+                            }}
+                        >
+                            {xcomTwoEps.map((episode, i) => {
+                                return (
+                                    <Episode
+                                        key={i}
+                                        episode={episode}
+                                        setSelectedEpisode={setSelectedEpisode}
+                                    />
+                                );
+                            })}
+                        </ReactSimplyCarousel>
+                    </div>
                 )}
             </div>
         </div>

@@ -42,9 +42,73 @@
 
 .playbackClose {
     background-color: black;
-    border: 1px solid white;
     color: white;
     position: absolute;
     right: 0px;
     top: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .playbackEpTitle {
+        margin-left: 10rem;
+        line-height: 18px;
+    }
+    .playbackEpCategory {
+        margin-left: 10rem;
+    }
+    .playbackControl {
+        margin-right: 2rem;
+        min-width: 120px;
+    }
+    .playbackEpInfo {
+        padding-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .playbackEpTitle {
+        margin-left: 2rem;
+    }
+    .playbackEpCategory {
+        margin-left: 2rem;
+    }
+    .playbackControl {
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .playbackEpTitle {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .playbackEpCategory {
+        font-size: 10px;
+    }
+    .playbackControl {
+        margin-right: 2rem;
+        min-width: 120px;
+    }
+    .playbackEpInfo {
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .playbackEpTitle {
+        font-size: 12px;
+        margin-left: 1.5rem;
+        line-height: 16px;
+    }
+    .playbackEpCategory {
+        margin-left: 1.5rem;
+        font-size: 10px;
+    }
+    .playbackControl {
+        margin-right: 1.5rem;
+        width: 250px;
+    }
+    .playbackEpInfo {
+        padding-right: 12px;
+    }
 }

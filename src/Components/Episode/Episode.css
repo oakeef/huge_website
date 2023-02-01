@@ -35,22 +35,27 @@
 }
 
 .episodePlayButton {
+    align-items: center;
     background-color: rgba(5, 172, 172, 0.6);
     border-radius: 100%;
     border: none;
     bottom: 85px;
-    color: grey;
-    font-size: x-large;
     height: 60px;
     left: 20px;
+    display: flex;
+    justify-content: space-around;
     position: relative;
     transition: all 0.4s;
     width: 60px;
 }
 
-.episodePlayButton:hover {
+.episodePlayIcon {
+    color: rgb(121, 120, 120);
+    font-size: 45px;
+}
+
+.episodePlayIcon:hover {
     color: white;
-    background-color: #01b7cc;
 }
 
 .episodeInfo {
@@ -72,4 +77,18 @@
     font-weight: 600;
     line-height: 30px;
     color: #061020;
+}
+
+@media only screen and (max-width: 414px) {
+    .episodeContainer {
+        height: 335px;
+        width: 275px;
+    }
+    .episodeImg {
+        height: 260px;
+        width: 275px;
+    }
+    .episodeTitle {
+        font-size: medium;
+    }
 }

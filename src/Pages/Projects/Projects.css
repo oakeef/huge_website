@@ -3,14 +3,22 @@
     flex-direction: column;
     max-width: 1140px;
     margin: auto;
+    padding: 0 1.875rem;
 }
 
 .projectsHeader {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem;
 }
 
 .hugeProjectsContainer {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 414px) {
+    .projectsContainer {
+        padding: 0;
+    }
 }

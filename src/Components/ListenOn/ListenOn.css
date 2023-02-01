@@ -1,17 +1,11 @@
-.listenOnContainer {
-    display: flex;
-    flex-direction: column;
-    max-width: 1140px;
-    margin: auto;
-}
 .listenOnAudioContainer {
     align-items: center;
     display: flex;
 }
 
 .listenOnIconAndTitle {
-    font-size: 20px;
-    padding-right: 10px;
+    font-size: 16px;
+    padding-right: 5px;
 }
 
 .podIcon {
@@ -51,4 +45,19 @@ a:visited {
 
 .listenOnDiscordText {
     margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .podIcon {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .listenOnIconAndTitle {
+        font-size: 14px;
+    }
+    .listenOnDiscord {
+        font-size: 13px;
+    }
 }

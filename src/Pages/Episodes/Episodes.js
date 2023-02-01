@@ -30,6 +30,8 @@ export default function Episodes(props) {
                         setSelectedEpisode={setSelectedEpisode}
                     />
                 ))}
+            </div>
+            <div className="paginationContainer">
                 <ReactPaginate
                     onPageChange={paginate}
                     pageCount={Math.ceil(podcastEpisodes.length / postsPerPage)}

@@ -1,3 +1,8 @@
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     background-color: #f6fafc;
     margin: 0;
@@ -26,8 +31,8 @@ body {
 .projectDescription {
     font-size: 18px;
     font-weight: 400;
-    padding: 0px 50px 0 25px;
-    width: 600px;
+    padding: 0px 50px 0 50px;
+    max-width: 600px;
 }
 
 .linkBold {
@@ -39,19 +44,62 @@ body {
     text-decoration: underline;
 }
 
+.episodePlayButton:hover {
+    color: white;
+    background-color: #01b7cc;
+}
+
 .projectHeader {
     padding-bottom: 30px;
     max-height: 800px;
-    max-width: 1700px;
+    max-width: 1500px;
 }
 
+.listenOnIconChannel {
+    display: flex;
+    padding-top: 5px;
+}
+
+.embedVideo {
+    width: 425px;
+    height: 300px;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
 @media only screen and (min-width: 1500px) {
     .projectHeader {
         margin: auto;
     }
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+@media only screen and (max-width: 600px) {
+    .listenOnChannel {
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .projectDescription {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .carouselButton {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .embedVideo {
+        width: 349px;
+        height: 247px;
+        margin: 10px;
+    }
+    .projectHeader {
+        max-height: 160px;
+    }
 }
