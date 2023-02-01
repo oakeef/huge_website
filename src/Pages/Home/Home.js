@@ -15,20 +15,17 @@ export default function Home(props) {
 
     return (
         <>
-            {podcastEpisodes.length > 0 && (
-                <Hero
-                    //TODO: figure out how to add/update featured ep
-                    episode={podcastEpisodes[13]}
-                    setSelectedEpisode={setSelectedEpisode}
-                />
-            )}
+            <Hero
+                //TODO: figure out how to add/update featured ep
+                episode={podcastEpisodes[13]}
+                setSelectedEpisode={setSelectedEpisode}
+            />
 
-            {podcastEpisodes.length > 0 && (
-                <LatestEpisodes
-                    latestEpisodes={latestEpisodes}
-                    setSelectedEpisode={setSelectedEpisode}
-                />
-            )}
+            <LatestEpisodes
+                latestEpisodes={latestEpisodes}
+                setSelectedEpisode={setSelectedEpisode}
+            />
+
             <HostsSection />
             <Patreon
                 patreonTitle="Support the Show on Patreon"

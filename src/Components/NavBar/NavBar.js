@@ -6,17 +6,23 @@ import { Link } from "react-router-dom";
 import patreon from "../../images/Patreon.png";
 import hugeLogo from "../../images/hugeLogo.png";
 
+const links = ["Home", "About", "Episodes", "Projects", "Contact"];
+
 function hamburgerClick() {
     var hamburgerLinks = document.getElementById("hamburgerLinks");
     var hamburgericon = document.getElementById("hamburgericon");
 
     hamburgerLinks.classList.toggle("hidden");
 
-    if (hamburgericon.src === hamburger) {
-        hamburgericon.src = exit;
-    } else {
-        hamburgericon.src = hamburger;
-    }
+    hamburger.src === hamburger
+        ? (hamburgericon.src = exit)
+        : (hamburgericon.src = hamburger);
+}
+
+function menuHide() {
+    var hamburgerLinks = document.getElementById("hamburgerLinks");
+
+    hamburgerLinks.classList.remove("hidden");
 }
 
 export default function NavBar() {
@@ -24,32 +30,18 @@ export default function NavBar() {
         <div className="navContainer">
             <div className="navMainContainer">
                 <ul className="navLinks">
-                    <li className="navLinkOuter">
-                        <Link className="navLink" to="/">
-                            Home
-                        </Link>
-                    </li>
-                    <li className="navLinkOuter">
-                        <Link className="navLink" to="/About">
-                            About
-                        </Link>
-                    </li>
-                    <li className="navLinkOuter">
-                        <Link className="navLink" to="/Episodes">
-                            Episodes
-                        </Link>
-                    </li>
-                    <li className="navLinkOuter">
-                        <Link className="navLink" to="/Projects">
-                            Projects
-                        </Link>
-                    </li>
-
-                    <li className="navLinkOuter">
-                        <Link className="navLink" to="/Contact">
-                            Contact
-                        </Link>
-                    </li>
+                    {links.map((link, index) => {
+                        return (
+                            <li className="navLinkOuter" key={index}>
+                                <Link
+                                    className="navLink"
+                                    to={link === "Home" ? "/" : "/" + link}
+                                >
+                                    {link}
+                                </Link>
+                            </li>
+                        );
+                    })}
                 </ul>
                 <a
                     href="https://www.patreon.com/hoppedupeast"
@@ -70,6 +62,7 @@ export default function NavBar() {
             <div className="navHamburger">
                 <Link to="/">
                     <img
+                        onClick={menuHide}
                         src={hugeLogo}
                         className="navbarHamburgerLogo"
                         alt="Hopped Up Gaming:East Logo"
@@ -87,45 +80,20 @@ export default function NavBar() {
                     />
                 </button>
                 <div id="hamburgerLinks" className="navHamburgerLinks">
-                    <Link
-                        className="hamburgerLink"
-                        onClick={hamburgerClick}
-                        to="/"
-                    >
-                        <span className="hamburgerLinkText">Home</span>
-                    </Link>
-
-                    <Link
-                        className="hamburgerLink"
-                        onClick={hamburgerClick}
-                        to="/About"
-                    >
-                        <span className="hamburgerLinkText"></span>About
-                    </Link>
-
-                    <Link
-                        className="hamburgerLink"
-                        onClick={hamburgerClick}
-                        to="/Episodes"
-                    >
-                        <span className="hamburgerLinkText"> Episodes</span>
-                    </Link>
-
-                    <Link
-                        className="hamburgerLink"
-                        onClick={hamburgerClick}
-                        to="/Projects"
-                    >
-                        <span className="hamburgerLinkText">Projects</span>
-                    </Link>
-
-                    <Link
-                        className="hamburgerLink"
-                        onClick={hamburgerClick}
-                        to="/Contact"
-                    >
-                        <span className="hamburgerLinkText">Contact</span>
-                    </Link>
+                    {links.map((link, i) => {
+                        return (
+                            <Link
+                                className="hamburgerLink"
+                                onClick={hamburgerClick}
+                                to={link === "Home" ? "/" : "/" + link}
+                                key={i}
+                            >
+                                <span className="hamburgerLinkText">
+                                    {link}
+                                </span>
+                            </Link>
+                        );
+                    })}
                 </div>
             </div>
         </div>

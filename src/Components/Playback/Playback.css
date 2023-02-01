@@ -65,12 +65,12 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
     .playbackEpTitle {
-        margin-left: 5rem;
+        margin-left: 2rem;
     }
     .playbackEpCategory {
-        margin-left: 5rem;
+        margin-left: 2rem;
     }
     .playbackControl {
         margin-right: 2rem;
@@ -80,11 +80,9 @@
 @media only screen and (max-width: 750px) {
     .playbackEpTitle {
         font-size: 14px;
-        margin-left: 3rem;
         line-height: 18px;
     }
     .playbackEpCategory {
-        margin-left: 3rem;
         font-size: 10px;
     }
     .playbackControl {
@@ -99,11 +97,11 @@
 @media only screen and (max-width: 414px) {
     .playbackEpTitle {
         font-size: 12px;
-        margin-left: 2rem;
+        margin-left: 1.5rem;
         line-height: 16px;
     }
     .playbackEpCategory {
-        margin-left: 2rem;
+        margin-left: 1.5rem;
         font-size: 10px;
     }
     .playbackControl {
