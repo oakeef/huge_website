@@ -22,7 +22,7 @@ function hamburgerClick() {
 function menuHide() {
     var hamburgerLinks = document.getElementById("hamburgerLinks");
 
-    hamburgerLinks.classList.toggle("hidden");
+    hamburgerLinks.classList.remove("hidden");
 }
 
 export default function NavBar() {
