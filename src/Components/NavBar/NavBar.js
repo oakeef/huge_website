@@ -30,13 +30,12 @@ export default function NavBar() {
         <div className="navContainer">
             <div className="navMainContainer">
                 <ul className="navLinks">
-                    {links.map((link, i) => {
+                    {links.map((link, index) => {
                         return (
-                            <li className="navLinkOuter">
+                            <li className="navLinkOuter" key={index}>
                                 <Link
                                     className="navLink"
                                     to={link === "Home" ? "/" : "/" + link}
-                                    key={i}
                                 >
                                     {link}
                                 </Link>
