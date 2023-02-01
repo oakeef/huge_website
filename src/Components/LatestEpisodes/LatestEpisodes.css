@@ -39,25 +39,34 @@
 }
 
 .carouselButton {
-    background-color: white;
+    /* background-color: white;
     border-radius: 100%;
     border: 1px solid #c2c8cd;
     height: 50px;
     margin: 5px;
-    width: 50px;
+    width: 50px; */
+    display: none;
 }
 
-.carouselButton:hover {
+/* .carouselButton:hover {
     background-color: #01b7cc;
     transition: all 0.4s;
     color: white;
-}
+} */
 
 .episodesContainer {
     display: flex;
     margin: auto;
     overflow-x: scroll;
     max-width: 1140px;
+}
+@media only screen and (max-width: 1200px) {
+    .latestEpContainer {
+        margin: 0;
+    }
+    .latestEpisodesCarouselContainer {
+        justify-content: space-between;
+    }
 }
 
 @media only screen and (max-width: 600px) {

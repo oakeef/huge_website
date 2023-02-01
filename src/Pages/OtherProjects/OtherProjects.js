@@ -145,6 +145,27 @@ export default function OtherProjects(props) {
                                     className: "carouselButton",
                                     children: "→",
                                 }}
+                                dotsNav={{
+                                    show: true,
+                                    itemBtnProps: {
+                                        style: {
+                                            height: 16,
+                                            width: 16,
+                                            borderRadius: "50%",
+                                            border: 0,
+                                            background: "silver",
+                                        },
+                                    },
+                                    activeItemBtnProps: {
+                                        style: {
+                                            height: 16,
+                                            width: 16,
+                                            borderRadius: "50%",
+                                            border: 0,
+                                            background: "black",
+                                        },
+                                    },
+                                }}
                             >
                                 {lastOfUsEpisodes.map((episode, i) => {
                                     return (
@@ -206,6 +227,27 @@ export default function OtherProjects(props) {
                                 forwardBtnProps={{
                                     className: "carouselButton",
                                     children: "→",
+                                }}
+                                dotsNav={{
+                                    show: true,
+                                    itemBtnProps: {
+                                        style: {
+                                            height: 16,
+                                            width: 16,
+                                            borderRadius: "50%",
+                                            border: 0,
+                                            background: "silver",
+                                        },
+                                    },
+                                    activeItemBtnProps: {
+                                        style: {
+                                            height: 16,
+                                            width: 16,
+                                            borderRadius: "50%",
+                                            border: 0,
+                                            background: "black",
+                                        },
+                                    },
                                 }}
                             >
                                 {hugeBBCEpisodes.map((episode, i) => {
