@@ -22,11 +22,11 @@ export default function LatestEpisodes(props) {
     return (
         <>
             <div className="latestEpContainer">
-                <div>
+                <div className="latestEpHeadings">
                     <h2 className="latestEpHeader"> Latest Episodes</h2>
-                    <span className="browseAll">
-                        <Link to="/Episodes">BROWSE ALL {">"}</Link>
-                    </span>
+                    <Link to="/Episodes">
+                        <span className="browseAll"> BROWSE ALL {">"} </span>
+                    </Link>
                 </div>
                 <div className="latestEpisodesCarouselContainer">
                     <ReactSimplyCarousel

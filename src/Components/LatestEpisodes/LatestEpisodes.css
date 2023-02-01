@@ -8,6 +8,12 @@
     padding: 0 1.875rem;
 }
 
+.latestEpHeadings {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 .latestEpHeader {
     font-family: "Helvetica Neue", sans-serif;
     font-size: 30px;
@@ -18,10 +24,9 @@
     color: #908dab;
     display: flex;
     font-family: "Anek Latin", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
-    margin-top: -5px;
-    margin-bottom: 15px;
+    margin-top: 5px;
 }
 
 .browseAll:hover {
@@ -58,6 +63,10 @@
 @media only screen and (max-width: 600px) {
     .latestEpisodesCarouselCountainer {
         padding: 0 2.5rem;
+    }
+    .latestEpHeadings {
+        flex-direction: column;
+        padding-bottom: 10px;
     }
     .latestEpHeader {
         text-align: center;
