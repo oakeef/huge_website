@@ -3,16 +3,28 @@ import "./Contact.css";
 import { useForm } from "react-hook-form";
 
 export default function Contact() {
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(
+                (key) =>
+                    encodeURIComponent(key) +
+                    "=" +
+                    encodeURIComponent(data[key])
+            )
+            .join("&");
+    };
+
     const {
         register,
         handleSubmit,
         formState: { errors },
     } = useForm();
     const onSubmit = (data) => {
+        console.log(data);
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encodeURI({ "form-name": "contact", ...data }),
+            body: encode({ "form-name": "contact", message: "hello" }),
         })
             .then(() => alert("Success!"))
             .catch((error) => alert(error));
