@@ -27,7 +27,7 @@
 }
 
 .beerGogglesFigCaption {
-    margin: 0 1.6rem;
+    margin: 0 1.6rem 1rem 1.6rem;
 }
 
 .beerGogglesEpContainer > figure {
@@ -75,10 +75,6 @@
     .beerGogglesEpContainer {
         max-width: 440px;
         margin: 0 1rem;
-    }
-
-    .beerGoogglesEp {
-        margin-bottom: 1.5rem;
     }
 }
 
