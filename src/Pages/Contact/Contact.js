@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contact.css";
 import { useForm } from "react-hook-form";
 
@@ -17,8 +17,11 @@ export default function Contact() {
     const {
         register,
         handleSubmit,
+        reset,
+        formState,
         formState: { errors },
     } = useForm();
+
     const onSubmit = (data) => {
         console.log(data);
         fetch("/", {
@@ -29,6 +32,12 @@ export default function Contact() {
             .then(() => alert("Success!"))
             .catch((error) => alert(error));
     };
+
+    useEffect(() => {
+        if (formState.isSubmitSuccessful) {
+            reset({ name: "", email: "", message: "" });
+        }
+    }, [formState, reset]);
 
     return (
         <div className="contactContainer">
