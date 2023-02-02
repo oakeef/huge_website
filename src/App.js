@@ -80,13 +80,34 @@ export default function App() {
                                 />
                             }
                         />
-                        <Suspense fallback={<div> Loading... </div>}>
-                            <Route path="About" element={<About />} />
-                        </Suspense>
-                        <Suspense fallback={<div> Loading... </div>}>
-                            <Route path="Projects" element={<Projects />} />
-                        </Suspense>
-                        <Route path="Contact" element={<Contact />} />
+
+                        <Route
+                            path="About"
+                            element={
+                                <Suspense fallback={<div> Loading... </div>}>
+                                    <About />
+                                </Suspense>
+                            }
+                        />
+
+                        <Route
+                            path="Projects"
+                            element={
+                                <Suspense fallback={<div> Loading... </div>}>
+                                    <Projects />
+                                </Suspense>
+                            }
+                        />
+
+                        <Route
+                            path="Contact"
+                            element={
+                                <Suspense fallback={<div> Loading... </div>}>
+                                    <Contact />
+                                </Suspense>
+                            }
+                        />
+
                         <Route
                             path="Episodes"
                             element={
@@ -98,43 +119,57 @@ export default function App() {
                                 </Suspense>
                             }
                         />
-                        <Suspense fallback={<div> Loading... </div>}>
-                            <Route
-                                path="Xcommittee"
-                                element={
+
+                        <Route
+                            path="Xcommittee"
+                            element={
+                                <Suspense fallback={<div> Loading... </div>}>
                                     <Xcommittee
                                         setSelectedEpisode={setSelectedEpisode}
                                     />
-                                }
-                            />
-                        </Suspense>
-                        <Suspense fallback={<div> Loading... </div>}>
-                            <Route
-                                path="BeerGoggles"
-                                element={<BeerGoggles />}
-                            />
-                        </Suspense>
-                        <Suspense fallback={<div> Loading... </div>}>
-                            <Route
-                                path="BeerGoggles"
-                                element={<BeerGoggles />}
-                            />
-                        </Suspense>
-                        <Suspense fallback={<div> Loading... </div>}>
-                            <Route path="HugeAss" element={<HugeAss />} />
-                        </Suspense>
-                        <Suspense fallback={<div> Loading... </div>}>
-                            <Route
-                                path="OtherProjects"
-                                element={
+                                </Suspense>
+                            }
+                        />
+
+                        <Route
+                            path="BeerGoggles"
+                            element={
+                                <Suspense fallback={<div> Loading... </div>}>
+                                    <BeerGoggles />{" "}
+                                </Suspense>
+                            }
+                        />
+
+                        <Route
+                            path="BeerGoggles"
+                            element={
+                                <Suspense fallback={<div> Loading... </div>}>
+                                    <BeerGoggles />
+                                </Suspense>
+                            }
+                        />
+
+                        <Route
+                            path="HugeAss"
+                            element={
+                                <Suspense fallback={<div> Loading... </div>}>
+                                    <HugeAss />
+                                </Suspense>
+                            }
+                        />
+
+                        <Route
+                            path="OtherProjects"
+                            element={
+                                <Suspense fallback={<div> Loading... </div>}>
                                     <OtherProjects
                                         hugeBBCEpisodes={hugeBBCEpisodes}
                                         lastOfUsEpisodes={lastOfUsEpisodes}
                                         setSelectedEpisode={setSelectedEpisode}
                                     />
-                                }
-                            />
-                        </Suspense>
+                                </Suspense>
+                            }
+                        />
                     </Routes>
                     <Footer />
                     {selectedEpisode && (
