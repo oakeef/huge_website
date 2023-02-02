@@ -66,7 +66,7 @@ export default function LatestEpisodes(props) {
                                     width: 16,
                                     borderRadius: "50%",
                                     border: 0,
-                                    background: "black",
+                                    background: "#05acac",
                                 },
                             },
                         }}
