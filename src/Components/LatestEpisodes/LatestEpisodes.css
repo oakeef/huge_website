@@ -13,6 +13,11 @@
     animation-name: slidein;
 }
 
+.latestEpisodesCarouselContainer button.carouselButton:nth-child(3) + div {
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
 .latestEpHeadings {
     align-items: center;
     display: flex;
