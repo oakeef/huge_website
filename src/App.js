@@ -1,21 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Home from "./Pages/Home/Home";
-import About from "./Pages/About/About";
-import Projects from "./Pages/Projects/Projects";
-import Contact from "./Pages/Contact/Contact";
-import Xcommittee from "./Pages/Xcommittee/Xcommittee";
-import BeerGoggles from "./Pages/BeerGoggles/BeerGoggles";
-import HugeAss from "./Pages/HugeAss/HugeAss";
-import OtherProjects from "./Pages/OtherProjects/OtherProjects";
 import Footer from "./Components/Footer/Footer";
-import Episodes from "./Pages/Episodes/Episodes";
 import Playback from "./Components/Playback/Playback";
 import axios from "axios";
 import { convertDate, convertLength, episodeCategory } from "./Helpers/Helpers";
 
 const { XMLParser } = require("fast-xml-parser");
+
+const About = lazy(() => import("./Pages/About/About"));
+const Episodes = lazy(() => import("./Pages/Episodes/Episodes"));
+const Projects = lazy(() => import("./Pages/Projects/Projects"));
+const Contact = lazy(() => import("./Pages/Contact/Contact"));
+const Xcommittee = lazy(() => import("./Pages/Xcommittee/Xcommittee"));
+const BeerGoggles = lazy(() => import("./Pages/BeerGoggles/BeerGoggles"));
+const HugeAss = lazy(() => import("./Pages/HugeAss/HugeAss"));
+const OtherProjects = lazy(() => import("./Pages/OtherProjects/OtherProjects"));
 
 export default function App() {
     const [selectedEpisode, setSelectedEpisode] = useState(null);
@@ -79,39 +80,61 @@ export default function App() {
                                 />
                             }
                         />
-                        <Route path="About" element={<About />} />
-                        <Route path="Projects" element={<Projects />} />
+                        <Suspense fallback={<div> Loading... </div>}>
+                            <Route path="About" element={<About />} />
+                        </Suspense>
+                        <Suspense fallback={<div> Loading... </div>}>
+                            <Route path="Projects" element={<Projects />} />
+                        </Suspense>
                         <Route path="Contact" element={<Contact />} />
                         <Route
                             path="Episodes"
                             element={
-                                <Episodes
-                                    podcastEpisodes={podcastEpisodes}
-                                    setSelectedEpisode={setSelectedEpisode}
-                                />
+                                <Suspense fallback={<div> Loading... </div>}>
+                                    <Episodes
+                                        podcastEpisodes={podcastEpisodes}
+                                        setSelectedEpisode={setSelectedEpisode}
+                                    />
+                                </Suspense>
                             }
                         />
-                        <Route
-                            path="Xcommittee"
-                            element={
-                                <Xcommittee
-                                    setSelectedEpisode={setSelectedEpisode}
-                                />
-                            }
-                        />
-                        <Route path="BeerGoggles" element={<BeerGoggles />} />
-                        <Route path="BeerGoggles" element={<BeerGoggles />} />
-                        <Route path="HugeAss" element={<HugeAss />} />
-                        <Route
-                            path="OtherProjects"
-                            element={
-                                <OtherProjects
-                                    hugeBBCEpisodes={hugeBBCEpisodes}
-                                    lastOfUsEpisodes={lastOfUsEpisodes}
-                                    setSelectedEpisode={setSelectedEpisode}
-                                />
-                            }
-                        />
+                        <Suspense fallback={<div> Loading... </div>}>
+                            <Route
+                                path="Xcommittee"
+                                element={
+                                    <Xcommittee
+                                        setSelectedEpisode={setSelectedEpisode}
+                                    />
+                                }
+                            />
+                        </Suspense>
+                        <Suspense fallback={<div> Loading... </div>}>
+                            <Route
+                                path="BeerGoggles"
+                                element={<BeerGoggles />}
+                            />
+                        </Suspense>
+                        <Suspense fallback={<div> Loading... </div>}>
+                            <Route
+                                path="BeerGoggles"
+                                element={<BeerGoggles />}
+                            />
+                        </Suspense>
+                        <Suspense fallback={<div> Loading... </div>}>
+                            <Route path="HugeAss" element={<HugeAss />} />
+                        </Suspense>
+                        <Suspense fallback={<div> Loading... </div>}>
+                            <Route
+                                path="OtherProjects"
+                                element={
+                                    <OtherProjects
+                                        hugeBBCEpisodes={hugeBBCEpisodes}
+                                        lastOfUsEpisodes={lastOfUsEpisodes}
+                                        setSelectedEpisode={setSelectedEpisode}
+                                    />
+                                }
+                            />
+                        </Suspense>
                     </Routes>
                     <Footer />
                     {selectedEpisode && (
