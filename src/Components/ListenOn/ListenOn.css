@@ -47,12 +47,6 @@ a:visited {
     margin: 0;
 }
 
-@media only screen and (max-width: 600px) {
-    .podIcon {
-        display: none;
-    }
-}
-
 @media only screen and (max-width: 414px) {
     .listenOnIconAndTitle {
         font-size: 14px;

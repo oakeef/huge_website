@@ -2,7 +2,6 @@ import React from "react";
 import "./ListenOn.css";
 import ListenLink from "../ListenLink/ListenLink";
 import { Link } from "react-router-dom";
-import podIcon from "../../images/podIcon.webp";
 import appleLogo from "../../images/appleLogo.png";
 import spotifyLogo from "../../images/spotifyLogo.png";
 import googleLogo from "../../images/googleLogo.webp";
@@ -35,14 +34,7 @@ export default function ListenOn(props) {
     return (
         <div className="listenOnContainer" style={{ marginTop: offsetValue }}>
             <div className="listenOnAudioContainer">
-                <h3 className="listenOnIconAndTitle">
-                    <img
-                        className="podIcon"
-                        src={podIcon}
-                        alt="podcatcher icon"
-                    />
-                    Subscribe:
-                </h3>
+                <h3 className="listenOnIconAndTitle">Subscribe:</h3>
 
                 {listenLinks}
             </div>

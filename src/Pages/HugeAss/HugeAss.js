@@ -2,7 +2,6 @@ import React from "react";
 import "./HugeAss.css";
 import Patreon from "../../Components/Patreon/Patreon";
 import hugeassPic from "../../images/hugeass.jpg";
-import podIcon from "../../images/podIcon.webp";
 import discordIcon from "../../images/discordIcon.png";
 import youtubeIcon from "../../images/youtubeIcon.png";
 
@@ -46,11 +45,6 @@ export default function HugeAss() {
                         </div>
                         <div className="beerGogglesListenOnContainer">
                             <h3 className="listenOnIconAndTitle">
-                                <img
-                                    className="podIcon"
-                                    src={podIcon}
-                                    alt="podcatcher icon"
-                                />
                                 Subscribe On:
                             </h3>
                             <div className="listenOnIconChannel">

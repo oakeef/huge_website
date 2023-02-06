@@ -4,7 +4,6 @@ import XcommitteePic from "../../images/xcommittee.jpg";
 
 import ReactSimplyCarousel from "react-simply-carousel";
 import Episode from "../../Components/Episode/Episode";
-import podIcon from "../../images/podIcon.webp";
 import discordIcon from "../../images/discordIcon.png";
 import youtubeIcon from "../../images/youtubeIcon.png";
 
@@ -52,11 +51,6 @@ export default function OtherProjects(props) {
                         </p>
                         <div className="beerGogglesListenOnContainer">
                             <h3 className="listenOnIconAndTitle">
-                                <img
-                                    className="podIcon"
-                                    src={podIcon}
-                                    alt="podcatcher icon"
-                                />
                                 Subscribe On:
                             </h3>
                             <div className="listenOnIconChannel">

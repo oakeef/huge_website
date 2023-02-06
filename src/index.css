@@ -67,6 +67,10 @@ body {
     max-width: 1500px;
 }
 
+.listenOnIconAndTitle {
+    padding-top: 10px;
+}
+
 .listenOnIconChannel {
     display: flex;
     padding-top: 5px;
