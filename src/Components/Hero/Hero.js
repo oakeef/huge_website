@@ -8,7 +8,7 @@ export default function Hero(props) {
     const { episode, setSelectedEpisode } = props;
 
     return (
-        <div className="outerContainer">
+        <div className="heroOuterContainer">
             <img
                 className="heroImageMediaQ"
                 src={hugeCrewImg}
@@ -35,8 +35,6 @@ export default function Hero(props) {
                         }
                     />
                 </div>
-
-                <img className="heroImage" src={hugeCrewImg} alt="HUGE Logo" />
             </div>
         </div>
     );
