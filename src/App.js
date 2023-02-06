@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Home from "./Pages/Home/Home";
 import Footer from "./Components/Footer/Footer";
+import LoadingSpinner from "./Components/LoadingSpinner/LoadingSpinner";
 import Playback from "./Components/Playback/Playback";
 import axios from "axios";
 import { convertDate, convertLength, episodeCategory } from "./Helpers/Helpers";
@@ -84,7 +85,7 @@ export default function App() {
                         <Route
                             path="About"
                             element={
-                                <Suspense fallback={<div> Loading... </div>}>
+                                <Suspense fallback={<LoadingSpinner />}>
                                     <About />
                                 </Suspense>
                             }
@@ -93,7 +94,7 @@ export default function App() {
                         <Route
                             path="Projects"
                             element={
-                                <Suspense fallback={<div> Loading... </div>}>
+                                <Suspense fallback={<LoadingSpinner />}>
                                     <Projects />
                                 </Suspense>
                             }
@@ -102,7 +103,7 @@ export default function App() {
                         <Route
                             path="Contact"
                             element={
-                                <Suspense fallback={<div> Loading... </div>}>
+                                <Suspense fallback={<LoadingSpinner />}>
                                     <Contact />
                                 </Suspense>
                             }
@@ -111,7 +112,7 @@ export default function App() {
                         <Route
                             path="Episodes"
                             element={
-                                <Suspense fallback={<div> Loading... </div>}>
+                                <Suspense fallback={<LoadingSpinner />}>
                                     <Episodes
                                         podcastEpisodes={podcastEpisodes}
                                         setSelectedEpisode={setSelectedEpisode}
@@ -123,7 +124,7 @@ export default function App() {
                         <Route
                             path="Xcommittee"
                             element={
-                                <Suspense fallback={<div> Loading... </div>}>
+                                <Suspense fallback={<LoadingSpinner />}>
                                     <Xcommittee
                                         setSelectedEpisode={setSelectedEpisode}
                                     />
@@ -134,7 +135,7 @@ export default function App() {
                         <Route
                             path="BeerGoggles"
                             element={
-                                <Suspense fallback={<div> Loading... </div>}>
+                                <Suspense fallback={<LoadingSpinner />}>
                                     <BeerGoggles />{" "}
                                 </Suspense>
                             }
@@ -143,7 +144,7 @@ export default function App() {
                         <Route
                             path="BeerGoggles"
                             element={
-                                <Suspense fallback={<div> Loading... </div>}>
+                                <Suspense fallback={<LoadingSpinner />}>
                                     <BeerGoggles />
                                 </Suspense>
                             }
@@ -152,7 +153,7 @@ export default function App() {
                         <Route
                             path="HugeAss"
                             element={
-                                <Suspense fallback={<div> Loading... </div>}>
+                                <Suspense fallback={<LoadingSpinner />}>
                                     <HugeAss />
                                 </Suspense>
                             }
@@ -161,7 +162,7 @@ export default function App() {
                         <Route
                             path="OtherProjects"
                             element={
-                                <Suspense fallback={<div> Loading... </div>}>
+                                <Suspense fallback={<LoadingSpinner />}>
                                     <OtherProjects
                                         hugeBBCEpisodes={hugeBBCEpisodes}
                                         lastOfUsEpisodes={lastOfUsEpisodes}
@@ -182,5 +183,5 @@ export default function App() {
             </>
         );
     }
-    return <p>loading</p>;
+    return <LoadingSpinner />;
 }
