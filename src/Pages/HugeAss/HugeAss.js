@@ -88,15 +88,16 @@ export default function HugeAss() {
                             </a>
                         </div>
                     </div>
-
-                    <iframe
-                        className="embedVideo"
-                        title="YouTubeEmbed HUGE ASS Playlist"
-                        src="https://www.youtube.com/embed/videoseries?list=PLXnsyGNMKFBgo8lYTARS244KlTaO1wTXb"
-                    ></iframe>
-                    <figcaption className="hugeAssfigCapt">
-                        Season One Playlist
-                    </figcaption>
+                    <div>
+                        <iframe
+                            className="embedVideo"
+                            title="YouTubeEmbed HUGE ASS Playlist"
+                            src="https://www.youtube.com/embed/videoseries?list=PLXnsyGNMKFBgo8lYTARS244KlTaO1wTXb"
+                        ></iframe>
+                        <figcaption className="hugeAssfigCapt">
+                            Season One Playlist
+                        </figcaption>
+                    </div>
                 </div>
                 <Patreon
                     patreonTitle="Season Two Early Access on Patreon"

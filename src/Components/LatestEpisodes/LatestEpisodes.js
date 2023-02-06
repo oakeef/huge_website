@@ -22,11 +22,11 @@ export default function LatestEpisodes(props) {
     return (
         <>
             <div className="latestEpContainer">
-                <div>
+                <div className="latestEpHeadings">
                     <h2 className="latestEpHeader"> Latest Episodes</h2>
-                    <span className="browseAll">
-                        <Link to="/Episodes">BROWSE ALL {">"}</Link>
-                    </span>
+                    <Link to="/Episodes">
+                        <span className="browseAll"> BROWSE ALL {">"} </span>
+                    </Link>
                 </div>
                 <div className="latestEpisodesCarouselContainer">
                     <ReactSimplyCarousel
@@ -38,7 +38,7 @@ export default function LatestEpisodes(props) {
                         infinite={false}
                         speed={60}
                         responsiveProps={[
-                            { minWidth: 780, maxWidth: 1199, itemsToShow: 2 },
+                            { minWidth: 780, maxWidth: 1199, itemsToShow: 2.5 },
                             { maxWidth: 779, itemsToShow: 1 },
                         ]}
                         backwardBtnProps={{
@@ -48,6 +48,27 @@ export default function LatestEpisodes(props) {
                         forwardBtnProps={{
                             className: "carouselButton",
                             children: "→",
+                        }}
+                        dotsNav={{
+                            show: true,
+                            itemBtnProps: {
+                                style: {
+                                    height: 16,
+                                    width: 16,
+                                    borderRadius: "50%",
+                                    border: 0,
+                                    background: "silver",
+                                },
+                            },
+                            activeItemBtnProps: {
+                                style: {
+                                    height: 16,
+                                    width: 16,
+                                    borderRadius: "50%",
+                                    border: 0,
+                                    background: "#05acac",
+                                },
+                            },
                         }}
                     >
                         {hugeEps}

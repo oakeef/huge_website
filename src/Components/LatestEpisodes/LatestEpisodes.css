@@ -8,6 +8,22 @@
     padding: 0 1.875rem;
 }
 
+.latestEpisodesCarouselContainer {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+}
+
+.latestEpisodesCarouselContainer button.carouselButton:nth-child(3) + div {
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.latestEpHeadings {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 .latestEpHeader {
     font-family: "Helvetica Neue", sans-serif;
     font-size: 30px;
@@ -18,10 +34,9 @@
     color: #908dab;
     display: flex;
     font-family: "Anek Latin", sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 600;
-    margin-top: -5px;
-    margin-bottom: 15px;
+    margin-top: 12px;
 }
 
 .browseAll:hover {
@@ -34,18 +49,7 @@
 }
 
 .carouselButton {
-    background-color: white;
-    border-radius: 100%;
-    border: 1px solid #c2c8cd;
-    height: 50px;
-    margin: 5px;
-    width: 50px;
-}
-
-.carouselButton:hover {
-    background-color: #01b7cc;
-    transition: all 0.4s;
-    color: white;
+    display: none;
 }
 
 .episodesContainer {
@@ -54,10 +58,22 @@
     overflow-x: scroll;
     max-width: 1140px;
 }
+@media only screen and (max-width: 1200px) {
+    .latestEpContainer {
+        margin: 0;
+    }
+    .latestEpisodesCarouselContainer {
+        justify-content: space-between;
+    }
+}
 
 @media only screen and (max-width: 600px) {
-    .latestEpisodesCarouselCountainer {
+    .latestEpisodesCarouselContainer {
         padding: 0 2.5rem;
+    }
+    .latestEpHeadings {
+        flex-direction: column;
+        padding-bottom: 10px;
     }
     .latestEpHeader {
         text-align: center;

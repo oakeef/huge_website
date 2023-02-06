@@ -22,9 +22,15 @@
     padding: 0 15px;
 }
 
+@media only screen and (max-width: 1100px) {
+    .hostContainer {
+        margin: 15px;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .hostContainer {
-        padding: 50px;
+        padding: 40px;
     }
 }
 

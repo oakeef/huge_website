@@ -46,7 +46,7 @@ export default function ListenOn(props) {
 
                 {listenLinks}
             </div>
-            <Link className="navLink" to="/About">
+            <Link to="/About">
                 <span className="listenOnBrowseAll"> BROWSE ALL {">"} </span>
             </Link>
 
