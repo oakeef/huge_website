@@ -35,6 +35,16 @@
     height: 300px;
 }
 
+.TheLastOfUsEpContainer button.carouselButton:nth-child(3) + div {
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.BBCEpsContainer button.carouselButton:nth-child(3) + div {
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
 @media only screen and (max-width: 1100px) {
     .otherProjectsIntroContainer {
         align-items: center;

@@ -1,15 +1,43 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contact.css";
 import { useForm } from "react-hook-form";
 
 export default function Contact() {
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(
+                (key) =>
+                    encodeURIComponent(key) +
+                    "=" +
+                    encodeURIComponent(data[key])
+            )
+            .join("&");
+    };
+
     const {
         register,
         handleSubmit,
+        reset,
+        formState,
         formState: { errors },
     } = useForm();
-    const onSubmit = (data) => console.log(data);
-    console.log(errors.email);
+
+    const onSubmit = (data) => {
+        console.log(data);
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...data }),
+        })
+            .then(() => alert("Success!"))
+            .catch((error) => alert(error));
+    };
+
+    useEffect(() => {
+        if (formState.isSubmitSuccessful) {
+            reset({ name: "", email: "", message: "" });
+        }
+    }, [formState, reset]);
 
     return (
         <div className="contactContainer">
