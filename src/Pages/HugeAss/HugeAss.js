@@ -44,9 +44,7 @@ export default function HugeAss() {
                             </p>
                         </div>
                         <div className="projectsListenOnContainer">
-                            <h3 className="listenOnIconAndTitle">
-                                Subscribe On:
-                            </h3>
+                            <h3 className="listenOnIconAndTitle">Subscribe:</h3>
                             <div className="listenOnIconChannel">
                                 <img
                                     className="youtubeIcon"

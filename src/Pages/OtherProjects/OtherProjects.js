@@ -50,9 +50,7 @@ export default function OtherProjects(props) {
                             charity fundraising! It's a hoot!
                         </p>
                         <div className="projectsListenOnContainer">
-                            <h3 className="listenOnIconAndTitle">
-                                Subscribe On:
-                            </h3>
+                            <h3 className="listenOnIconAndTitle">Subscribe:</h3>
                             <div className="listenOnIconChannel">
                                 <img
                                     className="youtubeIcon"
