@@ -1,6 +1,5 @@
 import React from "react";
 import "./Hero.css";
-import hugeCrewImg from "../../images/HUGEPodCrew.jpg";
 import Featured from "../Featured/Featured";
 import ListenOn from "../ListenOn/ListenOn";
 
@@ -11,7 +10,7 @@ export default function Hero(props) {
         <div className="heroOuterContainer">
             <img
                 className="heroImageMediaQ"
-                src={hugeCrewImg}
+                src="/HUGEPodCrew.jpg"
                 alt="HUGE Logo"
             />
             <div className="heroContainer">
