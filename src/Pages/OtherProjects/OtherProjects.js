@@ -49,7 +49,7 @@ export default function OtherProjects(props) {
                             Evan plays Sonic Adventure for 12 more hours of
                             charity fundraising! It's a hoot!
                         </p>
-                        <div className="beerGogglesListenOnContainer">
+                        <div className="projectsListenOnContainer">
                             <h3 className="listenOnIconAndTitle">
                                 Subscribe On:
                             </h3>
@@ -77,15 +77,16 @@ export default function OtherProjects(props) {
                                 src={discordIcon}
                                 alt="discord logo"
                             />
-                            <a
-                                href="https://bit.ly/hoppedupdiscord"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <p className="listenOnDiscordText">
+
+                            <p className="listenOnDiscordText">
+                                <a
+                                    href="https://bit.ly/hoppedupdiscord"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     Discord Server
-                                </p>
-                            </a>
+                                </a>
+                            </p>
                         </div>
                     </div>
 

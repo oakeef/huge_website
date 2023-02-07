@@ -43,7 +43,7 @@ export default function HugeAss() {
                                 </span>
                             </p>
                         </div>
-                        <div className="beerGogglesListenOnContainer">
+                        <div className="projectsListenOnContainer">
                             <h3 className="listenOnIconAndTitle">
                                 Subscribe On:
                             </h3>
