@@ -25,6 +25,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+::selection {
+    background: #faaf40;
+}
+
 .bold {
     font-weight: bold;
 }
