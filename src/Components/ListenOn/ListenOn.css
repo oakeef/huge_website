@@ -5,7 +5,7 @@
 
 .listenOnIconAndTitle {
     font-size: 16px;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 
 .podIcon {
@@ -45,12 +45,6 @@ a:visited {
 
 .listenOnDiscordText {
     margin: 0;
-}
-
-@media only screen and (max-width: 600px) {
-    .podIcon {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 414px) {

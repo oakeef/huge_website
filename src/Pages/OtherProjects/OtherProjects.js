@@ -4,7 +4,6 @@ import XcommitteePic from "../../images/xcommittee.jpg";
 
 import ReactSimplyCarousel from "react-simply-carousel";
 import Episode from "../../Components/Episode/Episode";
-import podIcon from "../../images/podIcon.webp";
 import discordIcon from "../../images/discordIcon.png";
 import youtubeIcon from "../../images/youtubeIcon.png";
 
@@ -50,15 +49,8 @@ export default function OtherProjects(props) {
                             Evan plays Sonic Adventure for 12 more hours of
                             charity fundraising! It's a hoot!
                         </p>
-                        <div className="beerGogglesListenOnContainer">
-                            <h3 className="listenOnIconAndTitle">
-                                <img
-                                    className="podIcon"
-                                    src={podIcon}
-                                    alt="podcatcher icon"
-                                />
-                                Subscribe On:
-                            </h3>
+                        <div className="projectsListenOnContainer">
+                            <h3 className="listenOnIconAndTitle">Subscribe:</h3>
                             <div className="listenOnIconChannel">
                                 <img
                                     className="youtubeIcon"
@@ -83,15 +75,16 @@ export default function OtherProjects(props) {
                                 src={discordIcon}
                                 alt="discord logo"
                             />
-                            <a
-                                href="https://bit.ly/hoppedupdiscord"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <p className="listenOnDiscordText">
+
+                            <p className="listenOnDiscordText">
+                                <a
+                                    href="https://bit.ly/hoppedupdiscord"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     Discord Server
-                                </p>
-                            </a>
+                                </a>
+                            </p>
                         </div>
                     </div>
 
