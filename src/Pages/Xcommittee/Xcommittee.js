@@ -4,6 +4,7 @@ import axios from "axios";
 import Episode from "../../Components/Episode/Episode";
 import ListenOn from "../../Components/ListenOn/ListenOn";
 import XcommitteePic from "../../images/xcommittee.jpg";
+import xcomImage from "../../images/xcomImage.jpeg";
 import ReactSimplyCarousel from "react-simply-carousel";
 import { convertDate, convertLength } from "../../Helpers/Helpers";
 
@@ -32,7 +33,7 @@ export default function Xcommittee(props) {
                         title: convertLength(episode.title),
                         subtitle: episode[`itunes:subtitle`],
                         category: "X-COMMITTEE",
-                        image: rssFeed.rss.channel.image.url,
+                        image: xcomImage,
                         date: convertDate(episode.pubDate),
                         link: episode.link,
                     };

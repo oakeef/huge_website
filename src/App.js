@@ -7,6 +7,7 @@ import LoadingSpinner from "./Components/LoadingSpinner/LoadingSpinner";
 import Playback from "./Components/Playback/Playback";
 import axios from "axios";
 import { convertDate, convertLength, episodeCategory } from "./Helpers/Helpers";
+import episodeImage from ".//images/episodeImage.jpeg";
 
 const { XMLParser } = require("fast-xml-parser");
 
@@ -48,7 +49,7 @@ export default function App() {
                         subtitle: episode[`itunes:subtitle`],
                         category: episodeCategory(episode.title),
                         link: episode.enclosure[`@_url`],
-                        image: rssFeed.rss.channel.image.url,
+                        image: episodeImage,
                         date: convertDate(episode.pubDate),
                     };
                     episodes.push(parsedEpisode);
