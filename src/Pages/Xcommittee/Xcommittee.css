@@ -23,7 +23,7 @@
     text-align: center;
 }
 
-.xcomCarouselContainer button.carouselButton:nth-child(3) + div {
+.xcomCarouselContainer button.carouselButton:nth-child(3)+div {
     gap: 5px;
     flex-wrap: wrap;
 }
@@ -47,6 +47,7 @@
     .xcomIntroContainer {
         width: 375px;
     }
+
     .xcomProjectDescription {
         width: 300px;
     }
@@ -56,12 +57,15 @@
     .xcomIntroContainer {
         width: 360px;
     }
+
     .xcomProjectDescription {
         margin-right: 0;
     }
+
     .xcomSeasonHeader {
         font-size: 26px;
     }
+
     .xcomCarouselContainer {
         padding: 0;
     }

@@ -46,7 +46,7 @@ export default function App() {
                 rssFeed.rss.channel.item.forEach((episode) => {
                     let parsedEpisode = {
                         title: convertLength(episode.title),
-                        subtitle: episode[`itunes:subtitle`],
+                        subtitle: convertLength(episode[`itunes:subtitle`]),
                         category: episodeCategory(episode.title),
                         link: episode.enclosure[`@_url`],
                         image: episodeImage,

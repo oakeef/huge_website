@@ -15,11 +15,12 @@
 }
 
 .beerGogglesEpContainer {
-    display: flex;
+
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     max-width: 1200px;
+    display: flex;
 }
 
 .beerGoogglesEp {
@@ -30,7 +31,7 @@
     margin: 0 1.6rem 1rem 1.6rem;
 }
 
-.beerGogglesEpContainer > figure {
+.beerGogglesEpContainer>figure {
     max-width: 450px;
 }
 
@@ -62,6 +63,7 @@
     .beerGooglesWriteUp {
         max-width: 400px;
     }
+
     .beerGogglesEpContainer {
         max-width: 440px;
         margin: 0 1rem;
@@ -72,10 +74,12 @@
     .beerGooglesIntroContainer {
         width: 375px;
     }
+
     .beerGogglesEpContainer {
         max-width: 300px;
         margin: 0 1rem;
     }
+
     .beerGoogglesEp {
         align-items: center;
         max-width: 375px;
@@ -84,12 +88,15 @@
         flex-direction: column;
         justify-content: center;
     }
+
     iframe {
         scale: 75%;
     }
+
     .projectDescription {
         max-width: 300px;
     }
+
     .beerGogglesEpContainer {
         margin-left: auto;
         margin-right: auto;
@@ -100,6 +107,7 @@
     .beerGooglesIntroContainer {
         width: 360px;
     }
+
     .beerGogglesEpContainer {
         margin: 0;
     }
