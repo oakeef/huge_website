@@ -1,8 +1,9 @@
 import React from "react";
 import HugeProject from "../../Components/HugeProject/HugeProject";
-import XcommitteePic from "../../images/xcommittee.jpg";
+import XcommitteePic from "../../images/XCOMMITTEE.png";
 import BeerGoggles from "../../images/BeerGoggles.png";
-import hugeassPic from "../../images/hugeass.jpg";
+import hugeassPic from "../../images/HUGEASS.png";
+import otherProjects from "../../images/Otherprojects.png"
 import "./Projects.css";
 
 export default function Projects() {
@@ -33,8 +34,7 @@ export default function Projects() {
             description:
                 "Other HUGE Projects including The Last of Us Play The Last Of Us, HUGE Boys Book Club as well as few 12 and 24 hour charity livestreams in support of the IWK Children's Hospital and Extra Life.",
             link: "/OtherProjects",
-            photo: XcommitteePic,
-            //placeholder - TODO:replsce with an "other projects image"
+            photo: otherProjects,
         },
     ];
 

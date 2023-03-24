@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./OtherProjects.css";
-import XcommitteePic from "../../images/xcommittee.jpg";
+import otherProjects from "../../images/Otherprojects.png";
 
 import ReactSimplyCarousel from "react-simply-carousel";
 import Episode from "../../Components/Episode/Episode";
@@ -16,8 +16,8 @@ export default function OtherProjects(props) {
         <div className="outerContainer">
             <img
                 className="projectHeader"
-                src={XcommitteePic}
-                alt="xcombanner"
+                src={otherProjects}
+                alt="other projects banner"
             />
             <div className="otherProjectsContainer">
                 <div className="otherProjectsIntroContainer">
