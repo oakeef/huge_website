@@ -46,9 +46,9 @@ export default function App() {
                 rssFeed.rss.channel.item.forEach((episode) => {
                     let parsedEpisode = {
                         title: convertLength(episode.title),
-                        subtitle: convertLength(episode[`itunes:subtitle`]),
-                        category: episodeCategory(episode.title),
-                        link: episode.enclosure[`@_url`],
+                        subtitle: convertLength(episode[`itunes:subtitle`] ?? ''),
+                        category: episodeCategory(episode.title) ?? 'Uncategorized',
+                        link: episode.enclosure?.['@_url'] ?? '',
                         image: episodeImage,
                         date: convertDate(episode.pubDate),
                     };
