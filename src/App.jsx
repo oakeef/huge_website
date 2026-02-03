@@ -8,8 +8,7 @@ import Playback from "./Components/Playback/Playback";
 import axios from "axios";
 import { convertDate, convertLength, episodeCategory } from "./Helpers/Helpers";
 import episodeImage from ".//images/episodeImage.jpeg";
-
-const { XMLParser } = require("fast-xml-parser");
+import { XMLParser } from "fast-xml-parser";
 
 const About = lazy(() => import("./Pages/About/About"));
 const Episodes = lazy(() => import("./Pages/Episodes/Episodes"));
