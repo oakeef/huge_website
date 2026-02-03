@@ -18,7 +18,7 @@ export default function Projects() {
         {
             title: "Beer Goggles",
             description:
-                "A fun little experiment where one of the HUGE members picks a game they remember loving from their childhood and plays through it in its entirety with another HUGE member as a co-pilot. They see if they still love the game after replaying it or if it was just nostalgia; hence the name Beer Googles.",
+                "A fun little experiment where one of the HUGE members picks a game they remember loving from their childhood and plays through it in its entirety with another HUGE member as a co-pilot. They see if they still love the game after replaying it or if it was just nostalgia; hence the name Beer Goggles.",
             link: "/BeerGoggles",
             photo: BeerGoggles,
         },

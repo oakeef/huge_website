@@ -1,6 +1,6 @@
 import React from "react";
 import "./HostsSection.css";
-import Host from "../Host/Host.js";
+import Host from "../Host/Host.jsx";
 import ben from "../../images/ben.jpeg";
 import evan from "../../images/evan.jpeg";
 import matthew from "../../images/matthew.jpeg";

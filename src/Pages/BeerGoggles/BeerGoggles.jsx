@@ -12,10 +12,10 @@ export default function BeerGoggles() {
                 src={BeerGogglesImg}
                 alt="beerGoggles logo"
             />
-            <div className="beerGooglesContainer">
-                <div className="beerGooglesIntroContainer">
+            <div className="beerGogglesContainer">
+                <div className="beerGogglesIntroContainer">
                     <div className="projectDescription">
-                        <div className="beerGooglesWriteUp">
+                        <div className="beerGogglesWriteUp">
                             <p>
                                 A fun little experiment where one of the HUGE
                                 members picks a game they remember loving from
@@ -23,7 +23,7 @@ export default function BeerGoggles() {
                                 entirety with another HUGE member as a co-pilot.
                                 They see if they still love the game after
                                 replaying it or if it was just nostalgia; hence
-                                the name Beer Googles.
+                                the name Beer Goggles.
                             </p>
                             <p className="bold">
                                 Featured Episode: God of War (2005)
